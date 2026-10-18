@@ -1,0 +1,226 @@
+[
+  {
+    "code": "A_hitori",
+    "source_sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+    "input": "1-1.in",
+    "input_sha256": "1a0cb2081c57cfe965f6fcfd93ae175b4de5e65999b0e623349032302081b100",
+    "bytes": 14221487,
+    "seconds": 0.1585,
+    "ok": true
+  },
+  {
+    "code": "A_hitori",
+    "source_sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+    "input": "2-1.in",
+    "input_sha256": "94004adff9900b8c9de8af1da12a77947fc684ce7e2daf7eda5da9220b514c48",
+    "bytes": 12888858,
+    "seconds": 0.0802,
+    "ok": true
+  },
+  {
+    "code": "A_hitori",
+    "source_sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+    "input": "3-1.in",
+    "input_sha256": "071e04334425f43c0fec9cda5345655dcbe18698e9e38ec8046634e4e04b1d01",
+    "bytes": 2100613,
+    "seconds": 0.0412,
+    "ok": true
+  },
+  {
+    "code": "A_hitori",
+    "source_sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+    "input": "4-1.in",
+    "input_sha256": "d5f81db8e5e396cd78cf060278dfadcbaab937e83d70a2ecddf933358d0a307b",
+    "bytes": 12448376,
+    "seconds": 0.0738,
+    "ok": true
+  },
+  {
+    "code": "A_hitori",
+    "gate": "traditional_file_io",
+    "ok": true
+  },
+  {
+    "code": "A_hitori",
+    "gate": "UBSan_largest_attachment",
+    "input": "1-1.in",
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "input": "1-1.in",
+    "input_sha256": "e6af1843f7439759abfe02cb75c6025f6174936d10b0d795e1c0f5820b9095d0",
+    "bytes": 50,
+    "seconds": 0.0018,
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "input": "2-1.in",
+    "input_sha256": "e53475f148f3a9f02659f23b12182a4cf7162291bf1956fb6a9f00999e5c19b0",
+    "bytes": 139,
+    "seconds": 0.0018,
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "input": "3-1.in",
+    "input_sha256": "d0bbd5627a572914003ec679227b8ddfb20b10da600ce40d42c0fcdb69b7892e",
+    "bytes": 2047,
+    "seconds": 0.0016,
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "input": "4-1.in",
+    "input_sha256": "52ec8d29df920798a888162b0d46d3a7b956652557b45bc51f202c5a334bd1d0",
+    "bytes": 34401,
+    "seconds": 0.0022,
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "input": "5-1.in",
+    "input_sha256": "1896a9786688bb38c926f2e6d42c87881f334cde269308e2d8aaf1fd9870f926",
+    "bytes": 6868436,
+    "seconds": 0.4622,
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "gate": "traditional_file_io",
+    "ok": true
+  },
+  {
+    "code": "B_ryo",
+    "gate": "UBSan_largest_attachment",
+    "input": "5-1.in",
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "1-1.in",
+    "input_sha256": "9254edd93899228655d8d0640f4ff42a56532233d660273c7ed43dcf253746dc",
+    "bytes": 3599913,
+    "seconds": 0.349,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "2-1.in",
+    "input_sha256": "49513c20c3c08647b1f24bd729dd0722055ee686cf16a1a3a736c2c06cfecbc4",
+    "bytes": 1572487,
+    "seconds": 0.0279,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "3-1.in",
+    "input_sha256": "56476a1a26b03fc8c5d84632141ab77fccd173c4ec2d83e310d3879842a2158b",
+    "bytes": 6246809,
+    "seconds": 0.3854,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "4-1.in",
+    "input_sha256": "37be9e80e16b36f57cf7f4bd228c9f5e6909517438850c51980544093066f333",
+    "bytes": 5736294,
+    "seconds": 0.3283,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "5-1.in",
+    "input_sha256": "f0402dd573514d61bc9b60696f0e85ad8c33874fbc61a78dda2ed0653b011066",
+    "bytes": 7154330,
+    "seconds": 0.4025,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "input": "6-1.in",
+    "input_sha256": "31abda2c810282a231f60055b4810985f82005b51f8aa339094c86e545934d33",
+    "bytes": 7134580,
+    "seconds": 0.3975,
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "gate": "traditional_file_io",
+    "ok": true
+  },
+  {
+    "code": "C_nijika",
+    "gate": "UBSan_largest_attachment",
+    "input": "5-1.in",
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "input": "1-9.in",
+    "input_sha256": "594dbc3770cdb87e78363f9422516daa100dfdc9d3d2fe72ff8e4e370f048a76",
+    "bytes": 34,
+    "seconds": 0.002,
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "input": "2-8.in",
+    "input_sha256": "481eb34c81c501e89d7551a259a10c0b32411c64ddb253bd836ecd1490a7d791",
+    "bytes": 3011,
+    "seconds": 0.0016,
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "input": "3-8.in",
+    "input_sha256": "56dd461af6b6fd87e43faa0d22cf3ef9217ccdeff2334855446d9576e90843ce",
+    "bytes": 29697,
+    "seconds": 0.0028,
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "input": "4-8.in",
+    "input_sha256": "d57efc18b1e58ba79b2ee48a4bb238ba2209104328e8b9ace3f6e183c0853c8a",
+    "bytes": 596498,
+    "seconds": 0.032,
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "input": "5-12.in",
+    "input_sha256": "485d906fe8f81b647d60cbc9385cb9a63dbd2633834b7c07fc2f437a2050aeb3",
+    "bytes": 3458317,
+    "seconds": 0.2899,
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "gate": "traditional_file_io",
+    "ok": true
+  },
+  {
+    "code": "D_xor",
+    "gate": "UBSan_largest_attachment",
+    "input": "5-12.in",
+    "ok": true
+  }
+]

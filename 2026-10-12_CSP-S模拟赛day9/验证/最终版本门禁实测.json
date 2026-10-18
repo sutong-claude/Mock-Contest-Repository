@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "success": false,
+  "tasks": [
+    {
+      "task": "zerofree",
+      "source": "zerofree_final.cpp",
+      "sha256": "46cdf6edd73148aa56cce34c647c1a71c03903d599249148ca48933cfe7d4e88",
+      "compiled": true,
+      "tests_passed": 1,
+      "tests_total": 3,
+      "failures": [
+        {
+          "case": "n=1不能跳过",
+          "error": "WRONG_ANSWER expected=['9'] actual=['0']"
+        },
+        {
+          "case": "样例1",
+          "error": "WRONG_ANSWER expected=['1'] actual=['0']"
+        }
+      ]
+    },
+    {
+      "task": "count",
+      "source": "count_final.cpp",
+      "sha256": "624d1556949cd4e986a604ac79b789e45fc6b25ad5f95ef4827ce7d1e5838fd6",
+      "compiled": true,
+      "tests_passed": 2,
+      "tests_total": 3,
+      "failures": [
+        {
+          "case": "单向不可达",
+          "error": "WRONG_ANSWER expected=['-1'] actual=['1']"
+        }
+      ]
+    },
+    {
+      "task": "color",
+      "source": "color_final.cpp",
+      "sha256": "18950accf6f464f7b4ab15719410a05f86524e9c38450b869c5fd87f315f5476",
+      "compiled": true,
+      "tests_passed": 0,
+      "tests_total": 2,
+      "failures": [
+        {
+          "case": "最后一瓶唯一解",
+          "error": "WRONG_ANSWER expected=['Yes'] actual=['No']"
+        },
+        {
+          "case": "官方示例两问",
+          "error": "WRONG_ANSWER expected=['Yes', 'No'] actual=['No', 'No']"
+        }
+      ]
+    },
+    {
+      "task": "silent",
+      "source": "silent_final.cpp",
+      "sha256": "6557a1184d1cdc435b2830bc92b6256bbf1d8b3867c8cdada1463476cb8574d5",
+      "compiled": true,
+      "tests_passed": 0,
+      "tests_total": 1,
+      "failures": [
+        {
+          "case": "官方样例1",
+          "error": "WRONG_ANSWER expected=['30'] actual=['0']"
+        }
+      ]
+    }
+  ]
+}

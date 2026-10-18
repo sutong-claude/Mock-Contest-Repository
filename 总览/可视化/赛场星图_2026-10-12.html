@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b13">
+<meta name="description" content="基于八场代码源模拟赛与CodeLands真实证据的交互式OI竞赛复盘指挥舱。36题可检索，赛时赛后分离，支持离线打开。">
+<title>赛场星图 | CSP-S EVIDENCE ATLAS</title>
+<style>
+:root{color-scheme:dark;--bg:#070b13;--panel:#101824;--panel2:#151f2d;--text:#e9f1fd;--mute:#8b9db5;--line:#26364a;--teal:#47edd8;--blue:#73adff;--amber:#f4c579;--red:#fb799a;--violet:#aa97ff;--good:#9ae6c9;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.62 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC","Microsoft YaHei",sans-serif;overflow-x:hidden}body::before{content:"";pointer-events:none;position:fixed;inset:0;background-image:linear-gradient(rgba(111,177,214,.024) 1px,transparent 1px),linear-gradient(90deg,rgba(111,177,214,.024) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 92%);z-index:-1}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--teal);outline-offset:3px}::selection{background:#14676c;color:#fff}
+.wrap{max-width:1420px;padding:0 44px;margin:auto}.topbar{position:sticky;z-index:60;top:0;backdrop-filter:blur(22px);background:rgba(7,11,19,.80);border-bottom:1px solid rgba(140,165,204,.12)}.top-inner{min-height:76px;display:flex;align-items:center;gap:25px}.brand{display:flex;gap:12px;align-items:center;white-space:nowrap;font-weight:800;letter-spacing:.035em}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--teal);border-radius:12px;color:var(--teal);box-shadow:0 0 32px rgba(71,237,216,.16);font:26px var(--mono)}.topnav{display:flex;align-items:center;gap:24px;margin-left:auto}.topnav a{font-size:12px;letter-spacing:.08em;color:var(--mute);transition:color .2s}.topnav a:hover,.topnav a.active{color:var(--teal)}.top-action{border:1px solid rgba(71,237,216,.3);background:rgba(71,237,216,.06);padding:9px 13px;border-radius:9px;color:var(--teal);font-size:12px;white-space:nowrap}
+.hero{position:relative;min-height:660px;display:flex;align-items:center;padding:90px 0 54px;isolation:isolate}.hero::before{content:"";position:absolute;inset:-40% -18% -10%;z-index:-2;background:radial-gradient(ellipse at 70% 48%,rgba(51,115,154,.15),transparent 42%),radial-gradient(ellipse at 26% 36%,rgba(74,88,145,.14),transparent 38%)}#stars{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.75}.hero-content{max-width:820px;position:relative}.micro{display:flex;gap:12px;align-items:center;color:var(--teal);font:11px var(--mono);letter-spacing:.18em;text-transform:uppercase}.dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:var(--teal);box-shadow:0 0 15px var(--teal)}.hero h1{font-size:clamp(50px,8vw,111px);line-height:1.045;letter-spacing:-.075em;margin:26px 0 22px;font-weight:830}.hero h1 em{font-style:normal;background:linear-gradient(115deg,#e9f8ff 15%,var(--teal) 52%,#77aaff 94%);background-clip:text;color:transparent}.hero-copy{font-size:17px;max-width:600px;color:#a7b8cd;line-height:1.85}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.cta{padding:13px 20px;border-radius:11px;font-size:13px;font-weight:720;border:1px solid #365269;background:#1b3541;color:#bffff4}.cta:hover{background:#234e54}.cta.secondary{background:rgba(18,28,44,.8);color:#d2dded;border-color:#26384c}.hero-aside{position:absolute;right:7%;top:23%;width:280px;height:280px;pointer-events:none;opacity:.78;filter:drop-shadow(0 0 30px #0c2931)}.orbit{position:absolute;border:1px solid rgba(75,237,218,.23);border-radius:50%;inset:4%;animation:turn 24s linear infinite}.orbit:nth-child(2){inset:19%;border-style:dashed;animation-duration:40s;animation-direction:reverse}.orbit:nth-child(3){inset:34%;border-color:rgba(115,173,255,.4);animation-duration:18s}.orbit::after{content:"";position:absolute;width:7px;height:7px;top:14%;left:14%;border-radius:50%;background:var(--teal);box-shadow:0 0 20px var(--teal)}.orbit:nth-child(2)::after{background:var(--blue)}.orbit:nth-child(3)::after{background:var(--amber)}@keyframes turn{to{transform:rotate(360deg)}}.core{position:absolute;inset:43%;background:#a7fff2;border-radius:50%;box-shadow:0 0 25px 12px rgba(59,225,211,.27),0 0 85px rgba(47,158,216,.2)}.meta-rail{display:flex;flex-wrap:wrap;gap:10px;color:var(--mute);font:11px var(--mono);margin-top:35px}.meta-rail span{padding-right:14px;border-right:1px solid var(--line)}.meta-rail span:last-child{border:none}
+.section{scroll-margin-top:98px;margin-top:86px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:23px}.eyebrow{font:11px var(--mono);letter-spacing:.18em;color:var(--teal);text-transform:uppercase;margin-bottom:11px}.section h2{font-size:clamp(27px,4vw,42px);line-height:1.2;letter-spacing:-.045em;margin:0}.section-sub{margin:9px 0 0;color:var(--mute);font-size:13px;max-width:680px}.tiny-note{font:11px var(--mono);color:var(--mute)}.status-chip{border:1px solid var(--line);padding:6px 9px;border-radius:8px;font:11px var(--mono);white-space:nowrap;color:#b4c8df;background:rgba(115,173,255,.04)}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.glass{position:relative;background:linear-gradient(145deg,rgba(21,32,48,.91),rgba(11,18,29,.96));border:1px solid rgba(141,169,203,.13);border-radius:18px;overflow:hidden}.glass::before{content:"";pointer-events:none;position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,rgba(255,255,255,.035),transparent 30%)}.metric{padding:25px 24px;min-height:153px}.metric .k-label{font:11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}.metric .number{font-size:clamp(28px,3.8vw,53px);font-weight:760;line-height:1.2;letter-spacing:-.06em;margin:17px 0 7px;font-variant-numeric:tabular-nums}.metric small{color:var(--mute);font-size:12px}.metric:nth-child(1) .number{color:var(--teal)}.metric:nth-child(2) .number{color:var(--blue)}.metric:nth-child(3) .number{color:var(--amber)}.metric:nth-child(4) .number{color:#d1b0ff}
+.chart-layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(300px,1fr);gap:14px}.chart-panel{padding:25px 26px}.panel-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}.panel-title{font-size:15px;font-weight:680}.panel-sub{font:11px var(--mono);color:var(--mute)}.score-svg{display:block;width:100%;overflow:visible;height:270px}.chart-grid{stroke:#3b4c61;stroke-width:1;opacity:.5}.chart-label{fill:#93a5bb;font:11px var(--mono)}.chart-line{fill:none;stroke:var(--teal);stroke-width:3.2;filter:drop-shadow(0 1px 12px rgba(71,237,216,.25))}.chart-area{fill:url(#scorearea)}.chart-node{stroke:#0b151e;stroke-width:3;cursor:pointer;transition:r .15s}.chart-node:hover,.chart-node:focus{r:9}.chart-focus{margin:16px 0 0;padding:16px;border:1px solid rgba(71,237,216,.15);background:rgba(71,237,216,.04);border-radius:12px;min-height:83px}.chart-focus b{color:var(--teal)}.chart-focus p{margin:5px 0 0;color:var(--mute);font-size:12px}.explain{padding:25px;display:flex;flex-direction:column;gap:15px}.explain .big{font-size:22px;font-weight:740;line-height:1.5}.explain p{margin:0;color:var(--mute);font-size:13px;line-height:1.8}.evidence-legend{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.legend{font:12px var(--mono);padding:11px;border:1px solid var(--line);border-radius:9px;color:var(--mute)}.legend b{color:var(--teal);margin-right:6px}
+.heatmap{display:grid;grid-template-columns:84px repeat(4,minmax(0,1fr));gap:9px;align-items:stretch}.heat-head{font:11px var(--mono);color:var(--mute);text-align:center;padding:12px}.heat-day{display:flex;align-items:center;font:12px var(--mono);color:#bed0e2}.heat-cell{border:1px solid var(--line);border-radius:12px;min-height:72px;padding:10px 14px;background:rgba(89,108,129,.07);text-align:left;color:#dbe9f8;transition:transform .2s,border-color .2s,background .2s;display:flex;align-items:flex-start;justify-content:space-between}.heat-cell:hover,.heat-cell.selected{transform:translateY(-3px);border-color:var(--teal);background:rgba(54,177,164,.1)}.heat-cell strong{font-size:21px;font-variant-numeric:tabular-nums}.heat-cell span{font:10px var(--mono);color:var(--mute)}.heat-cell.ace{background:rgba(59,208,177,.17);border-color:rgba(71,237,216,.29)}.heat-cell.partial{background:rgba(119,173,242,.12);border-color:rgba(115,173,255,.18)}.heat-cell.none{background:rgba(125,135,155,.045)}.heat-foot{display:flex;gap:17px;margin-top:14px;font:11px var(--mono);color:var(--mute);flex-wrap:wrap}
+.controls{display:flex;gap:11px;flex-wrap:wrap;align-items:center}.filter{padding:10px 12px;border:1px solid var(--line);background:#121c2a;border-radius:9px;color:var(--text);font-size:12px;min-height:42px}.query{flex:1 1 280px;max-width:390px}.result-count{font:11px var(--mono);color:var(--teal);padding:5px}.problem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}.problem{padding:21px;min-height:194px;text-align:left;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s;cursor:pointer}.problem:hover{transform:translateY(-3px);border-color:rgba(71,237,216,.55)}.problem-head{display:flex;justify-content:space-between;gap:9px;align-items:center}.code{font:11px var(--mono);color:var(--teal)}.score{font:12px var(--mono);color:var(--mute)}.score b{font-size:19px;color:#eef7ff;font-weight:760}.problem-title{font-size:17px;font-weight:720;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.problem-meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--mute);font-size:11px}.problem-brief{font-size:12px;line-height:1.7;color:#aabbd1;margin-top:auto;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.more{color:var(--teal);font:11px var(--mono);margin-top:4px}.empty{border:1px dashed var(--line);padding:30px;color:var(--mute);grid-column:1/-1;text-align:center;border-radius:12px}
+.story-layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:15px}.story-nav{padding:14px;display:flex;flex-direction:column;gap:5px;max-height:540px;overflow:auto}.story-tab{background:transparent;border:1px solid transparent;color:var(--mute);text-align:left;border-radius:10px;padding:12px;transition:all .2s;font-size:12px}.story-tab .mini{display:block;font:10px var(--mono);color:#8094ac;margin-bottom:5px}.story-tab:hover,.story-tab[aria-selected=true]{background:rgba(71,237,216,.07);border-color:rgba(71,237,216,.22);color:var(--text)}.story-tab[aria-selected=true] .mini{color:var(--teal)}.story-view{padding:36px;display:flex;flex-direction:column;justify-content:space-between;min-height:440px;background:radial-gradient(ellipse at top right,rgba(71,237,216,.085),transparent 45%),linear-gradient(145deg,rgba(21,32,48,.91),rgba(11,18,29,.96))}.story-index{font:11px var(--mono);color:var(--teal);letter-spacing:.12em}.story-view h3{font-size:clamp(27px,4vw,46px);letter-spacing:-.045em;line-height:1.17;max-width:800px;margin:18px 0}.story-view p{font-size:16px;color:#afc1d6;max-width:760px;line-height:1.9}.story-detail{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-top:30px;border-top:1px solid var(--line);padding-top:24px}.story-source{font:11px var(--mono);color:var(--mute)}.story-tools{display:flex;gap:9px}
+.evidence-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.evidence-card{padding:23px;min-height:190px}.evidence-card h3{margin:0 0 12px;font-size:15px}.evidence-card p{font-size:12px;color:var(--mute);margin:0;line-height:1.8}.evidence-card .badge-num{font:27px var(--mono);color:var(--teal);margin:14px 0 10px}.rail{margin:25px 0 0;border-left:2px solid var(--line);padding-left:20px}.rail-item{position:relative;padding:0 0 21px 17px}.rail-item::before{content:"";position:absolute;width:10px;height:10px;top:7px;left:-26px;border:2px solid var(--teal);background:var(--bg);border-radius:50%}.rail-item b{font-size:13px}.rail-item p{color:var(--mute);font-size:12px;margin:5px 0}
+.task-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.task-card{padding:21px;display:flex;gap:16px;align-items:flex-start}.task-card .seq{flex:0 0 45px;display:grid;place-items:center;width:45px;height:45px;border-radius:11px;border:1px solid #344658;background:#172536;color:var(--teal);font:12px var(--mono)}.task-card h3{margin:0;font-size:15px}.task-card p{margin:6px 0;color:var(--mute);font-size:12px}.task-tag{font:11px var(--mono);color:var(--amber)}
+.footer{border-top:1px solid var(--line);margin-top:100px;padding:36px 0 48px;display:flex;gap:20px;justify-content:space-between;color:var(--mute);font-size:12px}.footer a{color:var(--teal)}
+.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(2,7,12,.81);backdrop-filter:blur(9px);display:flex;justify-content:flex-end;animation:show .17s ease}.modal-backdrop[hidden]{display:none}.drawer{width:min(720px,100%);height:100%;overflow:auto;background:#0c1421;border-left:1px solid #315167;box-shadow:-22px 0 90px rgba(0,0,0,.5);padding:35px clamp(24px,5vw,56px)}.drawer-top{display:flex;align-items:center;justify-content:space-between;color:var(--teal);font:11px var(--mono)}.close{width:39px;height:39px;border:1px solid var(--line);background:#152538;color:#fff;border-radius:9px;font-size:19px}.drawer h2{font-size:clamp(27px,4vw,43px);line-height:1.2;letter-spacing:-.04em;margin:22px 0}.drawer-stat{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:25px}.drawer-stat span{border:1px solid var(--line);border-radius:9px;padding:9px 11px;color:var(--mute);font:12px var(--mono)}.drawer-stat strong{color:var(--text)}.drawer-block{margin:24px 0;border-top:1px solid var(--line);padding-top:18px}.drawer-block label{display:block;color:var(--teal);font:11px var(--mono);letter-spacing:.15em;margin-bottom:12px}.drawer-block p{color:#b8c8dc;font-size:14px;line-height:1.9;margin:0}.drawer-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.drawer-links a{border:1px solid rgba(71,237,216,.32);padding:11px 14px;border-radius:10px;color:var(--teal);font-size:12px}.drawer-links a:hover{background:rgba(71,237,216,.08)}body.modal-open{overflow:hidden}@keyframes show{from{opacity:0}to{opacity:1}}
+@media(max-width:1100px){.hero-aside{right:1%;opacity:.3}.problem-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.topnav{gap:13px}.topbar .topnav a{font-size:11px}.chart-layout{grid-template-columns:1fr}}
+@media(max-width:740px){.wrap{padding:0 18px}.top-inner{min-height:65px;gap:8px}.brand{font-size:12px}.topnav{display:none}.top-action{margin-left:auto;padding:8px}.hero{min-height:620px;padding-top:70px}.hero h1{letter-spacing:-.065em}.hero-copy{font-size:15px}.hero-aside{top:12%;right:-65px;width:220px;height:220px;opacity:.22}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{padding:19px;min-height:127px}.section{margin-top:67px}.section-heading{display:block}.section-heading .status-chip{display:inline-block;margin-top:14px}.heatmap{grid-template-columns:51px repeat(4,minmax(0,1fr));gap:5px}.heat-day{font-size:10px}.heat-cell{padding:8px;min-height:57px;border-radius:7px}.heat-cell strong{font-size:16px}.heat-cell span{font-size:9px}.heat-head{padding:6px}.problem-grid,.task-list,.evidence-grid{grid-template-columns:1fr}.story-layout{grid-template-columns:1fr}.story-nav{display:flex;flex-direction:row;overflow:auto;max-height:unset}.story-tab{min-width:150px;flex:0 0 150px}.story-view{padding:23px;min-height:380px}.story-detail{flex-direction:column;align-items:start}.chart-panel{padding:16px}.explain{padding:20px}.footer{flex-direction:column;margin-top:70px}.drawer{padding-top:20px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* 2026-10-12: clip large atmospheric pseudo elements; no sideways page on narrow screens. */
+html{overflow-x:clip}
+.hero{overflow:clip}
+@media(max-width:740px){.metric .number{font-size:24px;letter-spacing:-.08em;overflow-wrap:anywhere}.metric{min-width:0}.hero-aside{right:-55px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap top-inner">
+<a class="brand" href="#home" aria-label="返回赛场星图首页"><span class="brand-mark" aria-hidden="true">✳</span><span>ST / EVIDENCE ATLAS</span></a>
+<nav class="topnav" aria-label="主导航"><a href="#trajectory">竞赛轨迹</a><a href="#heat">得分星图</a><a href="#cases">36题档案</a><a href="#stories">关键转折</a><a href="#evidence">证据系统</a><a href="#missions">下一步任务</a></nav>
+<a class="top-action" href="https://github.com/sutong-claude/Day1" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a>
+</div></header>
+<main class="wrap">
+<section class="hero" id="home" aria-labelledby="hero-title">
+<canvas id="stars" aria-hidden="true"></canvas><div class="hero-aside" aria-hidden="true"><span class="orbit"></span><span class="orbit"></span><span class="orbit"></span><span class="core"></span></div>
+<div class="hero-content">
+<div class="micro"><span class="dot"></span> ORIGINAL REPLAY · REAL SCORES · VERIFIED EVIDENCE</div>
+<h1 id="hero-title">把四小时的<br><em>每一次思考</em><br>变成坐标。</h1>
+<p class="hero-copy">这不是一张静态成绩单。它连接八场 CSP-S 模拟赛的真实得分、36道题目的研究状态，以及来自录音、Replay、源码与官方提交的关键转折。你的每一次试错，都值得被准确记住。</p>
+<div class="hero-actions"><a class="cta" href="#trajectory">进入竞赛指挥舱 ↗</a><a class="cta secondary" href="#stories">打开思路考古 →</a><a class="cta secondary" href="#cases">检索全部 36 题</a></div>
+<div class="meta-rail"><span>01 / 08 代码源赛场</span><span>02 / 04 CodeLands 独立题</span><span>03 / TRACEABLE BY SOURCE</span><span id="source-tag">2026-10-12</span></div>
+</div>
+</section>
+<section class="section" id="trajectory" aria-labelledby="trajectory-title">
+<div class="section-heading"><div><div class="eyebrow">01 / FLIGHT RECORD</div><h2 id="trajectory-title">从得分曲线，看见真实转变。</h2><p class="section-sub" id="summary-note">官方赛时成绩，不混入赛后重交。</p></div><span class="status-chip">CODESOURCE · 8 / 8 SNAPSHOTS</span></div>
+<div class="metrics">
+<div class="glass metric"><div class="k-label">TOTAL / 8 CONTESTS</div><div class="number" id="m-total">—</div><small>八场正式赛时 OJ 得分</small></div>
+<div class="glass metric"><div class="k-label">PEAK / DAY 03</div><div class="number" id="m-best">—</div><small>最高单场正式成绩</small></div>
+<div class="glass metric"><div class="k-label">PROBLEM ARCHIVE</div><div class="number" id="m-count">—</div><small>32 代码源 + 4 CodeLands</small></div>
+<div class="glass metric"><div class="k-label">REPLAY / SOURCE STATES</div><div class="number" id="m-records">—</div><small>Day7 / Day8 保存事件 SHA 核验</small></div>
+</div>
+<div class="chart-layout" style="margin-top:14px">
+<div class="glass chart-panel"><div class="panel-top"><span class="panel-title">Score trajectory <span style="color:var(--mute);font-weight:400">/ 八场</span></span><span class="panel-sub">0 — 400 POINTS</span></div>
+<svg class="score-svg" id="score-plot" viewBox="0 0 850 270" role="img" aria-label="八场模拟赛赛时分数折线图，点击节点查看单场成绩"></svg>
+<div class="chart-focus" aria-live="polite"><div class="micro"><span id="focus-day">DAY 08</span> · <span id="focus-score">15/400</span></div><b id="focus-title">边界与性能</b><p id="focus-note">赛时得分</p></div>
+</div>
+<aside class="glass explain"><div><div class="eyebrow">READ THE DATA</div><div class="big">成绩是终点，<br>不是全部真相。</div><p>Day4 的零分同时包含编译、运行与验证器失效；Day7 的后两题虽未提交，却真实发现过可取的部分分性质。这里刻意把“想到了”“验证了”“提交了”分开。</p></div>
+<div class="evidence-legend"><div class="legend"><b>[P]</b>严格证明</div><div class="legend"><b>[E]</b>独立实验</div><div class="legend"><b>[H]</b>待证猜想</div><div class="legend"><b>[X]</b>已证伪</div></div>
+<p style="border-top:1px solid var(--line);padding-top:15px">CodeLands 独立赛为 <strong style="color:var(--amber)">200/400</strong>，不并入左侧八场分数曲线。</p></aside>
+</div></section>
+<section class="section" id="heat" aria-labelledby="heat-title"><div class="section-heading"><div><div class="eyebrow">02 / SCORE CONSTELLATION</div><h2 id="heat-title">32 题，像星座一样摊开。</h2><p class="section-sub">每格都是正式比赛的最后状态。点击任意格，打开该题的详细档案。CodeLands 的四题放在下方搜索库内。</p></div><span class="status-chip">CLICK TO INSPECT · A/B/C/D</span></div>
+<div class="glass" style="padding:22px"><div class="heatmap" id="heatmap" aria-label="代码源八场32题得分矩阵"></div><div class="heat-foot"><span style="color:var(--teal)">■ 100 FULL</span><span style="color:var(--blue)">■ 1—99 PARTIAL</span><span>□ 0 / NO SUBMISSION</span><button class="filter" id="heat-all" type="button" style="margin-left:auto">查看全部题目 ↗</button></div></div></section>
+<section class="section" id="cases" aria-labelledby="cases-title"><div class="section-heading"><div><div class="eyebrow">03 / CASE EXPLORER</div><h2 id="cases-title">36 份题目档案，随手查阅。</h2><p class="section-sub">不是让你再看一遍题解。每题保留真实赛时得分、曾经走到哪里、当前解法状态和下一步突破口。</p></div><span class="status-chip">SEARCH · FILTER · INSPECT</span></div>
+<div class="controls" role="search" aria-label="题目筛选">
+<input id="filter-query" class="filter query" type="search" autocomplete="off" placeholder="搜索题名、算法、问题、证据……" aria-label="全文搜索题目">
+<select id="filter-system" class="filter" aria-label="筛选平台"><option value="all">全部平台</option><option value="代码源">代码源</option><option value="代码部落">CodeLands</option></select>
+<select id="filter-day" class="filter" aria-label="筛选场次"><option value="all">所有 Day</option></select>
+<select id="filter-status" class="filter" aria-label="筛选得分状态"><option value="all">所有分数</option><option value="ac">100 分</option><option value="partial">部分分</option><option value="zero">零分</option></select>
+<button type="button" class="filter" id="reset">重置</button><button type="button" class="filter" id="export">导出当前CSV ↓</button><span id="result-count" class="result-count" aria-live="polite">—</span>
+</div><div id="problem-grid" class="problem-grid" aria-live="polite"></div></section>
+<section class="section" id="stories" aria-labelledby="stories-title"><div class="section-heading"><div><div class="eyebrow">04 / REPLAY ARCHAEOLOGY</div><h2 id="stories-title">错误发生之前，思考已经发生。</h2><p class="section-sub">把关键的时间节点连回原始想法。你看到的不只是最后哪个代码错了，而是它如何一步步变成那样。</p></div><span class="status-chip">11 HIGH-SIGNAL EVENTS</span></div>
+<div class="story-layout"><div class="glass story-nav" id="story-nav" role="tablist" aria-label="考古关键事件选择"></div><article class="glass story-view" role="tabpanel" aria-live="polite"><div><div class="story-index" id="story-index"></div><h3 id="story-title">等待载入</h3><p id="story-copy"></p></div><div class="story-detail"><div><span class="status-chip" id="story-state">研究</span><p class="story-source" id="story-source"></p></div><div class="story-tools"><button class="filter" id="story-prev" type="button">← 上一节点</button><button class="filter" id="story-next" type="button">下一节点 →</button></div></div></article></div></section>
+<section class="section" id="evidence" aria-labelledby="evidence-title"><div class="section-heading"><div><div class="eyebrow">05 / PROVENANCE GRAPH</div><h2 id="evidence-title">证据足够硬，结论才站得住。</h2><p class="section-sub">仓库之所以值得持续维护，是因为结论能返回原始保存版本、官方记录、录音原文和独立实验，而不是由 AI 自己描述得漂亮。</p></div><span class="status-chip">SCAN ≠ SEMANTIC CLOSURE</span></div>
+<div class="evidence-grid">
+<div class="glass evidence-card"><h3>01 / 原始三包</h3><div class="badge-num" id="e-archives">3</div><p>三份长期原件存放于授权 Library；235 容器实例经递归完整性核验，原始资料不随公开仓库发布。</p></div>
+<div class="glass evidence-card"><h3>02 / Replay</h3><div class="badge-num" id="e-records">113</div><p>Day7 59 次、Day8 54 次保存。全部核对内容 SHA，但尚未将所有录像逐帧语义闭合。</p></div>
+<div class="glass evidence-card"><h3>03 / 历史对话</h3><div class="badge-num" id="e-chat">282</div><p>两份聊天原件拥有逐消息索引。程序遍历与每条对话的深入理解属于不同验收层。</p></div>
+<div class="glass evidence-card"><h3>04 / 原件断点</h3><div class="badge-num" id="e-gap">6</div><p>历史导出中已有6处截断提示，不能凭推测补回任何缺失的工具输出或用户原话。</p></div>
+</div>
+<div class="rail" aria-label="证据成熟度演化">
+<div class="rail-item"><b>OBSERVED / 现场可观察</b><p>题面、官方成绩、提交源码、屏幕、笔记与录音。记录来源和时间。</p></div>
+<div class="rail-item"><b>HYPOTHESIS / 用户的猜想</b><p>保存用户的正确分支，也保留已走过但被证伪的岔路。</p></div>
+<div class="rail-item"><b>VERIFIED / 独立验证</b><p>先做合法数据生成、独立 oracle、最小反例；局部样例通过不能自动提升为证明。</p></div>
+<div class="rail-item"><b>FROZEN → SUBMITTED → SCORED</b><p>版本哈希与正式提交身份一致后才能记赛时得分；赛后重交独立建账。</p></div>
+</div></section>
+<section class="section" id="missions" aria-labelledby="missions-title"><div class="section-heading"><div><div class="eyebrow">06 / MISSION CONTROL</div><h2 id="missions-title">下一步不是计划，是待完成的闭环。</h2><p class="section-sub">把最有价值的实际缺口留给接班者：先重现、再修复、最后验证，不用新文档掩盖旧问题。</p></div><span class="status-chip">PRIORITIZED WORKSTREAMS</span></div><div id="task-list" class="task-list"></div>
+<div class="glass" style="margin-top:15px;padding:22px 24px"><div class="eyebrow">CRITICAL DISTINCTION / DAY8</div><div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap"><div style="font-size:20px;font-weight:720">赛时 <span style="color:var(--teal)">15 / 400</span></div><div style="font-size:13px;color:var(--mute);max-width:650px">同日赛后 A70 来自用户贴出的 OJ 逐点页面；C23 来自用户自述。二者尚未独立取回新 record，不能合并为赛时成绩。</div></div></div>
+</section>
+<footer class="footer"><span>ST / EVIDENCE ATLAS · 2026-10-12 · 一切结论可回溯，一切缺口如实保留。</span><span><a href="https://github.com/sutong-claude/Day1" target="_blank" rel="noopener noreferrer">GITHUB ↗</a> · <a href="#home">BACK TO TOP ↑</a></span></footer>
+</main>
+<div class="modal-backdrop" id="detail-backdrop" hidden><aside class="drawer" id="detail-drawer" role="dialog" aria-modal="true" aria-labelledby="detail-title" tabindex="-1">
+<div class="drawer-top"><span id="detail-id">CASE FILE</span><button type="button" class="close" id="detail-close" aria-label="关闭题目详情">×</button></div>
+<h2 id="detail-title"></h2><div class="drawer-stat"><span><strong id="detail-score">0/100</strong> · 赛时</span><span id="detail-verdict">状态</span><span id="detail-system">场次</span></div>
+<div class="drawer-block"><label>01 / 真实赛时状态</label><p id="detail-process"></p></div>
+<div class="drawer-block"><label>02 / 赛后研究与正确性</label><p id="detail-current"></p></div>
+<div class="drawer-block"><label>03 / 下一个突破口</label><p id="detail-next"></p></div>
+<div class="drawer-block"><label>04 / 来源强度与边界</label><p id="detail-source"></p></div><div class="drawer-links" id="detail-links"></div>
+</aside></div>
+<script type="application/json" id="app-data">{
+  "schema": "csp-s-evidence-dashboard.v1",
+  "snapshot": "2026-10-12",
+  "scoreScope": "比赛结束时的正式OJ归档；赛后提交另列，不计入图表",
+  "source": "全题总表_2026-10-11.md + 交接/2026-10-11_主力模拟赛分析_万字接班报告.md",
+  "sourceCommit": "f0d9745bf4f8c8c730bd6992fedefaad995e9531",
+  "privacy": "Public summary only. Original recordings, video and private conversation remain in authorized Library.",
+  "scores": [
+    45,
+    130,
+    204,
+    0,
+    15,
+    115,
+    145,
+    15
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "09/25",
+      "score": 45,
+      "focus": "读总范围"
+    },
+    {
+      "day": 2,
+      "date": "09/27",
+      "score": 130,
+      "focus": "可提交资产"
+    },
+    {
+      "day": 3,
+      "date": "10/01",
+      "score": 204,
+      "focus": "检查器契约"
+    },
+    {
+      "day": 4,
+      "date": "10/02",
+      "score": 0,
+      "focus": "Oracle可信度"
+    },
+    {
+      "day": 5,
+      "date": "10/04",
+      "score": 15,
+      "focus": "查询对象"
+    },
+    {
+      "day": 6,
+      "date": "10/05",
+      "score": 115,
+      "focus": "状态语义"
+    },
+    {
+      "day": 7,
+      "date": "10/06",
+      "score": 145,
+      "focus": "反向DSU"
+    },
+    {
+      "day": 8,
+      "date": "10/11",
+      "score": 15,
+      "focus": "边界与性能"
+    }
+  ],
+  "questions": [
+    {
+      "id": "D1-A",
+      "system": "代码源",
+      "contest": "Day1",
+      "date": "2026-09-25",
+      "letter": "A",
+      "title": "蜗蜗的记录带",
+      "score": 20,
+      "verdict": "TLE",
+      "current": "FULL：固定右端点增量维护/树状数组",
+      "difficulty": "S",
+      "value": "4.3/5",
+      "reliability": "高",
+      "contestProcess": "partial；复杂度失守",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "复习 O(n²) 与总范围核验",
+      "path": "2026-09-25_CSP-S模拟赛day1"
+    },
+    {
+      "id": "D1-B",
+      "system": "代码源",
+      "contest": "Day1",
+      "date": "2026-09-25",
+      "letter": "B",
+      "title": "蜗蜗的联动面板",
+      "score": 25,
+      "verdict": "WA",
+      "current": "FULL：a_i≤i 判定 + 归纳构造",
+      "difficulty": "S",
+      "value": "4.5/5",
+      "reliability": "高",
+      "contestProcess": "partial；构造未闭合",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "构造题先证明充要再实现",
+      "path": "2026-09-25_CSP-S模拟赛day1"
+    },
+    {
+      "id": "D1-C",
+      "system": "代码源",
+      "contest": "Day1",
+      "date": "2026-09-25",
+      "letter": "C",
+      "title": "蜗蜗的晶体树阵",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "FULL：树形 DP / 深度分层",
+      "difficulty": "S+",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "未提交",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "补题并整理 70 分梯度",
+      "path": "2026-09-25_CSP-S模拟赛day1"
+    },
+    {
+      "id": "D1-D",
+      "system": "代码源",
+      "contest": "Day1",
+      "date": "2026-09-25",
+      "letter": "D",
+      "title": "蜗蜗的轮换密钥",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "FULL：排列环 + 同余最短路；45分背包",
+      "difficulty": "S+",
+      "value": "4.4/5",
+      "reliability": "高",
+      "contestProcess": "未提交",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "优先掌握 45 分路线",
+      "path": "2026-09-25_CSP-S模拟赛day1"
+    },
+    {
+      "id": "D2-A",
+      "system": "代码源",
+      "contest": "Day2",
+      "date": "2026-09-27",
+      "letter": "A",
+      "title": "乘法",
+      "score": 100,
+      "verdict": "AC",
+      "current": "FULL：有符号二进制/数位 DP/NAF",
+      "difficulty": "S",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "100；耗时偏长",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "训练更早锁分",
+      "path": "2026-09-27_CSP-S模拟赛day2"
+    },
+    {
+      "id": "D2-B",
+      "system": "代码源",
+      "contest": "Day2",
+      "date": "2026-09-27",
+      "letter": "B",
+      "title": "🧶",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "FULL：Trie + 增量维护；赛后 full 与赛时骨架已分层",
+      "difficulty": "S",
+      "value": "4.5/5",
+      "reliability": "高",
+      "contestProcess": "约14:06仅777B无输出骨架，无提交",
+      "review": "较完整",
+      "evidence": "高",
+      "next": "训练“前缀统计转Trie层计数”；末段不冷启动新题",
+      "path": "2026-09-27_CSP-S模拟赛day2"
+    },
+    {
+      "id": "D2-C",
+      "system": "代码源",
+      "contest": "Day2",
+      "date": "2026-09-27",
+      "letter": "C",
+      "title": "🔴",
+      "score": 30,
+      "verdict": "TLE",
+      "current": "FULL：前缀差 + 二维偏序 DP；赛时 O(n²) partial 已 [P/E] 闭合",
+      "difficulty": "S+",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "13:40严格>有反例→13:49修>=；正确30分 partial",
+      "review": "较完整",
+      "evidence": "高",
+      "next": "保留正确 O(n²) 资产，再从二维偏序继续优化",
+      "path": "2026-09-27_CSP-S模拟赛day2"
+    },
+    {
+      "id": "D2-D",
+      "system": "代码源",
+      "contest": "Day2",
+      "date": "2026-09-27",
+      "letter": "D",
+      "title": "🐺",
+      "score": 0,
+      "verdict": "CE",
+      "current": "FULL：小状态 DP；枚举全局量 + 矩阵线段树",
+      "difficulty": "S+",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "有代码但交付失败",
+      "review": "较完整",
+      "evidence": "中",
+      "next": "练提交源唯一化",
+      "path": "2026-09-27_CSP-S模拟赛day2"
+    },
+    {
+      "id": "D3-A",
+      "system": "代码源",
+      "contest": "Day3",
+      "date": "2026-10-01",
+      "letter": "A",
+      "title": "报数",
+      "score": 100,
+      "verdict": "AC",
+      "current": "FULL：排序 + 前缀判定",
+      "difficulty": "S-",
+      "value": "4.2/5",
+      "reliability": "高",
+      "contestProcess": "100",
+      "review": "黄金样例",
+      "evidence": "高",
+      "next": "保留为开局稳定题范式",
+      "path": "2026-10-01_CSP-S模拟赛day3"
+    },
+    {
+      "id": "D3-B",
+      "system": "代码源",
+      "contest": "Day3",
+      "date": "2026-10-01",
+      "letter": "B",
+      "title": "翻面消除",
+      "score": 65,
+      "verdict": "WA",
+      "current": "FULL：约简串/逆结构/平方共轭判定",
+      "difficulty": "S",
+      "value": "4.9/5",
+      "reliability": "高",
+      "contestProcess": "65；checker 误用",
+      "review": "黄金样例",
+      "evidence": "高",
+      "next": "checker 只证明它检查的部分",
+      "path": "2026-10-01_CSP-S模拟赛day3"
+    },
+    {
+      "id": "D3-C",
+      "system": "代码源",
+      "contest": "Day3",
+      "date": "2026-10-01",
+      "letter": "C",
+      "title": "任务领取",
+      "score": 24,
+      "verdict": "WA",
+      "current": "FULL：树形偏序线性扩展 + 换根",
+      "difficulty": "S+",
+      "value": "4.8/5",
+      "reliability": "高",
+      "contestProcess": "partial",
+      "review": "黄金样例",
+      "evidence": "高",
+      "next": "补 reroot 计数",
+      "path": "2026-10-01_CSP-S模拟赛day3"
+    },
+    {
+      "id": "D3-D",
+      "system": "代码源",
+      "contest": "Day3",
+      "date": "2026-10-01",
+      "letter": "D",
+      "title": "同类分段",
+      "score": 15,
+      "verdict": "TLE",
+      "current": "FULL：出现区间交叠 + 扫描数据结构",
+      "difficulty": "S+",
+      "value": "4.8/5",
+      "reliability": "高",
+      "contestProcess": "15；复杂度不足",
+      "review": "黄金样例",
+      "evidence": "高",
+      "next": "从 O(n³) 找重复工作",
+      "path": "2026-10-01_CSP-S模拟赛day3"
+    },
+    {
+      "id": "D4-A",
+      "system": "代码源",
+      "contest": "Day4",
+      "date": "2026-10-02",
+      "letter": "A",
+      "title": "蜗蜗的温控舱",
+      "score": 0,
+      "verdict": "CE",
+      "current": "FULL已闭合：极值不变量 + lower-bound 达成条件，O(n)",
+      "difficulty": "S",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "赛时主体接近；工程回归丢分",
+      "review": "中",
+      "evidence": "高",
+      "next": "lower bound→何时不可达",
+      "path": "2026-10-02_CSP-S模拟赛day4"
+    },
+    {
+      "id": "D4-B",
+      "system": "代码源",
+      "contest": "Day4",
+      "date": "2026-10-02",
+      "letter": "B",
+      "title": "蜗蜗的频谱窗",
+      "score": 0,
+      "verdict": "TLE",
+      "current": "FULL待补；赛时 oracle/状态模型曾失真",
+      "difficulty": "S+",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "深挖+对拍但未闭合",
+      "review": "中",
+      "evidence": "高",
+      "next": "先重建正确 brute/oracle",
+      "path": "2026-10-02_CSP-S模拟赛day4"
+    },
+    {
+      "id": "D4-C",
+      "system": "代码源",
+      "contest": "Day4",
+      "date": "2026-10-02",
+      "letter": "C",
+      "title": "蜗蜗的信号终端",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "FULL待补；m≤6 显著状态压缩味道",
+      "difficulty": "S+",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "几乎没正常时间",
+      "review": "薄",
+      "evidence": "中",
+      "next": "从 m≤6 状压/树上状态入手",
+      "path": "2026-10-02_CSP-S模拟赛day4"
+    },
+    {
+      "id": "D4-D",
+      "system": "代码源",
+      "contest": "Day4",
+      "date": "2026-10-02",
+      "letter": "D",
+      "title": "组合题",
+      "score": 0,
+      "verdict": "RE",
+      "current": "FULL待补；n≤20/300/2500 partial 梯度明确",
+      "difficulty": "S+",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "末段抢写",
+      "review": "中",
+      "evidence": "高",
+      "next": "先写 n≤20 真值，再找区间连通 DP",
+      "path": "2026-10-02_CSP-S模拟赛day4"
+    },
+    {
+      "id": "D5-A",
+      "system": "代码源",
+      "contest": "Day5",
+      "date": "2026-10-04",
+      "letter": "A",
+      "title": "蜗蜗的三角画布",
+      "score": 0,
+      "verdict": "WA",
+      "current": "FULL已闭合：按位置 next-greater / 单调栈",
+      "difficulty": "S",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "接近正解但 query 写错",
+      "review": "较深",
+      "evidence": "高",
+      "next": "查询对象→数据结构接口",
+      "path": "2026-10-04_CSP-S模拟赛day5"
+    },
+    {
+      "id": "D5-B",
+      "system": "代码源",
+      "contest": "Day5",
+      "date": "2026-10-04",
+      "letter": "B",
+      "title": "蜗蜗的巡检路线",
+      "score": 15,
+      "verdict": "WA",
+      "current": "FULL待补；15分 partial 正确",
+      "difficulty": "S",
+      "value": "4.2/5",
+      "reliability": "高",
+      "contestProcess": "稳定 partial",
+      "review": "中",
+      "evidence": "高",
+      "next": "先冻结已验证 partial 再扩",
+      "path": "2026-10-04_CSP-S模拟赛day5"
+    },
+    {
+      "id": "D5-C",
+      "system": "代码源",
+      "contest": "Day5",
+      "date": "2026-10-04",
+      "letter": "C",
+      "title": "蜗蜗的日志摘要",
+      "score": 0,
+      "verdict": "WA",
+      "current": "FULL待补；赛时第三交已证实输出可不合法且非字典序最优 [E/X]",
+      "difficulty": "S+",
+      "value": "4.4/5",
+      "reliability": "高",
+      "contestProcess": "前两交IO RE；第三交n/串长混淆+局部贪心失败",
+      "review": "较深",
+      "evidence": "很高",
+      "next": "先验输出合法性，再验最优；见E-D5-016及tiny oracle",
+      "path": "2026-10-04_CSP-S模拟赛day5"
+    },
+    {
+      "id": "D5-D",
+      "system": "代码源",
+      "contest": "Day5",
+      "date": "2026-10-04",
+      "letter": "D",
+      "title": "蜗蜗的灯光预案",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "赛后FULL候选[P/E]：GF(2)影响类+二阶矩+精确位集；未OJ-AC",
+      "difficulty": "S+",
+      "value": "4.5/5",
+      "reliability": "高",
+      "contestProcess": "赛时仅扫题主动让出T4，无代码/提交；9分brute也未物化",
+      "review": "较深",
+      "evidence": "高",
+      "next": "官方OJ待验证；保留赛时0与赛后full分层，见E-D5-017",
+      "path": "2026-10-04_CSP-S模拟赛day5"
+    },
+    {
+      "id": "D6-A",
+      "system": "代码源",
+      "contest": "Day6",
+      "date": "2026-10-05",
+      "letter": "A",
+      "title": "蜗蜗的休息日程",
+      "score": 100,
+      "verdict": "AC",
+      "current": "FULL：间隙容量 + 贪心，O(n)",
+      "difficulty": "S",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "约50min首交100",
+      "review": "较深",
+      "evidence": "高",
+      "next": "健康建模样例",
+      "path": "2026-10-05_CSP-S模拟赛day6"
+    },
+    {
+      "id": "D6-B",
+      "system": "代码源",
+      "contest": "Day6",
+      "date": "2026-10-05",
+      "letter": "B",
+      "title": "蜗蜗的计算日志",
+      "score": 0,
+      "verdict": "WA",
+      "current": "FULL已基本闭合：势函数变换 + LNDS",
+      "difficulty": "S+",
+      "value": "5.0/5",
+      "reliability": "高",
+      "contestProcess": "图/DAG方向接近，判定不闭合",
+      "review": "较深",
+      "evidence": "高",
+      "next": "pair compatibility→一维势函数",
+      "path": "2026-10-05_CSP-S模拟赛day6"
+    },
+    {
+      "id": "D6-C",
+      "system": "代码源",
+      "contest": "Day6",
+      "date": "2026-10-05",
+      "letter": "C",
+      "title": "蜗蜗的反馈灯阵",
+      "score": 0,
+      "verdict": "TLE",
+      "current": "核心结构已闭合：固定k四分类；完整计数待最终校验",
+      "difficulty": "S+",
+      "value": "4.9/5",
+      "reliability": "高",
+      "contestProcess": "四分类赛时已想到但压错信息",
+      "review": "较深",
+      "evidence": "高",
+      "next": "保留 forced/optional 语义",
+      "path": "2026-10-05_CSP-S模拟赛day6"
+    },
+    {
+      "id": "D6-D",
+      "system": "代码源",
+      "contest": "Day6",
+      "date": "2026-10-05",
+      "letter": "D",
+      "title": "蜗蜗的频段配对",
+      "score": 15,
+      "verdict": "TLE",
+      "current": "partial已闭合：暴力正确；n≤1000 可预处理phi+区间DP",
+      "difficulty": "S+",
+      "value": "4.5/5",
+      "reliability": "高",
+      "contestProcess": "15稳定",
+      "review": "较深",
+      "evidence": "高",
+      "next": "full待补；分层冻结 partial",
+      "path": "2026-10-05_CSP-S模拟赛day6"
+    },
+    {
+      "id": "D7-A",
+      "system": "代码源",
+      "contest": "Day7",
+      "date": "2026-10-06",
+      "letter": "A",
+      "title": "兄弟",
+      "score": 100,
+      "verdict": "AC",
+      "current": "FULL：按父亲分组取基线 + 全局一次额外",
+      "difficulty": "S-",
+      "value": "4.4/5",
+      "reliability": "高",
+      "contestProcess": "约35min首交100",
+      "review": "深",
+      "evidence": "高",
+      "next": "快速抽象成功样例",
+      "path": "2026-10-06_CSP-S模拟赛day7"
+    },
+    {
+      "id": "D7-B",
+      "system": "代码源",
+      "contest": "Day7",
+      "date": "2026-10-06",
+      "letter": "B",
+      "title": "凯瑟琳的委托分组",
+      "score": 45,
+      "verdict": "RE",
+      "current": "FULL：反向加点 + DSU，O(n α(n))",
+      "difficulty": "S",
+      "value": "5.0/5",
+      "reliability": "高",
+      "contestProcess": "brute语义正确；复杂度未反演",
+      "review": "深",
+      "evidence": "很高",
+      "next": "删除分裂→倒序加入",
+      "path": "2026-10-06_CSP-S模拟赛day7"
+    },
+    {
+      "id": "D7-C",
+      "system": "代码源",
+      "contest": "Day7",
+      "date": "2026-10-06",
+      "letter": "C",
+      "title": "砂糖的培养方案",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "partial：v=50 10分；极端k 15分赛后补；full待补",
+      "difficulty": "S+",
+      "value": "4.6/5",
+      "reliability": "高",
+      "contestProcess": "赛时已发现10分却未物化",
+      "review": "深",
+      "evidence": "很高",
+      "next": "PROVED partial 10分钟内代码化",
+      "path": "2026-10-06_CSP-S模拟赛day7"
+    },
+    {
+      "id": "D7-D",
+      "system": "代码源",
+      "contest": "Day7",
+      "date": "2026-10-06",
+      "letter": "D",
+      "title": "提纳里的巡林路线",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "partial：N≤100 19分；full待补",
+      "difficulty": "S+",
+      "value": "4.7/5",
+      "reliability": "高",
+      "contestProcess": "19分赛时已发现但未提交",
+      "review": "深",
+      "evidence": "很高",
+      "next": "已证明 partial 先锁分",
+      "path": "2026-10-06_CSP-S模拟赛day7"
+    },
+    {
+      "id": "CL-A/net",
+      "system": "代码部落",
+      "contest": "NOI金牌命题模拟赛1",
+      "date": "2026-10-06",
+      "letter": "A/net",
+      "title": "网络重建",
+      "score": 100,
+      "verdict": "OJ-AC",
+      "current": "FULL赛后：同步剥叶 O(n)；赛时final有M=1反例",
+      "difficulty": "S",
+      "value": "4.7/5",
+      "reliability": "中：数据漏卡已知反例",
+      "contestProcess": "100，但官方AC≠证明",
+      "review": "很深",
+      "evidence": "很高",
+      "next": "OJ-AC/PROVED 分层",
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1"
+    },
+    {
+      "id": "CL-B/game",
+      "system": "代码部落",
+      "contest": "NOI金牌命题模拟赛1",
+      "date": "2026-10-06",
+      "letter": "B/game",
+      "title": "分段游戏",
+      "score": 100,
+      "verdict": "OJ-AC",
+      "current": "FULL：16状态DP O(n)；赛时代码穷举0 mismatch",
+      "difficulty": "S",
+      "value": "5.0/5",
+      "reliability": "高",
+      "contestProcess": "100；7代反例驱动闭合",
+      "review": "很深",
+      "evidence": "很高",
+      "next": "分类讨论工程化验证范例",
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1"
+    },
+    {
+      "id": "CL-C/core",
+      "system": "代码部落",
+      "contest": "NOI金牌命题模拟赛1",
+      "date": "2026-10-06",
+      "letter": "C/core",
+      "title": "谁是核心串",
+      "score": 0,
+      "verdict": "0分",
+      "current": "FULL赛后：Trie容量 + 字典序扫描",
+      "difficulty": "S+",
+      "value": "4.8/5",
+      "reliability": "高",
+      "contestProcess": "赛时只到Trie/EMPTY入口",
+      "review": "很深",
+      "evidence": "很高",
+      "next": "从L=0容量判定逐层推广",
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1"
+    },
+    {
+      "id": "CL-D/tree",
+      "system": "代码部落",
+      "contest": "NOI金牌命题模拟赛1",
+      "date": "2026-10-06",
+      "letter": "D/tree",
+      "title": "巡游树",
+      "score": 0,
+      "verdict": "0分",
+      "current": "partial PROVED：N≤5000 O(n²)；full待补",
+      "difficulty": "S+",
+      "value": "4.5/5",
+      "reliability": "中：样例包格式事故",
+      "contestProcess": "多special半闭合，捆绑0",
+      "review": "很深",
+      "evidence": "很高",
+      "next": "一次只闭合一个subtask；样例先体检",
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1"
+    },
+    {
+      "id": "D8-A",
+      "system": "代码源",
+      "contest": "Day8",
+      "date": "2026-10-11",
+      "letter": "A",
+      "title": "今汐的巡防分区",
+      "score": 15,
+      "verdict": "WA",
+      "current": "赛后已证明分类计数且一条件修复14400组正确；未OJ AC",
+      "difficulty": "S（待校准）",
+      "value": "5/5",
+      "reliability": "高：OJ #2 15",
+      "contestProcess": "数学主线正确，d=m产生非法路径",
+      "review": "新场次首审",
+      "evidence": "高",
+      "next": "优先复习非法路径契约，必要时OJ回测",
+      "path": "2026-10-11_CSP-S模拟赛day8"
+    },
+    {
+      "id": "D8-B",
+      "system": "代码源",
+      "contest": "Day8",
+      "date": "2026-10-11",
+      "letter": "B",
+      "title": "卡提希娅的接线方案",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "一般树full待补；赛后链端点15分经独立枚举和附件核对",
+      "difficulty": "S+（待校准）",
+      "value": "5/5",
+      "reliability": "高：未提交",
+      "contestProcess": "赛时最大边删除猜想被样例质疑",
+      "review": "新场次首审",
+      "evidence": "高",
+      "next": "研究离路径便宜边可转接，避免局部贪心",
+      "path": "2026-10-11_CSP-S模拟赛day8"
+    },
+    {
+      "id": "D8-C",
+      "system": "代码源",
+      "contest": "Day8",
+      "date": "2026-10-11",
+      "letter": "C",
+      "title": "爱弥斯的观测记录",
+      "score": 0,
+      "verdict": "TLE；部分小点WA",
+      "current": "赛后n<=5000/8bit联合40分候选；20bit full待补",
+      "difficulty": "S+（待校准）",
+      "value": "5/5",
+      "reliability": "高：OJ TLE+非法路径",
+      "contestProcess": "赛时有DP及回溯，k索引错位+复杂度超限",
+      "review": "新场次首审",
+      "evidence": "很高",
+      "next": "k[i]数学对象+mask优化",
+      "path": "2026-10-11_CSP-S模拟赛day8"
+    },
+    {
+      "id": "D8-D",
+      "system": "代码源",
+      "contest": "Day8",
+      "date": "2026-10-11",
+      "letter": "D",
+      "title": "达妮娅的脉冲测试",
+      "score": 0,
+      "verdict": "未提交",
+      "current": "赛后小n与性质B联合50分程序本地验证；其余full待补",
+      "difficulty": "S+（待校准）",
+      "value": "5/5",
+      "reliability": "高：未提交",
+      "contestProcess": "赛时只有扫题无算法主体",
+      "review": "新场次首审",
+      "evidence": "高",
+      "next": "度<=2链环与性质B短图",
+      "path": "2026-10-11_CSP-S模拟赛day8"
+    }
+  ],
+  "events": [
+    {
+      "day": 1,
+      "type": "range",
+      "moment": "复盘核心",
+      "title": "约束和复杂度",
+      "text": "没有把全输入规模和预计复杂度对齐；先设计能真的提交的部分分。",
+      "status": "赛时失分",
+      "evidence": "OJ归档＋仓库复盘"
+    },
+    {
+      "day": 2,
+      "type": "version",
+      "moment": "Day2 / C",
+      "title": "严格大于 → 大于等于",
+      "text": "正确的朴素DP资产已找到；比较边界经过反例才被纠正。",
+      "status": "思路保留",
+      "evidence": "历史版本与赛时回放"
+    },
+    {
+      "day": 3,
+      "type": "oracle",
+      "moment": "Day3 / B",
+      "title": "Checker 假绿",
+      "text": "自制检查器对 NO 分支缺少完整真值约束；研究大样例的努力不能被一句“没验证”抹掉。",
+      "status": "验证风险",
+      "evidence": "样例与checker源码"
+    },
+    {
+      "day": 4,
+      "type": "oracle",
+      "moment": "Day4 / B",
+      "title": "生成器 + Oracle 双污染",
+      "text": "随机生成器越过题面合法域，参考程序还漏条件；大量对拍因此不能视为证明。",
+      "status": "真值中断",
+      "evidence": "赛场源码／合法域穷举"
+    },
+    {
+      "day": 5,
+      "type": "model",
+      "moment": "Day5 / A",
+      "title": "查询对象被偷换",
+      "text": "三角画布的后缀候选思路存在；问题是值域和位置域的查询意义不一致。",
+      "status": "模型修正",
+      "evidence": "赛时录音和历史代码"
+    },
+    {
+      "day": 6,
+      "type": "model",
+      "moment": "Day6 / C",
+      "title": "四分类进入代码",
+      "text": "forced/optional 四类状态赛时已经形成，后来公式与状态表达发生语义退化。",
+      "status": "研究有产出",
+      "evidence": "Replay版本＋OJ"
+    },
+    {
+      "day": 7,
+      "type": "replay",
+      "moment": "01:35 → 01:53",
+      "title": "B：真实回滚与冻结",
+      "text": "稳定朴素版本经历重写与恢复，并冻结为WA.cpp；障碍是动态分裂到倒序DSU的复杂度变换。",
+      "status": "版本受控",
+      "evidence": "Replay保存SHA"
+    },
+    {
+      "day": 7,
+      "type": "replay",
+      "moment": "03:27 → 03:52",
+      "title": "D：20代真实尝试",
+      "text": "源码曾达到1663字节，后来主动推倒成583字节骨架。不能用最后文件长度推断“没研究”。",
+      "status": "候选证伪",
+      "evidence": "20代file_changes"
+    },
+    {
+      "day": 8,
+      "type": "replay",
+      "moment": "01:49:02",
+      "title": "A：abs 被引入",
+      "text": "为了处理位移方向改用绝对值，但d=m时产生不存在的单调路径，旧源码出现可复现反例。",
+      "status": "边界错误",
+      "evidence": "赛时原版C++ / Replay"
+    },
+    {
+      "day": 8,
+      "type": "replay",
+      "moment": "03:56:19",
+      "title": "C：修对一处、漏下一处",
+      "text": "popcount(f[j],f[i])改成popcount(a[j],a[i])，k[pos]却仍错用链长度索引。",
+      "status": "下标语义",
+      "evidence": "Replay源码差分"
+    },
+    {
+      "day": 8,
+      "type": "score",
+      "moment": "赛后同日",
+      "title": "A70 / C23 ≠ 赛时成绩",
+      "text": "A70取自用户粘贴的OJ逐点文字；C23来自用户陈述。赛时成绩仍为15/400。",
+      "status": "时间分层",
+      "evidence": "用户消息；新record待核验"
+    }
+  ],
+  "postgame": {
+    "A": {
+      "reported": 70,
+      "evidence": "用户提供 OJ 逐点页面文字",
+      "verifiedIndependent": false
+    },
+    "C": {
+      "reported": 23,
+      "evidence": "用户自述",
+      "verifiedIndependent": false
+    }
+  },
+  "collected": {
+    "rawArchives": 3,
+    "archiveBytes": [
+      477675304,
+      448287929,
+      441633954
+    ],
+    "replaySaves": 113,
+    "originalChatMessages": 282,
+    "chatTruncations": 6,
+    "semanticAllClosed": false
+  },
+  "tasks": [
+    {
+      "id": "A70",
+      "priority": "P0",
+      "name": "Day8 A · 第五子任务 TLE",
+      "detail": "赛后70分源码的合法域、逆阶乘与最大性能",
+      "evidence": "新OJ record尚未独立取得"
+    },
+    {
+      "id": "C20",
+      "priority": "P0",
+      "name": "Day8 C · 20-bit 候选",
+      "detail": "重测O(n·1024)与回溯合法性；官方满分未知",
+      "evidence": "仅历史本地验证"
+    },
+    {
+      "id": "B4",
+      "priority": "P0",
+      "name": "Day4 B · 重建真值",
+      "detail": "合法生成器、独立oracle及最小反例",
+      "evidence": "旧generator和oracle均存在错误"
+    },
+    {
+      "id": "D7",
+      "priority": "P0",
+      "name": "Day7 C/D · 部分分冻结",
+      "detail": "赛时已发现10/19分条件，转成运行资产",
+      "evidence": "已证思路≠已经正式提交"
+    },
+    {
+      "id": "FULL",
+      "priority": "P1",
+      "name": "Day5 B/C · FULL 待闭合",
+      "detail": "从已有部分分及反例继续做证明",
+      "evidence": "尚无可靠full验收"
+    },
+    {
+      "id": "ASR",
+      "priority": "P1",
+      "name": "逐段录音＋Replay 语义",
+      "detail": "把尚未分析的片段转成事件级证据",
+      "evidence": "目前仅完成全容器与113保存哈希"
+    }
+  ]
+}
+</script><script>
+"use strict";
+(function(){
+const DATA=JSON.parse(document.getElementById("app-data").textContent);
+const root=document.documentElement;
+const state={day:"all",system:"all",status:"all",q:"",event:8};
+const problems=DATA.questions;
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);return e};
+const node=(p,tag,cls,text)=>{const e=el(tag,cls,text);p.append(e);return e};
+const set=(s,text)=>{$(s).textContent=String(text)};
+const fmt=n=>Number(n).toLocaleString("zh-CN");
+const contest=q=>q.system==="代码源"?"代码源 "+q.contest:"CodeLands";
+const baseRepo="https://github.com/sutong-claude/Day1/blob/chatgpt/oct7-stage-maintenance/";
+const repoPath=path=>baseRepo+path.split("/").map(encodeURIComponent).join("/");
+function titleData(){
+const scores=DATA.scores;set("#m-total",fmt(scores.reduce((a,b)=>a+b,0))+" / 3200");
+set("#m-best",Math.max(...scores)+" / 400");set("#m-count",DATA.questions.length+" 道");set("#m-records",DATA.collected.replaySaves);
+set("#source-tag",DATA.snapshot+" / 来源锁定");set("#summary-note",DATA.scoreScope);
+set("#e-records",DATA.collected.replaySaves);set("#e-chat",DATA.collected.originalChatMessages);
+set("#e-archives",DATA.collected.rawArchives);set("#e-gap",DATA.collected.chatTruncations);}
+function scoreChart(){
+const svg=$("#score-plot"),NS="http://www.w3.org/2000/svg";const mk=(t,attrs,parent=svg)=>{const x=document.createElementNS(NS,t);for(const [k,v]of Object.entries(attrs||{}))x.setAttribute(k,v);parent.append(x);return x};
+const ds=mk("defs");const grad=mk("linearGradient",{id:"scorearea",x1:"0",x2:"0",y1:"0",y2:"1"},ds);mk("stop",{offset:"0%","stop-color":"#47edd8","stop-opacity":".28"},grad);mk("stop",{offset:"100%","stop-color":"#47edd8","stop-opacity":"0"},grad);
+const W=850,H=270,ml=46,mr=26,mt=22,mb=42,w=W-ml-mr,h=H-mt-mb;
+const X=i=>ml+i*w/7,Y=s=>mt+(400-s)*h/400;
+for(let y=0;y<=400;y+=100){mk("line",{x1:ml,x2:W-mr,y1:Y(y),y2:Y(y),class:"chart-grid"});const t=mk("text",{x:ml-11,y:Y(y)+4,"text-anchor":"end",class:"chart-label"});t.textContent=String(y)}
+const pts=DATA.days.map((d,i)=>[X(i),Y(d.score)]),poly=pts.map(p=>p.join(",")).join(" "),region=ml+","+(mt+h)+" "+poly+" "+(W-mr)+","+(mt+h);
+mk("polygon",{points:region,class:"chart-area"});mk("polyline",{points:poly,class:"chart-line"});
+for(let i=0;i<8;i++){const d=DATA.days[i];const dot=mk("circle",{cx:X(i),cy:Y(d.score),r:7,fill:i===2?"#f4c579":"#47edd8",class:"chart-node",tabindex:"0",role:"button","aria-label":"第"+d.day+"场，"+d.score+"分"});dot.addEventListener("click",()=>chooseChart(i));dot.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();chooseChart(i)}});const label=mk("text",{x:X(i),y:H-10,"text-anchor":"middle",class:"chart-label"});label.textContent="D"+d.day;}
+chooseChart(7)}
+function chooseChart(i){const d=DATA.days[i];set("#focus-day","DAY "+String(d.day).padStart(2,"0"));set("#focus-score",d.score+"/400");set("#focus-title",d.focus);set("#focus-note","赛时正式分数。点击下方题目矩阵可查看该场四题。");$$(".chart-node").forEach((x,j)=>{x.setAttribute("stroke",i===j?"#fff":"#0b151e");x.setAttribute("r",i===j?"9":"7")});}
+function classify(s){return s===100?"ace":s>0?"partial":"none"}
+function makeHeatmap(){
+const grid=$("#heatmap");grid.textContent="";node(grid,"div","heat-head","DAY");
+for(const h of ["A","B","C","D"])node(grid,"div","heat-head",h);
+for(let d=1;d<=8;d++){node(grid,"div","heat-day","D"+String(d).padStart(2,"0"));for(const letter of ["A","B","C","D"]){const q=problems.find(x=>x.id==="D"+d+"-"+letter);if(!q)continue;
+const b=node(grid,"button","heat-cell "+classify(q.score));b.type="button";b.setAttribute("aria-label",q.contest+" "+letter+" "+q.score+"分，查看详情");const val=node(b,"strong","",q.score);node(b,"span","",letter);b.title=q.title+" · "+q.verdict;b.addEventListener("click",()=>openProblem(q));}}
+}
+function isShown(q){
+if(state.system!=="all"&&state.system!==q.system)return false;
+if(state.day!=="all"&&q.contest!=="Day"+state.day)return false;
+if(state.status==="ac"&&q.score!==100)return false;
+if(state.status==="partial"&&!(q.score>0&&q.score<100))return false;
+if(state.status==="zero"&&q.score!==0)return false;
+const needle=state.q.trim().toLocaleLowerCase();if(needle&&!([q.title,q.id,q.current,q.next,q.verdict,q.contestProcess,q.contest].join(" ").toLocaleLowerCase().includes(needle)))return false;
+return true}
+function renderProblems(){
+const grid=$("#problem-grid");grid.textContent="";
+const shown=problems.filter(isShown);set("#result-count",shown.length+" / "+problems.length+" MATCHED");
+const slice=shown;
+if(!slice.length){node(grid,"div","empty","没有找到符合条件的题目。试试重置筛选。");return}
+for(const q of slice){const b=node(grid,"button","glass problem");b.type="button";b.setAttribute("aria-label","打开"+q.id+" "+q.title+" 的复盘详情");
+const top=node(b,"div","problem-head");node(top,"span","code",q.id+" / "+(q.system==="代码源"?"CODESOURCE":"CODELANDS"));const sc=node(top,"span","score");node(sc,"b","",q.score);sc.append(" / 100");
+node(b,"div","problem-title",q.title);
+const tags=node(b,"div","problem-meta");node(tags,"span","status-chip",q.verdict);node(tags,"span","status-chip",q.difficulty);node(tags,"span","status-chip",q.reliability==="高"?"证据较完整":"证据:"+q.reliability);
+node(b,"div","problem-brief",q.contestProcess);
+node(b,"div","more","OPEN CASE FILE ↗");b.addEventListener("click",()=>openProblem(q));}}
+function setDayFilter(day){state.day=day;$("#filter-day").value=day;renderProblems();$("#cases").scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})}
+function setupFilters(){
+const day=$("#filter-day");for(let i=1;i<=8;i++){const o=node(day,"option","", "Day "+i);o.value=String(i)}
+day.addEventListener("change",e=>{state.day=e.target.value;renderProblems()});
+$("#filter-system").addEventListener("change",e=>{state.system=e.target.value;if(state.system!=="代码源"){state.day="all";day.value="all"}renderProblems()});
+$("#filter-status").addEventListener("change",e=>{state.status=e.target.value;renderProblems()});
+$("#filter-query").addEventListener("input",e=>{state.q=e.target.value;renderProblems()});
+$("#reset").addEventListener("click",()=>{state.day="all";state.system="all";state.status="all";state.q="";day.value="all";$("#filter-system").value="all";$("#filter-status").value="all";$("#filter-query").value="";renderProblems()});
+$("#heat-all").addEventListener("click",()=>{state.day="all";day.value="all";renderProblems();$("#cases").scrollIntoView({behavior:"smooth"})});
+$("#export").addEventListener("click",exportCSV);}
+function exportCSV(){
+const head=["ID","平台","场次","题号","标题","赛时分","状态","当前正确性描述","下一步"];
+const rows=[head,...problems.filter(isShown).map(q=>[q.id,q.system,q.contest,q.letter,q.title,q.score,q.verdict,q.current,q.next])];
+const csv=rows.map(row=>row.map(x=>'"'+String(x).replaceAll('"','""')+'"').join(",")).join("\r\n");
+const url=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8;"}));const a=el("a");a.href=url;a.download="CSP-S_复盘题目_"+DATA.snapshot+".csv";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)}
+let lastFocus=null;
+function openProblem(q){
+const b=$("#detail-backdrop"),pane=$("#detail-drawer");lastFocus=document.activeElement;set("#detail-id",q.id+" / EVIDENCE FILE");set("#detail-title",q.title);set("#detail-score",q.score+"/100");set("#detail-verdict",q.verdict);set("#detail-system",contest(q));
+set("#detail-process",q.contestProcess);set("#detail-current",q.current);set("#detail-next",q.next);set("#detail-source","题目总表："+q.evidence+" / "+q.review+"；当前评级为仓库分析，不是官方定级。");
+const links=$("#detail-links");links.textContent="";
+const a=node(links,"a","","查看比赛文件夹 ↗");a.href="https://github.com/sutong-claude/Day1/tree/chatgpt/oct7-stage-maintenance/"+q.path.split("/").map(encodeURIComponent).join("/");a.target="_blank";a.rel="noopener noreferrer";
+const c=node(links,"a","","查看权威36题总表 ↗");c.href=repoPath("全题总表_2026-10-11.md");c.target="_blank";c.rel="noopener noreferrer";
+b.hidden=false;document.body.classList.add("modal-open");pane.focus();history.replaceState(null,"","#"+q.id)}
+function closeProblem(){const b=$("#detail-backdrop");if(b.hidden)return;b.hidden=true;document.body.classList.remove("modal-open");if(location.hash.startsWith("#D")||location.hash.startsWith("#CL-"))history.replaceState(null,"",location.pathname+location.search);if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+function setupDetail(){$("#detail-close").addEventListener("click",closeProblem);$("#detail-backdrop").addEventListener("click",e=>{if(e.target===$("#detail-backdrop"))closeProblem()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeProblem();if(!$("#detail-backdrop").hidden&&e.key==="Tab"){const f=$$('a,button,[tabindex="0"]',$("#detail-drawer")).filter(x=>!x.hasAttribute("disabled"));if(f.length){const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}}})}
+function renderStory(){
+const nav=$("#story-nav");nav.textContent="";
+DATA.events.forEach((e,i)=>{const b=node(nav,"button","story-tab");b.type="button";b.setAttribute("role","tab");b.setAttribute("aria-selected",String(i===state.event));node(b,"span","mini","DAY "+String(e.day).padStart(2,"0")+" · "+e.moment);node(b,"span","",e.title);b.addEventListener("click",()=>chooseEvent(i));});
+$("#story-prev").addEventListener("click",()=>chooseEvent((state.event-1+DATA.events.length)%DATA.events.length));
+$("#story-next").addEventListener("click",()=>chooseEvent((state.event+1)%DATA.events.length));
+chooseEvent(state.event)}
+function chooseEvent(i){state.event=i;const e=DATA.events[i];set("#story-index","EVENT "+String(i+1).padStart(2,"0")+" / "+DATA.events.length+"  ·  DAY "+e.day);set("#story-title",e.title);set("#story-copy",e.text);set("#story-state",e.status);set("#story-source","证据口径："+e.evidence);$$(".story-tab").forEach((b,j)=>{b.setAttribute("aria-selected",String(j===i));b.tabIndex=j===i?0:-1;});}
+function renderTasks(){const list=$("#task-list");list.textContent="";DATA.tasks.forEach((t,i)=>{const card=node(list,"article","glass task-card");node(card,"span","seq",String(i+1).padStart(2,"0"));const info=node(card,"div","");node(info,"span","task-tag",t.priority+" / "+t.id);node(info,"h3","",t.name);node(info,"p","",t.detail);node(info,"p","", "证据限制："+t.evidence);})}
+function initStars(){
+const c=$("#stars");if(!c||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;const ctx=c.getContext("2d");if(!ctx)return;let pts=[],w=0,h=0,frame=0;
+function resize(){const b=c.getBoundingClientRect(),dpr=Math.min(window.devicePixelRatio||1,2);w=b.width;h=b.height;c.width=Math.round(w*dpr);c.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);pts=Array.from({length:Math.min(130,Math.round(w*h/12000))},(_,i)=>({x:(Math.sin(i*74.8+12.7)*42758.54%1+1)%1*w,y:(Math.sin(i*12.98+63.2)*15814.2%1+1)%1*h,r:i%7===0?1.6:.8,phase:i*.63}))}
+resize();window.addEventListener("resize",resize,{passive:true});
+let visible=true;document.addEventListener("visibilitychange",()=>visible=!document.hidden);
+function draw(){requestAnimationFrame(draw);if(!visible)return;ctx.clearRect(0,0,w,h);frame++;for(const p of pts){const alpha=.18+.25*(1+Math.sin(frame*.009+p.phase))/2;ctx.fillStyle="rgba(155,219,245,"+alpha+")";ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();}}draw()}
+function setupNav(){const links=$$(".topnav a");const obs=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting){links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))}}},{rootMargin:"-23% 0px -65% 0px"});$$("section[id]").forEach(s=>obs.observe(s))}
+function setupHash(){const id=decodeURIComponent(location.hash.slice(1));const q=problems.find(q=>q.id===id);if(q)openProblem(q)}
+titleData();scoreChart();makeHeatmap();setupFilters();renderProblems();renderStory();renderTasks();setupDetail();initStars();setupNav();setupHash();
+})();
+</script>
+</body></html>

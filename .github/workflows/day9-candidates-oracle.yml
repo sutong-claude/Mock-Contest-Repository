@@ -1,0 +1,40 @@
+name: Day9 candidate independent oracle tests
+
+on:
+  push:
+    branches: [chatgpt/oct7-stage-maintenance]
+    paths:
+      - "2026-10-12_CSP-S模拟赛day9/赛后候选/**"
+      - ".github/workflows/day9-candidates-oracle.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  independent-oracles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile all four independent post-contest candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "2026-10-12_CSP-S模拟赛day9/赛后候选"
+          g++ -std=c++17 -O2 -Wall -Wextra -Wshadow zerofree_onnr.cpp -o zerofree_onnr
+          g++ -std=c++17 -O2 -Wall -Wextra -Wshadow count_directed.cpp -o count_directed
+          g++ -std=c++17 -O2 -Wall -Wextra -Wshadow color_mitm.cpp -o color_mitm
+          g++ -std=c++17 -O2 -Wall -Wextra -Wshadow silent_cycle_windows.cpp -o silent
+      - name: Cross-check A/B/C against independent enumerations
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "2026-10-12_CSP-S模拟赛day9/赛后候选"
+          python3 test_candidates.py
+      - name: Cross-check D against pair-orbit oracle and all small cycle lengths
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "2026-10-12_CSP-S模拟赛day9/赛后候选"
+          python3 test_silent_cycle_windows.py

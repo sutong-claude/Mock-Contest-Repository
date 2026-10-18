@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="450" viewBox="0 0 1440 450" role="img" aria-label="CSP-S赛场星图，36题，669/3200分，113条Replay证据">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07121e"/><stop offset=".6" stop-color="#0e1d2d"/><stop offset="1" stop-color="#0d1025"/></linearGradient>
+ <linearGradient id="type" x1="0" x2="1"><stop stop-color="#d6fff6"/><stop offset=".5" stop-color="#55ead6"/><stop offset="1" stop-color="#8daafe"/></linearGradient>
+ <linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#47edd8" stop-opacity=".23"/><stop offset="1" stop-color="#47edd8" stop-opacity="0"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#42ded0" stop-opacity=".23"/><stop offset="1" stop-color="#42ded0" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2a4258" stroke-opacity=".27" stroke-width="1"/></pattern>
+ <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1440" height="450" fill="url(#bg)"/><rect width="1440" height="450" fill="url(#grid)"/>
+<circle cx="1240" cy="170" r="250" fill="url(#halo)"/>
+<g fill="none" stroke="#52ded5" stroke-opacity=".3">
+<circle cx="1208" cy="191" r="163"/><circle cx="1208" cy="191" r="120" stroke-dasharray="3 6"/><circle cx="1208" cy="191" r="64" stroke="#7faef4"/>
+<path d="M1208 28v326M1045 191h326" stroke-opacity=".08"/></g>
+<circle cx="1208" cy="191" r="18" fill="#8df1e4" opacity=".22" filter="url(#soft)"/><circle cx="1208" cy="191" r="8" fill="#96fff3"/>
+<circle cx="1067" cy="110" r="4" fill="#60f7df"/><circle cx="1114" cy="128" r="3" fill="#8fadff"/><circle cx="1240" cy="245" r="4" fill="#f9ce87"/>
+<g fill="#8ba7bf" font-family="Consolas,monospace" font-size="13" letter-spacing="3"><text x="64" y="63">CSP-S / ORIGINAL REPLAY / VERIFIED EVIDENCE</text><text x="65" y="412">2026-10-12 · EIGHT CONTESTS · ONE TRACEABLE CONTEXT</text></g>
+<g font-family="system-ui,'Microsoft YaHei',sans-serif" font-weight="850">
+<text x="60" y="172" font-size="78" fill="#f0f6ff" letter-spacing="-5">EVIDENCE</text>
+<text x="60" y="258" font-size="89" fill="url(#type)" letter-spacing="-6">ATLAS <tspan font-size="49" letter-spacing="0">· 赛场星图</tspan></text>
+</g>
+<g font-size="17" fill="#b0c4da" font-family="system-ui,'Microsoft YaHei',sans-serif">
+<text x="65" y="316">真实成绩 · 代码演化 · 36 道题 · 反例与证明 · 永久可追溯的复盘</text>
+</g>
+<g font-family="Consolas,monospace"><rect x="65" y="349" width="182" height="34" rx="8" fill="#153941" stroke="#3aaba6" stroke-opacity=".5"/><text x="86" y="372" font-size="16" fill="#65f0db">669 / 3200</text>
+<rect x="259" y="349" width="130" height="34" rx="8" fill="#15273b" stroke="#426583" stroke-opacity=".7"/><text x="277" y="372" font-size="15" fill="#98befd">36 CASES</text>
+<rect x="401" y="349" width="160" height="34" rx="8" fill="#15273b" stroke="#426583" stroke-opacity=".7"/><text x="420" y="372" font-size="15" fill="#d0b2ff">113 REPLAYS</text></g>
+<g transform="translate(936,280)" stroke-width="3" stroke-linejoin="round"><path d="M0 90L55 48L110 11L165 90L220 84L275 53L330 39L385 84L385 110H0Z" fill="url(#area)" stroke="none"/>
+<path d="M0 90L55 48L110 11L165 90L220 84L275 53L330 39L385 84" fill="none" stroke="#58e9d5"/>
+<g fill="#7affed" stroke="#0d1624" stroke-width="2"><circle cx="0" cy="90" r="5"/><circle cx="55" cy="48" r="5"/><circle cx="110" cy="11" r="6" fill="#ffce82"/><circle cx="165" cy="90" r="5"/><circle cx="220" cy="84" r="5"/><circle cx="275" cy="53" r="5"/><circle cx="330" cy="39" r="5"/><circle cx="385" cy="84" r="5"/></g></g>
+</svg>

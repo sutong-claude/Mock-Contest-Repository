@@ -1,0 +1,20 @@
+{
+  "A_hitori": {
+    "source_sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+    "cases": 2292
+  },
+  "B_ryo": {
+    "source_sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+    "cases": 1563
+  },
+  "C_nijika": {
+    "source_sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+    "cases": 1200
+  },
+  "D_xor": {
+    "source_sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+    "cases": 1563
+  },
+  "seed": 20261018,
+  "status": "PASS"
+}

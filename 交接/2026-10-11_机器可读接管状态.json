@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "snapshot_date": "2026-10-11",
+  "purpose": "Contest-analysis handoff facts with separated evidence levels. Repository currently visible as public; no raw personal files.",
+  "repository": "sutong-claude/Day1",
+  "reviewed_heads_before_manifest": {
+    "maintenance": "bb268933c659abff6a807522aca23b2c1ca4d998",
+    "default": "dec07b703e36d31d20a666e3ae31bd5a9a7cd999"
+  },
+  "canonical_entry": "交接/2026-10-11_主力模拟赛分析_万字接班报告.md",
+  "canonical_docs": [
+    "AI_MASTER_INDEX.md",
+    "AI_HANDOFF.md",
+    "全题总表_2026-10-11.md",
+    "证据阅读台账.md",
+    "复盘产物覆盖矩阵.md",
+    "交接/2026-10-11_下一阶段任务与验收.md"
+  ],
+  "competition": {
+    "system": "代码源",
+    "contests": [
+      {
+        "day": 1,
+        "score": 45,
+        "points": [
+          20,
+          25,
+          0,
+          0
+        ]
+      },
+      {
+        "day": 2,
+        "score": 130,
+        "points": [
+          100,
+          0,
+          30,
+          0
+        ]
+      },
+      {
+        "day": 3,
+        "score": 204,
+        "points": [
+          100,
+          65,
+          24,
+          15
+        ]
+      },
+      {
+        "day": 4,
+        "score": 0,
+        "points": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "day": 5,
+        "score": 15,
+        "points": [
+          0,
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "day": 6,
+        "score": 115,
+        "points": [
+          100,
+          0,
+          0,
+          15
+        ]
+      },
+      {
+        "day": 7,
+        "score": 145,
+        "points": [
+          100,
+          45,
+          0,
+          0
+        ]
+      },
+      {
+        "day": 8,
+        "score": 15,
+        "points": [
+          15,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "points_total": 669,
+    "points_possible": 3200,
+    "score_scope": "contest_time_original_OJ_snapshots",
+    "source_reconstruction": "8 Library OJ archive ZIPs, testzip verified, 29 record JSON documents and 32 statements"
+  },
+  "other_competition": {
+    "name": "CodeLands NOI Gold mock 1",
+    "points": [
+      100,
+      100,
+      0,
+      0
+    ],
+    "total": 200,
+    "possible": 400,
+    "ranking": "3/54 live snapshot only; not complete-finishers ranking"
+  },
+  "day8_postgame": {
+    "A": {
+      "reported_score": 70,
+      "source_level": "user_pasted_OJ_point_by_point_text",
+      "observed_subtasks": "15+15+20+20; fifth TLE",
+      "independent_record_retrieved": false
+    },
+    "C": {
+      "reported_score": 23,
+      "source_level": "user_statement",
+      "change": "k[pos] to k[i]",
+      "independent_record_retrieved": false
+    },
+    "B": {
+      "partial_candidate": 15,
+      "evaluation": "local_only_no_OJ"
+    },
+    "D": {
+      "partial_candidate": 50,
+      "evaluation": "local_only_no_OJ"
+    },
+    "C_full_candidate": {
+      "method": "20-bit split 10+10",
+      "complexity": "O(n*1024)",
+      "evaluation": "historical_local_tests_only_not_OJ_AC"
+    }
+  },
+  "original_sources": {
+    "library_required": true,
+    "three_zip_bytes": [
+      477675304,
+      448287929,
+      441633954
+    ],
+    "library_paths": [
+      "/CSP-S模拟赛资料/原始三包/模拟赛资料_01_共03包.zip",
+      "/CSP-S模拟赛资料/原始三包/模拟赛资料_02_共03包.zip",
+      "/CSP-S模拟赛资料/原始三包/模拟赛资料_03_共03包.zip"
+    ],
+    "recursive_container_instances": 235,
+    "recursive_unique_containers": 97,
+    "recursive_path_records_with_repetitions": 8414,
+    "decompression_errors": 0,
+    "semantic_full_completion": false,
+    "chat_export": {
+      "messages": 282,
+      "user_messages": 146,
+      "conversations": 2,
+      "original_truncations": 6,
+      "images_base64": 10
+    },
+    "replay_saved_versions": {
+      "day7": 59,
+      "day8": 54,
+      "sha_checked": 113,
+      "all_screens_semantically_closed": false
+    }
+  },
+  "read_status": {
+    "source_integrity_scan": "completed",
+    "OJ_contest_snapshot_score_check": "completed",
+    "replay_file_changes_sha_day7_day8": "completed",
+    "audio_full_semantic_closure": "incomplete",
+    "screen_complete_video_review": "incomplete",
+    "every_chat_message_semantic_closure": "incomplete",
+    "day8_new_OJ_record_retrieval": "incomplete"
+  },
+  "privacy": {
+    "github_public_at_last_check": true,
+    "raw_chat_audio_screen_keyboard_in_repo": false,
+    "permissions_needed_for_library": true
+  },
+  "epistemic_labels": [
+    "[U] user",
+    "[R] Replay",
+    "[S] source",
+    "[P] proof",
+    "[E] independent experiment",
+    "[C] contract",
+    "[H] hypothesis",
+    "[X] counterexample",
+    "OJ-AC official judged"
+  ],
+  "highest_priority": [
+    "Verify Day8 later A70/C23 source records without overwriting contest 15",
+    "Re-run A boundary/performance and C full local candidates",
+    "Day4 B generator/oracle validation",
+    "Close Day5 B/C and Day7 C/D partial assets"
+  ]
+}

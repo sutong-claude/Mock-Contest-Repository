@@ -1,3 +1,17 @@
+> **2026-10-18 代码源 Day9 完整复盘**：本场是后藤一里/山田凉/虹夏/子集异或，**不是**旧目录中zerofree/count/color/silent那场。赛时OJ核实 **60/400（A60 B0 C0 D未交）**。新增[长篇复盘](2026-10-18_代码源_CSP-S_day9/复盘报告.md)、[四题独立证明及代码](2026-10-18_代码源_CSP-S_day9/题解.md)、[41事件与65次保存](2026-10-18_代码源_CSP-S_day9/比赛全过程复现_完整版.md)、[离线交互回放](2026-10-18_代码源_CSP-S_day9/可视化复盘/Day9_整场回放.html)。四题最终源码6618例独立真值＋20份附件＋正式IO/UBSan通过，**未新交OJ，不标官方补题400**；25段录像只检查9张关键帧。下一步沿A原倒扫→B插入合法性→C按起点合并→C事件图→D值域分层补题。完整交接见[本场入口](2026-10-18_代码源_CSP-S_day9/README.md)。
+
+> **2026-10-15 夜间新D功能资产**：Day9 `silent` 完整候选现已代码化，位于 [赛后候选/silent_cycle_windows.cpp](2026-10-12_CSP-S模拟赛day9/赛后候选/silent_cycle_windows.cpp)；[算法证明/反例](2026-10-12_CSP-S模拟赛day9/赛后候选/silent_cycle_windows_数学证明与反例.md) 解释 PDF第21–22页没闭合的“按r自然滑窗不连续”；[真实对拍记录](2026-10-12_CSP-S模拟赛day9/赛后候选/silent_本地编译与对拍验收_2026-10-15.md) 包含6596组小真值、10万大周期压力、GitHub远端Actions [#38841253085](https://github.com/sutong-claude/Mock-Contest-Repository/actions/runs/38841253085) successful run和准确blob SHA。**不得把赛时D输出0覆盖成赛后候选，也不得将本地 full-model 测试冒充正式OJ。**
+
+> **2026-10-15 Day9/补题路线接班增量**：完整 [Gemini PDF 39页覆盖登记](交接/2026-10-15_Gemini39页_证据登记与入库覆盖.md)、[Day9 考古与61分争议](2026-10-12_CSP-S模拟赛day9/2026-10-15_Gemini增量_赛时考古与分数争议.md)、[A/B/C 候选实际1800组测试及SHA回读](2026-10-12_CSP-S模拟赛day9/赛后候选/本地验证记录_2026-10-15.md)、[T0–T3 补题20题](总览/2026-10-15_Gemini候选四梯队20题补题路线.md)。始终区分：Gemini截屏陈述[ G ] / 本轮本地执行[E] / 真实官方OJ；D100及全部题目AC未验证。本次变更先落维护分支，别冒称默认分支已同步。
+
+> **2026-10-13 Day9 优先入口**：`2026-10-12_CSP-S模拟赛day9/` 已新增：52次脱敏保存哈希、重大R/F/V/U交叉节点、三级分数账本、真实编译反例门禁、独立B最小修正版、交互图。**官方成绩/提交源码未见**，别把本地最终目录当服务器提交；录音、键盘、录屏原件仍在用户授权文件库。旧交接段落是历史截面；接手请先查当前 HEAD。
+
+> **2026-10-12 补库新状态**：[两分支缺失资产补齐与哈希验收](交接/2026-10-12_漏写资产补齐_两分支回读验收.md)：CodeLands原缺19文件、其它八场/工具原缺84文件，现仅对默认分支缺失路径恢复，共103/103 Git blob SHA精确匹配，不覆盖用户已有同名文件。另将Day8 A/C/D赛后代码、独立D oracle及CodeLands四题28事件交互回放入两个分支，官方赛时成绩不改变。工具运行不等于OJ AC；未深挖录音的任务仍存在。**接班先以实际当前 HEAD 为准**。
+
+> **2026-10-12 产品层已真实更新**：[CURRENT_STATE.md](CURRENT_STATE.md) 记录了赛场星图上线到默认分支、默认分支 Actions #38203544956、施工分支 #38203493728 两套静态+真实 Chromium+390px 手机测试通过的证据；原始交接报告仍见 [万字报告](交接/2026-10-11_主力模拟赛分析_万字接班报告.md)。下一位AI应先核对最新HEAD，再挑 Day8 A70/C23 原始 record 或 Day4 B Oracle 等尚未闭合的工程问题，不要重新造一个只会显示KPI的前端。
+
+> **2026-10-11 最新上下文修订**：请先读 [最新证据接管报告](交接/2026-10-11_主力模拟赛分析_万字接班报告.md) 与 [后续施工与验收](交接/2026-10-11_下一阶段任务与验收.md)。截至本档，代码源赛时八场分数45→130→204→0→15→115→145→15，共669；CodeLands另计200。Day8赛后A70来自用户粘贴OJ逐点文本、C23来自用户自述，均不能回填赛时15，且未独立获取后来新record。Day7/Day8共113个保存事件已逐一核验哈希，但不意味着所有视频逐帧语义完成。公开仓库只保存脱敏接班资料，敏感原件位于授权Library。
+
 # AI 接管指南（最新状态）
 
 > **第一件事：先读 `模拟赛复盘总协议_v2.md` 和 `复盘产物覆盖矩阵.md`。**
@@ -199,3 +213,419 @@ Day3 以后新增：
 先重新取证，再改仓库。
 
 **仓库里的错误分析也必须允许被后来的更强证据推翻。**
+
+
+# 11. 2026-10-07 新增接管信息
+
+## 七场代码源原始归档重新交叉验证
+
+不要只沿用旧总结数字。现有：
+
+- `tools/archive/代码源Day1-Day7_归档证据清单.csv`
+- `tools/archive/代码源Day1-Day7_来源与交叉验证.md`
+
+record score 可直接恢复：
+
+`45 → 130 → 204 → 0 → 15 → 115 → 145`
+
+Day7 后续以 2026-10-06 15:10 新归档为主；它包含 105 行榜单。旧 04:07 版只做归档工具差异对照。
+
+## BAG
+
+当前推荐是 `tools/vm/bag_v4_flat/`。
+
+理解重点：
+- V4 强不在脚本多；
+- 强在一份 main.cpp + 一池 testcase；
+- 官方样例 / 手工 Debug / stress 反例全部自动进入同一回归系统；
+- 工具目标是让正确动作成为默认动作。
+
+先读：
+- `tools/vm/BAG_演化史与赛场工作流.md`
+- `tools/vm/虚拟机赛场工程经验.md`
+
+## Coderlands
+
+底层 OJ 引擎未确认。
+
+禁止仅凭 Vue / Element UI 写成 Hydro/HUSTOJ 改版。
+
+当前可靠的是 DOM 采集规格，见：
+
+`tools/archive/Coderlands_平台与采集路径初步勘查.md`
+
+后续应先做正常登录浏览器 DOM adapter；观察到真实只读 API 后再升级数据层，禁止猜接口。
+
+
+## 接手控制平面（10/7）
+
+第一入口改为：
+`总览/AI直接接手入口.md`
+
+全 32 题统一索引：
+- `总览/全题总表_32题.md`
+- `总览/全题总表_32题.csv`
+
+阶段经验：
+- `总览/每场比赛经验纪要.md`
+- `总览/阶段数据与预测.md`
+- `总览/可视化/阶段成长仪表盘.html`
+
+下一场直接执行：
+- `执行包/下一场比赛_赛前执行包.md`
+
+考古新增硬规则：
+- `模拟赛考古纪要协议.md`
+- 读取原始证据后必须 append-as-you-read；
+- 不得只把智能纪要当作已读原始材料；
+- OJ-AC、[P]、[E]、[H]、[X] 必须区分。
+
+
+# 12. 三包长期原始资料池（2026-10-07 固定）
+
+后续模拟赛仓库持续经营只从以下三包继续做原始证据考古：
+
+- `/CSP-S模拟赛资料/原始三包/模拟赛资料_01_共03包.zip`
+- `/CSP-S模拟赛资料/原始三包/模拟赛资料_02_共03包.zip`
+- `/CSP-S模拟赛资料/原始三包/模拟赛资料_03_共03包.zip`
+
+它们已经保存到 ChatGPT Library，不再依赖本次聊天附件生命周期。
+
+接手先读：
+
+1. `tools/archive/三包原始资料_处理台账.md`
+2. `tools/archive/三包递归扫描_统计摘要.md`
+3. `tools/archive/recursive_zip_inventory.py`
+4. `证据阅读台账.md`
+
+2026-10-07 depth≤3 首轮 inventory：
+
+- 9,073 rows；
+- 195 个 nested ZIP 成功打开；
+- 0 个 ZIP open error；
+- 34 组重复 nested-ZIP 内容哈希；
+- 169 个 ZIP 路径落在重复哈希组里。
+
+所以后续工作单位优先改成：
+`content hash + provenance + contest mapping + extraction status`，
+不要把重复 VM 快照里的相同 ZIP 当成全新材料重复分析。
+
+Replay recorder 源码审计已新增：
+
+- `tools/vm/Replay采集脚本_源码考古与能力边界.md`
+- `tools/vm/replay_recorder/contest_replay_capture_v3.0.1.patch`
+
+其中 v3.0.0 已证明存在 pause/raw 语义缺口；以后解释 raw_keys 与 timeline 冲突时必须先查 recorder 版本与 pause status。
+
+
+# 13. 2026-10-07 三包深挖第二轮
+
+## Day7 主 capture 已做 file_changes 全量版本考古
+
+入口：
+- `2026-10-06_CSP-S模拟赛day7/回放数据/file_changes_完整版本时间线_20261006_080043.md`
+- `2026-10-06_CSP-S模拟赛day7/逐段考古纪要.md` E-D7-011/012
+
+关键事实：
+- 59 条 file_changes；
+- B stable→失败重写→exact rollback→WA.cpp freeze→最终只补 IO；
+- C 没有 T3/main.cpp 保存事件，最终仍 starter template；
+- D 有 20 个 main 保存状态，1663B 候选后主动推倒到 583B；
+- capture 早期出现的 `CSP-S/Day6/foo*.cc` 属历史目录事件，不应计入 Day7 T1~T4 研究量。
+
+## Day6 已完成“正式提交源码 ↔ Replay snapshot”精确映射
+
+入口：
+- `2026-10-05_CSP-S模拟赛day6/回放数据/file_changes_语义版本时间线_20261005_101100.md`
+- `tools/archive/replay_submission_matcher.py`
+
+四份 OJ source 均得到唯一 exact normalized-content match：
+- A → T1 save #9；
+- B → T2 save #6；
+- C → T3 save #30；
+- D → T4 save #10。
+
+新硬规则：
+> VM 最终工作区不能默认当正式提交源码；先用 OJ source 与 file_changes 内容精确匹配。
+
+Day6 额外新证据：
+- B 12 分钟内把实现/类型错误修干净，但错误数学 predicate 不变；
+- D 主动用 `phi(1), phi(2), phi(6)` 做最小微型探针，随后修边界与 leftover prime 条件；
+- C 四分类真实进入代码的窗口约 13:30～13:32，后来发生语义退化。
+
+## 旧 VM 血缘已闭合到 Day3→Day4
+
+入口：
+`tools/archive/旧VM快照_血缘与Day3Day4迁移.md`
+
+03包：
+- `虚拟机.zip` 410 文件；
+- `虚拟机(1).zip` 595 文件；
+- 338 个同路径共同文件中 310 个同 SHA，只有 28 个同路径内容变化；
+- 旧快照根 T1～T4 有 60 个文件在新快照 `Desktop/Day3/T1~T4` 中原 SHA 迁移保存。
+
+因此旧快照要做 path-move/content-hash 去重，不能重复读 310 个纯副本。
+
+## Day4 新钉死事实
+
+- A OJ CE 的具体原因已定位：正式提交的 `freopen ("Thermokinesis.out, "w", stdout);` 字符串引号错误；赛后 VM 版本已把两行 freopen 注释，所以只看最终本地文件会漏掉事故。
+- B OJ source 与 `虚拟机(1).zip!Desktop/T2/main.cpp` 完全一致。
+- D OJ submitted source 与 VM 后续版发生结构性分叉，不能互相替代。
+
+## Recorder baseline 措辞修正
+
+v3.0.0 的 FileTracker **有** `_seed_state()` fingerprint 基线；缺的是“启动时把全部现有文件内容写入 file_changes 的 initial snapshot”。以后禁止简写成“没有 baseline”。
+
+
+# 14. Day3 checker 真反例 + Day5 提交链
+
+## Day3 B：不是“样例没卡到”，是 checker 把官方反例吞了
+
+原版 T2/AC.cpp + checker + sample1～8 已重新编译重放。
+
+sample7 第4 case：
+- candidate：NO
+- official：YES 62528 125010
+- checker：Skipped (NO is not verified)
+- 整份仍 exit 0
+
+并且 OJ B65 正式提交源码去掉 freopen 后，与该 T2/AC.cpp 完全一致。
+
+所以以后准确写：
+> 官方 sample7 已经卡掉最终 B 算法主体；本地 checker 由于不验证 NO，没把错误暴露出来。
+
+入口：
+- 2026-10-01_CSP-S模拟赛day3/原始材料/keystream_20261001_184442_checker假安全链.md
+- 2026-10-01_CSP-S模拟赛day3/原始材料/OJ提交源码与VM_AC对齐.md
+- tools/archive/checker_coverage_probe.py
+
+## Day5 Replay 已找到，不要再重复“定位原件”
+
+主 capture：
+03包 → Day6.zip → Desktop/CSP-S/Day5/contest_capture/20261004_090304
+
+99 条 file_changes，25 段 screen，约4小时完整覆盖。
+
+六次 OJ 提交已与 Replay 对齐，见：
+2026-10-04_CSP-S模拟赛day5/回放数据/Replay与六次OJ提交映射_20261004_090304.md
+
+必须记住：
+- A 第一交是 T2/WA.cpp 的 417B 临时 special，不是前两小时 T1 full 主体；
+- B15 来自 T2/main.cpp 输出 a[n] 的正确 partial；
+- C 两次 RE exact 命中本地保存版，第三交主体相同但补 Hina IO 后变 WA；
+- T4 在赛场真实改名为 T4(now T1)，用于 A 第二代；
+- 多次 traditional IO 在 OJ 网页提交链最后修改；
+- A 两次临时/新增 special 在写完到复制提交之间没有新的 F9 验证。
+
+## 新提交一致性规则
+
+FROZEN/VERIFIED 只对具体字节内容成立。
+
+任何网页提交框里的二次修改都产生新版本：
+VERIFIED/FROZEN → MODIFIED_UNVERIFIED。
+
+理想证据必须是：
+OJ source exact match 本地最后 VERIFIED/FROZEN source。
+
+仅 body_without_freopen 一致表示算法主体对应，但交付链仍有 divergence。
+
+
+# 15. 三包全量处理状态已升级（2026-10-07）
+
+不要再沿用“depth≤3 inventory = 当前最高完成度”的说法。
+
+本轮已经做到：
+- ZIP magic 递归展开全部容器；
+- 235 个容器实例 / 97 个唯一容器 / 0 解压错误；
+- 展开树 7,324 文件；
+- 逐路径处理审计 missing=0；
+- 3,701 个文本类文件全文读取；
+- 82 PDF 全文文本提取；
+- 2,370 个 .in/.out 全字节扫描；
+- 239 媒体全字节哈希 + 元数据；
+- raw-key gzip 全量解压；
+- ELF/.o 全字节哈希；
+- DOCX/XLSX clean text 提取。
+
+详细：
+`tools/archive/三包全量递归展开与读取审计_2026-10-07.md`
+
+**新的欠账定义**：
+文件“索引/读取覆盖”已经不是瓶颈；后续重点是把已读原始内容继续转化成：
+- 逐段考古；
+- 题解；
+- 提交链；
+- 反例；
+- 机会成本；
+- 跨场经验。
+
+## OJ 快照新硬规则
+
+同一场多个 OJ archive **不能 latest-wins**。
+
+实测：
+- Day1～Day4 较早快照有榜单 CSV，较晚快照反而缺；
+- Day5～Day7 较晚快照补全 record metadata；
+- 27 个唯一提交 ID 中 9 个存在快照字段质量差异。
+
+以后：
+> 所有 snapshot 做并集，按字段选 strongest evidence，保留 provenance。
+
+入口：
+`tools/archive/OJ多版本归档_字段级证据合并规则.md`
+
+## 录音新硬规则
+
+Day3 / Day5 / Day6 / Day7 / Coderlands 各存在两份**同一音频的平行 ASR 转写**。
+
+它们用于互相纠错，不是两份独立录音证据，禁止重复加权。
+
+入口：
+`tools/archive/录音双转写_配对与证据规则.md`
+
+## Day5 提交链补强
+
+六次 OJ source：
+- 2 次 exact Replay snapshot；
+- 4 次只差最后 freopen 两行。
+
+所以 FileTracker 的 2 秒 polling 缺口已有真实比赛证据。
+
+入口：
+`2026-10-04_CSP-S模拟赛day5/回放数据/OJ正式提交与file_changes逐提交对齐.md`
+
+
+# 16. 2026-10-07 新增硬证据：不要再用单层错因解释 Day4/Day6/Day7
+
+## Day4 B
+
+准确故障树：
+
+```
+small partial:
+正确 brute 思路
+→ solve2 重复读取 testcase
+→ subtask1 TLE
+
+full:
+solve1 允许把右端点当删除值
+→ n=21: 2..21,1 输出21，truth20
+
+stress:
+AC oracle 同样没检查 v != endpoints
+→ [2,1] truth1, AC2, WA2
+→ common-mode fake green
+```
+
+所以 Day4 B 是仓库里“oracle 与 candidate 共模错误”的标准教材。
+
+## Day4 D
+
+RE 不应再笼统写“运行时错误”：
+- Fusion freopen 注释；
+- 本地主体 exit0；
+- 不生成 Fusion.out；
+- OJ 1ms RE。
+
+修 IO 后仍会因无条件 n! 直接 WA sample1。
+
+## Day6 B
+
+最终源码同时有：
+- average-speed 数学 predicate 双向错误；
+- n/m 数学对象身份混淆；
+- 全局日志数组跨 testcase 残留；
+- same testcase 可因 prefix 不同产生不同答案。
+
+以后讲 Day6 B 时，不要只说“差一个势函数”。
+
+## Day6 C
+
+官方 sample1 是一个危险教材：
+- local predicate 已错；
+- 但 d=(1,1) 的 expectation 恰好抵消成8/9；
+- 所以 submitted source sample1 完全通过。
+
+必须强调：
+> 概率题不能只验证 aggregate expectation；要先验证 local predicate / state set。
+
+## Day7 B
+
+45 RE 的直接原因已经不是猜测：
+- 256MiB limit；
+- 无用 unordered_set 在递归中 retained；
+- path case RSS 近 Θ(n²)；
+- 256MiB 下 bad_alloc 可复现；
+- OJ 107MiB / 227MiB 曲线与本地 n=2000/3000 对齐。
+
+删 set 后可过附件1~3且 n=1e4 最坏链很轻，但 full仍 Θ(n²)。
+
+这些结论的详细原件入口均已写进对应 `逐段考古纪要.md`。
+
+
+# 20. 2026-10-07 Day3 旧键流证据边界 + Day7 ID 修订
+
+## Day3 v1 keystream
+
+新增源码审计：
+`tools/vm/Day3旧Keystream采集器_源码考古与证据边界.md`
+
+Day3 当场使用的是旧 `keystream_linux.py`，不是后来的 Replay v3。
+
+必须记住：
+- raw JSONL 记录全部 EV_KEY up/down/repeat；
+- `keys.txt` 省略 key-up 与 standalone modifier；
+- v1 没有 pause；
+- v1 没有 mouse/window/screen/clipboard/file-change；
+- 所以 readable text 空窗不能写成“用户没操作”。
+
+Day3 B checker provenance 新闭合：
+- checker.cpp 出现在 B 刚开始后的赛中窗口；
+- 双 ASR 同期明确说“既然提供了校验器……先把这些东西全下载下来”；
+- 当前可标 [E]“赛中取得的随题/赛场提供资产”；
+- 不能继续写“可能赛前已有”；
+- 但具体 URL/按钮仍未恢复，不得冒充 [P]。
+- checker.cpp 取得后未见源码改写，所以 false-NO coverage hole 不是后来改坏。
+
+Day3 对应事件：
+- E-D3-015
+- E-D3-016
+
+## Day7 事件 ID
+
+历史上两个不同事件都叫 `E-D7-013`。
+
+从现在开始 canonical：
+- E-D7-013a：B45 官方子任务/资源边界；
+- E-D7-013b：retained unordered_set → Θ(n²) 峰值内存 → bad_alloc/RE 根因。
+
+裸 `E-D7-013` 视为 legacy ambiguous ID。
+修订规则已经写入：
+`Replay逐段考古协议.md`
+
+
+## 2026-10-08 Day5 D 满分数学闭合（仍非 OJ-AC）
+
+- 原始来源严格为 03 包：Day5 2026-10-05 OJ 完整归档中的 D 官方题面；`2026-10-03 20_53 记录_原文.docx` 的 T+02:16 / T+02:30；`Day6.zip` 中 `contest_capture/20261004_090304/timeline.txt` 与 `file_changes.jsonl`。
+- 赛时 D **仍是0分、未提交**；音频/Replay 证明只做过收益扫描且把 T4 改为 T4(now T1) 服务 A。不能把赛后算法回写到赛时能力。
+- 新成果：D 已得到完整 GF(2) 影响向量/两两独立/二阶矩公式，并实现按影响指令位集精确分组 + 加权前缀平方统计，覆盖 `n≤1000,q≤1e5,a_i,x<128`。
+- [P] 完整证明与样例推导：`2026-10-04_CSP-S模拟赛day5/题解.md` 中 D1-D8；[E] 10,119组小域全穷举+650组随机，0 mismatch，两官方样例全过；C++ / 独立真值脚本分别在 `正解代码/D_灯光预案_二阶矩_确定性位集.cpp`、`验证/D_灯光预案_独立穷举对拍.py`。
+- 考古节点：`2026-10-04_CSP-S模拟赛day5/逐段考古纪要.md` E-D5-017；同见 `证据阅读台账.md` 2026-10-08 段。
+- **验收边界**：这是「赛后 full [P math]+[E local test]」，未执行 OJ 正式提交，禁止写为 OJ-AC；GitHub 代码仍可由下一 agent 直接运行仓库自带脚本重新验证。
+- Day5 B/C 的 full 仍待补，整场「题解」在 `复盘产物覆盖矩阵.md` 标 **△**，不冒充整场闭合。下一高增益目标建议 Day5 B 的 full 题意→路线或 Day4 C/D 未充分利用的原始研究材料。
+
+
+# 2026-10-11 Day8 新增审计（请优先于上面截止10-07的32题旧总表）
+
+**新场次已真实落仓库**：`2026-10-11_CSP-S模拟赛day8/README.md`（commit da811f65afbea7fb51c8bc19b5576c0f01e83170）。这次正式成绩是A15、B0、C0、D0，总分15/400；2026-10-07旧“32题/七场”基线此后应理解为**历史截面**。新增后代码源八场32题共669/3200（均分83.625；旧七场654/2800，不可拿新旧口径混算）；另有独立CodeLands四题。
+
+原件审计：VM 138条目，Replay 54保存事件（A34、C10），25录像段代表抽帧，OJ两份正式提交及子任务结果，两份原文平行ASR；更多校验细节看Day8 README和 Library `/CSP-S模拟赛资料/Day8_深度复盘/`。A数学分类已经成立而d=m被abs伪造非法路径，最小一行patch本地14400/14400；B三点反例、链端点15分；C k[i]错位、赛后40分联合partial；D旧图度≤2、性质B赛后50分联合partial。**所有赛后程序未OJ AC，不回填得分。**
+
+下一次更新canonical全题表时，应新增四行并标明旧表发布日期、真实得分和证据等级；不能因为赛后A新程序正确就把A15升级为100。
+
+
+## 2026-10-11 第三版深复盘与C全范围赛后候选
+- [三版复盘_推理模型与证据修订.md](2026-10-11_CSP-S模拟赛day8/三版复盘_推理模型与证据修订.md)：不以最终源码代替赛时研究，以原始03:44语义和54条保存事件重建数学演化。
+- [C_观测记录_20bit拆半DP.cpp](2026-10-11_CSP-S模拟赛day8/赛后正解/C_观测记录_20bit拆半DP.cpp)：独立推导20bit二分10+10，O(n*1024)，44MiB最佳前驱表；本地120小随机与五份官方附件输出最优长度3/1119/99999/7066/21981全部相同且路径合法。**未OJ重交，不得说AC。**
+- Library 全量教学长文：`/CSP-S模拟赛资料/Day8_深度复盘/Day8_第三版_赛时推理与完整算法教学.md`。
+- A的一行d<m修数学错误并不等于100：原代码每个calc求逆元是O(∑n logP)，A仅1000ms；须压大数据性能、预处理invfact。赛时A15分不改。

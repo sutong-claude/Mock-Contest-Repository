@@ -1,0 +1,44 @@
+name: CSP-S Evidence Atlas · visual smoke
+on:
+  push:
+    branches:
+      - claude/simulation-analysis-vm-debug-lzglku
+      - chatgpt/oct7-stage-maintenance
+    paths:
+      - '总览/可视化/**'
+      - '赛场星图.html'
+      - 'docs/**'
+      - 'tools/verify_star_atlas.mjs'
+      - 'tools/smoke_star_atlas.mjs'
+      - '.github/workflows/atlas-smoke.yml'
+  workflow_dispatch:
+jobs:
+  atlas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 36-question evidence snapshot and offline assets
+        run: node tools/verify_star_atlas.mjs
+      - name: Install browser driver
+        run: npm install --no-save --no-package-lock playwright@1.56.1
+      - name: Install headless Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Interact with real dashboard in Chromium
+        run: node tools/smoke_star_atlas.mjs
+        env:
+          ATLAS_SCREENSHOT: artifacts/atlas-desktop.png
+      - name: Preserve full-page screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: csp-s-evidence-atlas-offline-bundle
+          path: |
+            artifacts/atlas-desktop.png
+            artifacts/atlas-mobile.png
+            总览/可视化/赛场星图_2026-10-12.html
+          if-no-files-found: ignore

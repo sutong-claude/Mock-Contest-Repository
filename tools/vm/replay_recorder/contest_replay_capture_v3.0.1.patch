@@ -1,0 +1,97 @@
+--- a/contest_replay_capture.py
++++ b/contest_replay_capture.py
+@@ -23,7 +23,7 @@
+   manifest.json           Capture status, paths, tools, and guard state.
+ 
+ Hotkeys:
+-  Ctrl+Alt+P              Pause/resume keyboard and clipboard logging.
++  Ctrl+Alt+P              Pause/resume keyboard, raw-key, and clipboard logging.
+   Ctrl+Alt+Q              Stop the recorder cleanly.
+ 
+ The sudo password used to launch this program is entered before the recorder
+@@ -51,7 +51,7 @@
+ from pathlib import Path
+ from typing import Dict, Iterable, Optional, Tuple
+ 
+-VERSION = "3.0.0"
++VERSION = "3.0.1"
+ 
+ # Linux input_event on 64-bit Linux: timeval(sec,usec), type, code, value.
+ EVENT = struct.Struct("llHHi")
+@@ -442,7 +442,12 @@
+         return f"KEY{code}"
+ 
+     def feed(self, code: int, value: int, now: float) -> Optional[str]:
++        # Privacy invariant: while paused, neither the semantic timeline nor
++        # raw_keys.jsonl stores user key content.  Modifier state is still
++        # maintained so Ctrl+Alt+P can resume logging.
+         if value == 0:
++            if not self.paused:
++                self.writer.add_raw_key(now, code, value)
+             self.down.discard(code)
+             return None
+         if value not in (1, 2):
+@@ -461,6 +466,8 @@
+         if self.paused:
+             return None
+ 
++        self.writer.add_raw_key(now, code, value)
++
+         if code == KEY_CAPSLOCK and value == 1:
+             self.caps_lock = not self.caps_lock
+ 
+@@ -694,7 +701,10 @@
+         pattern = str(self.session_dir / "screen_%03d.mkv")
+         vf = f"fps={self.fps},scale='min(1600,iw)':-2"
+         command = [ffmpeg, "-nostdin", "-hide_banner", "-loglevel", "warning", "-y"]
+-        command += ["-f", "x11grab", "-draw_mouse", "1"]
++        # Ask x11grab itself for the low contest-safe frame rate.  Without
++        # this, ffmpeg's x11grab default is typically "ntsc" (~29.97 fps) and
++        # the later fps filter discards almost all captured frames, wasting CPU.
++        command += ["-f", "x11grab", "-framerate", str(self.fps), "-draw_mouse", "1"]
+         geometry = self._display_geometry()
+         if geometry:
+             command += ["-video_size", f"{geometry[0]}x{geometry[1]}"]
+@@ -994,6 +1004,34 @@
+         if "KEY    ENTER" not in replay:
+             failures.append("decoder_enter")
+ 
++        # Privacy regression: paused keystrokes must not be written to raw_keys.
++        (root / "pause_case").mkdir()
++        writer2 = ReplayWriter(root / "pause_case", fake_kbd, "AT Translated Set 2 keyboard")
++        decoder2 = KeyDecoder(writer2, FakeWindows(), FakeClipboard())  # type: ignore[arg-type]
++        decoder2.feed(KEY_LEFTCTRL, 1, 0.1)
++        decoder2.feed(KEY_LEFTALT, 1, 0.2)
++        decoder2.feed(KEY_P, 1, 0.3)   # pause
++        decoder2.feed(KEY_P, 0, 0.31)
++        decoder2.feed(KEY_LEFTALT, 0, 0.32)
++        decoder2.feed(KEY_LEFTCTRL, 0, 0.33)
++        decoder2.feed(30, 1, 0.4)      # hidden 'a'
++        decoder2.feed(30, 0, 0.5)
++        decoder2.feed(KEY_LEFTCTRL, 1, 0.6)
++        decoder2.feed(KEY_LEFTALT, 1, 0.7)
++        decoder2.feed(KEY_P, 1, 0.8)   # resume
++        decoder2.feed(KEY_P, 0, 0.81)
++        decoder2.feed(KEY_LEFTALT, 0, 0.82)
++        decoder2.feed(KEY_LEFTCTRL, 0, 0.83)
++        decoder2.feed(48, 1, 0.9)      # visible 'b'
++        decoder2.feed(48, 0, 1.0)
++        writer2.close("self_test_pause")
++        pause_replay = (root / "pause_case" / "timeline.txt").read_text(encoding="utf-8")
++        pause_raw = (root / "pause_case" / "raw_keys.jsonl").read_text(encoding="utf-8")
++        if 'TYPE   "a"' in pause_replay or '"code": 30' in pause_raw:
++            failures.append("pause_raw_privacy")
++        if 'TYPE   "b"' not in pause_replay or '"code": 48' not in pause_raw:
++            failures.append("pause_resume")
++
+     if failures:
+         print("SELF-TEST FAILED:", ", ".join(failures))
+         return 1
+@@ -1120,7 +1158,6 @@
+                     if event_type != EV_KEY:
+                         continue
+                     event_now = writer.elapsed()
+-                    writer.add_raw_key(event_now, code, value)
+                     action = decoder.feed(code, value, event_now)
+                     if action == "stop":
+                         stop_flag.request("Ctrl+Alt+Q")
