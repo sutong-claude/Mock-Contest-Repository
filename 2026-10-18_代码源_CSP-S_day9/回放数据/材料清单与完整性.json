@@ -1,0 +1,120 @@
+{
+  "uploads": [
+    {
+      "name": ".虚拟机(7).zip.wLP34n",
+      "bytes": 120324096,
+      "sha256": "fb792a82346e15efff73f618f96a757b1ded4f7520540673eef5db087fa87a87"
+    },
+    {
+      "name": "2026-10-17 22_23 记录_原文.docx",
+      "bytes": 33540,
+      "sha256": "ad34b7e8c52f2b93715d2177cc759f5e91361c8e4f8b0c370af00d4862814730"
+    },
+    {
+      "name": "2026-10-17 22_23 记录_导读.docx",
+      "bytes": 13588,
+      "sha256": "c54d34cfee5d389ed6f2862ece7e2112df7470b7f48424f37074a1985d621b5b"
+    },
+    {
+      "name": "Day9_原文.docx",
+      "bytes": 32176,
+      "sha256": "a3868a6f8f032f7aefde7e38d63b935e1148a4f4f5a3f76100fdbf1c31e7055b"
+    },
+    {
+      "name": "Day9_导读.docx",
+      "bytes": 11810,
+      "sha256": "7f59d2a8a1a9d8886c2e8248cf423b0abb5cad1ac8d8e5e8bbebc3a28fd13348"
+    },
+    {
+      "name": "代码源新 OJ_6ad1f7498dcc4dd4642f091e_2026 CSP-S 复赛赛前模拟赛 day9_AI提示词_2026-10-18T06-42-05-943Z.txt",
+      "bytes": 119126,
+      "sha256": "50712600ef4335a263bffe91f6900abc58b36a217cc0be18ba4d4c3dd5da192c"
+    },
+    {
+      "name": "代码源新 OJ_6ad1f7498dcc4dd4642f091e_2026 CSP-S 复赛赛前模拟赛 day9_完整归档_2026-10-18T06-42-05-941Z.zip",
+      "bytes": 2648443,
+      "sha256": "2c400d99d6a75346c026623461480510afad15b7c83ed779d52a9f6ac83618c6"
+    },
+    {
+      "name": "粘贴的 Markdown (1).md",
+      "bytes": 39543,
+      "sha256": "67f0fdd9cdfe530eafd17f6444d81cf2239dc2c93202be44141aa170bd73468c"
+    },
+    {
+      "name": "虚拟机(7).zip",
+      "bytes": 171604698,
+      "sha256": "790b04cfaacd19fc83e48ad209b7cd213104efd98b5db64a5c3169076437c926"
+    }
+  ],
+  "nested_archives": [
+    {
+      "path": "代码源新 OJ_6ad1f7498dcc4dd4642f091e_2026 CSP-S 复赛赛前模拟赛 day9_完整归档_2026-10-18T06-42-05-941Z.zip",
+      "files": 89,
+      "uncompressed_bytes": 2632439
+    },
+    {
+      "path": "虚拟机(7).zip",
+      "files": 203,
+      "uncompressed_bytes": 295549918
+    },
+    {
+      "path": "虚拟机(7).zip / 虚拟机/Desktop/contest_capture/20261018_102736/AI_TEXT_BUNDLE.zip",
+      "files": 5,
+      "uncompressed_bytes": 423294
+    },
+    {
+      "path": "虚拟机(7).zip / 虚拟机/Downloads/hitori.zip",
+      "files": 8,
+      "uncompressed_bytes": 44791252
+    },
+    {
+      "path": "虚拟机(7).zip / 虚拟机/Downloads/nijika.zip",
+      "files": 12,
+      "uncompressed_bytes": 40253624
+    },
+    {
+      "path": "虚拟机(7).zip / 虚拟机/Downloads/ryo.zip",
+      "files": 10,
+      "uncompressed_bytes": 6905094
+    },
+    {
+      "path": "虚拟机(7).zip / 虚拟机/Downloads/sample.zip",
+      "files": 10,
+      "uncompressed_bytes": 4087600
+    }
+  ],
+  "replay": {
+    "capture": "20261018_102736",
+    "timeline_lines": 5405,
+    "timeline_types": {
+      "TYPE": 1182,
+      "STATUS": 3,
+      "WINDOW": 258,
+      "KEY": 3861,
+      "PASTE": 25,
+      "FILE": 65
+    },
+    "saved_events": 65,
+    "paths": {
+      "T1/notes.txt": 16,
+      "T1/main.cpp": 30,
+      "T1/WA.cpp": 4,
+      "T2/main.cpp": 9,
+      "T3/main.cpp": 6
+    },
+    "sha256_all_verified": true,
+    "raw_records_parsed": 23004,
+    "raw_schema": [
+      "t",
+      "code",
+      "value"
+    ],
+    "screen_segments": 25,
+    "screen_bytes": 50584781
+  },
+  "coverage": {
+    "audio": "both original ASR transcripts read; guides cross-checked, not primary",
+    "video": "9 selected frames inspected; not all video frames",
+    "raw_keys": "all JSON records decoded for structural validation; no full text reconstruction"
+  }
+}

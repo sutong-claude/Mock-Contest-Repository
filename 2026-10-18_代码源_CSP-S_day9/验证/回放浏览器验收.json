@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "browser": "Chromium",
+  "desktop": [
+    1440,
+    1050
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    "event navigation",
+    "filter",
+    "play/pause",
+    "A exact operation reconstruction",
+    "B two insertion positions",
+    "D empty evidence state",
+    "all four mobile tabs no overflow",
+    "no page errors"
+  ]
+}

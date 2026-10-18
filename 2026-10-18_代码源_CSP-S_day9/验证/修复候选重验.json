@@ -1,0 +1,49 @@
+[
+  {
+    "code": "A_repair",
+    "random_vs_full": 10001,
+    "match": true
+  },
+  {
+    "code": "A_repair",
+    "file": "1-1.in",
+    "ok": true,
+    "seconds": 0.175
+  },
+  {
+    "code": "A_repair",
+    "file": "2-1.in",
+    "ok": true,
+    "seconds": 0.095
+  },
+  {
+    "code": "A_repair",
+    "file": "3-1.in",
+    "ok": true,
+    "seconds": 0.036
+  },
+  {
+    "code": "A_repair",
+    "file": "4-1.in",
+    "ok": true,
+    "seconds": 0.09
+  },
+  {
+    "code": "C_partial",
+    "file": "1-1.in",
+    "ok": true,
+    "seconds": 0.074
+  },
+  {
+    "code": "C_partial",
+    "file": "2-1.in",
+    "ok": true,
+    "seconds": 0.06
+  },
+  {
+    "code": "C_partial",
+    "file": "3-1.in",
+    "ok": true,
+    "seconds": 0.142
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "problem": "A",
+    "oj_sha256": "6f691b1927f947f14482ca8a208525bddb167f93fbe941fdcf118ba1caa31e85",
+    "vm_sha256": "202f666a323bae93ecd79eab1c1b917bdf05ebbcd634bbb0be2fddcbfb9b862d",
+    "exact_bytes": false,
+    "body_equal_excluding_freopen": true,
+    "matching_replay_events": [
+      56,
+      57
+    ],
+    "difference": "one trailing newline only"
+  },
+  {
+    "problem": "B",
+    "oj_sha256": "14a634e65e490d85f94d2864abb293dd5a538132a244161cdc4751101c98fc56",
+    "vm_sha256": "9fe05d125a1933e4f228831b6d41602886f43b85311725a13a79bd4198400c2f",
+    "exact_bytes": false,
+    "body_equal_excluding_freopen": true,
+    "matching_replay_events": [
+      65
+    ],
+    "difference": "one trailing newline only"
+  },
+  {
+    "problem": "C",
+    "oj_sha256": "d7ee06b70d5304f836dbd076efac52fdbb7851e1e20ece4680e3a4e0cc90c997",
+    "vm_sha256": "50628aad3398256a3c25ce7c57c2391cc7c61cd5d171cc19263b5d720a077364",
+    "exact_bytes": false,
+    "body_equal_excluding_freopen": true,
+    "matching_replay_events": [
+      62
+    ],
+    "difference": "two freopen lines plus trailing newline"
+  }
+]

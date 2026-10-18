@@ -1,0 +1,39 @@
+name: CodeSource Day9 20261018 evidence and replay
+on:
+  push:
+    branches: [review/codesource-day9-20261018, chatgpt/oct7-stage-maintenance]
+    paths:
+      - '2026-10-18_代码源_CSP-S_day9/**'
+      - '.github/workflows/codesource-day9-20261018.yml'
+  pull_request:
+    paths:
+      - '2026-10-18_代码源_CSP-S_day9/**'
+      - '.github/workflows/codesource-day9-20261018.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent small oracles against actual C++
+        run: python3 '2026-10-18_代码源_CSP-S_day9/验证/verify.py' --rounds 1200 --output /tmp/day9-oracles.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser for local offline replay validation
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Exercise replay on desktop and mobile
+        run: node '2026-10-18_代码源_CSP-S_day9/验证/回放验收.cjs'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: codesource-day9-20261018-validation
+          path: |
+            /tmp/day9-oracles.json
+            /tmp/day9_replay_desktop.png
+            /tmp/day9_replay_mobile.png
+            2026-10-18_代码源_CSP-S_day9/验证/回放浏览器验收.json
