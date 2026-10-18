@@ -1,0 +1,36 @@
+--- A_oj.cpp
++++ A_沿原倒扫修正版.cpp
+@@ -35,27 +35,21 @@
+             pos = i;
+         }
+     }
+-    int now = 0;
+     int sum = 0;
+-    for (int i = n; i >= pos; i--) {
+-        a[i] = a[i] + sum * i;
++    for (int i = n; i >= 1; i--) {
++        a[i] += sum * i;
+         if (i % 2 == 0) {
+             int len = a[i + 1] - a[i];
+-            int go = len / i;
+-            go = max (go, 0LL);
++            int go = min(ma - sum, max(len / i, 0LL));
+             sum += go;
+-            now += go;
++            a[i] += go * i;
+         }
+-        int cha = a[i - 1] - a[i];
+-        if (now < cha) {
++        if (i < n && a[i] > a[i + 1]) {
+             cout << -1 << '\n';
+             return;
+         }
+     }
+-    if (now >= ma)
+-        cout << ma << '\n';
+-    else
+-        cout << -1 << '\n';
++    cout << (sum == ma ? ma : -1) << '\n';
+ }
+ signed main () {
+     ios::sync_with_stdio (false);
