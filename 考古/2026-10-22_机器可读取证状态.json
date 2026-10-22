@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "archive_date": "2026-10-22",
+  "source_type": "two_part_7z_original_desktop",
+  "part_sha256": [
+    "7d0800442066f9e5160313a278224612d6159306d943e9cabb1c3f6fafb0fda5",
+    "1f12237b0b202f82cd8a950948d621013a8b256792f0957bb99aedadcc5e5310"
+  ],
+  "archive_entries": 2992,
+  "regular_files": 2581,
+  "bytes_unpacked": 1721576697,
+  "file_sha256_calculated": 2581,
+  "file_changes_events": 690,
+  "nonempty_code_snapshots": 522,
+  "code_snapshot_sha256_verified": 522,
+  "recorded_video_segments": 240,
+  "has_examined_all_video_frames": false,
+  "has_confirmed_all_official_scores": false,
+  "has_rereviewed_all_ai_solution_claims": false,
+  "session_fields_note": "timestamps are taken as manifest fields without claiming timezone; event clock is offset from recorder startup, not official contest start",
+  "sessions": [
+    {
+      "session": "CSP-J/Day1",
+      "manifest_start": "2026-10-09T15:58:33",
+      "manifest_end": "2026-10-09T17:26:33",
+      "status": "stopped",
+      "video_segments": 10,
+      "file_events": 42,
+      "code_events": 20,
+      "dominant_source_events": [
+        "T1/main.cpp:3",
+        "T2/main.cpp:3",
+        "T3/main.cpp:6",
+        "T4/main.cpp:8"
+      ]
+    },
+    {
+      "session": "CSP-S/Day4",
+      "manifest_start": "2026-10-05T10:06:28",
+      "manifest_end": null,
+      "status": "recording",
+      "video_segments": 1,
+      "file_events": 0,
+      "code_events": 0,
+      "dominant_source_events": []
+    },
+    {
+      "session": "CSP-S/Day5",
+      "manifest_start": "2026-10-04T09:03:05",
+      "manifest_end": "2026-10-04T13:05:40",
+      "status": "stopped",
+      "video_segments": 25,
+      "file_events": 99,
+      "code_events": 87,
+      "dominant_source_events": [
+        "T1/main.cpp:48",
+        "T4(now T1)/main.cpp:19",
+        "T3/WA.cpp:4"
+      ]
+    },
+    {
+      "session": "CSP-S/Day6",
+      "manifest_start": "2026-10-05T10:11:01",
+      "manifest_end": "2026-10-05T14:30:43",
+      "status": "stopped",
+      "video_segments": 27,
+      "file_events": 71,
+      "code_events": 57,
+      "dominant_source_events": [
+        "T1/main.cpp:9",
+        "T2/main.cpp:6",
+        "T3/main.cpp:31",
+        "T4/main.cpp:11"
+      ]
+    },
+    {
+      "session": "CSP-S/Day7",
+      "manifest_start": "2026-10-06T08:00:45",
+      "manifest_end": "2026-10-06T12:00:52",
+      "status": "stopped",
+      "video_segments": 25,
+      "file_events": 59,
+      "code_events": 50,
+      "dominant_source_events": [
+        "T1/main.cpp:8",
+        "T2/main.cpp:17",
+        "T4/main.cpp:20",
+        "T2/WA.cpp:1"
+      ]
+    },
+    {
+      "session": "CSP-S/Day8",
+      "manifest_start": "2026-10-11T08:21:13",
+      "manifest_end": "2026-10-11T12:24:18",
+      "status": "stopped",
+      "video_segments": 25,
+      "file_events": 54,
+      "code_events": 44,
+      "dominant_source_events": [
+        "T1/main.cpp:34",
+        "T3/main.cpp:10"
+      ]
+    },
+    {
+      "session": "CSP-S/Day9",
+      "manifest_start": "2026-10-18T10:27:38",
+      "manifest_end": "2026-10-18T14:30:56",
+      "status": "stopped",
+      "video_segments": 25,
+      "file_events": 65,
+      "code_events": 49,
+      "dominant_source_events": [
+        "T1/main.cpp:30",
+        "T2/main.cpp:9",
+        "T3/main.cpp:6",
+        "T1/WA.cpp:4"
+      ]
+    },
+    {
+      "session": "CSP-S/codelands-Day1",
+      "manifest_start": "2026-10-06T13:54:21",
+      "manifest_end": "2026-10-06T17:50:43",
+      "status": "stopped",
+      "video_segments": 24,
+      "file_events": 50,
+      "code_events": 37,
+      "dominant_source_events": [
+        "T1/main.cpp:10",
+        "T2/main.cpp:7",
+        "T3/main.cpp:3",
+        "T4/main.cpp:12"
+      ]
+    },
+    {
+      "session": "CSP-S/codelands-Day2",
+      "manifest_start": "2026-10-13T14:17:31",
+      "manifest_end": null,
+      "status": "recording",
+      "video_segments": 25,
+      "file_events": 126,
+      "code_events": 97,
+      "dominant_source_events": [
+        "T1/main.cpp:11",
+        "T2/main.cpp:24",
+        "T3/main.cpp:6",
+        "T4/main.cpp:3"
+      ]
+    },
+    {
+      "session": "CSP-S/codelands-Day3/Desktop",
+      "manifest_start": "2026-10-22T14:56:27",
+      "manifest_end": "2026-10-22T19:00:39",
+      "status": "stopped",
+      "video_segments": 25,
+      "file_events": 75,
+      "code_events": 72,
+      "dominant_source_events": [
+        "T1/main.cpp:24",
+        "T2/main.cpp:17",
+        "T3/main.cpp:7",
+        "ZJ-*/step/step.cpp:3",
+        "ZJ-*/alien/alien.cpp:5",
+        "ZJ-*/maxcover/maxcover.cpp:4"
+      ]
+    },
+    {
+      "session": "CSP-S/luogu",
+      "manifest_start": "2026-10-17T14:15:20",
+      "manifest_end": "2026-10-17T18:31:50",
+      "status": "stopped",
+      "video_segments": 28,
+      "file_events": 49,
+      "code_events": 38,
+      "dominant_source_events": [
+        "T1/main.cpp:21",
+        "T2/main.cpp:9",
+        "T3/main.cpp:7",
+        "T1/WA.cpp:1"
+      ]
+    }
+  ]
+}
