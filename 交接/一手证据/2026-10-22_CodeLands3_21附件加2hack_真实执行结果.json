@@ -1,0 +1,210 @@
+{
+  "baseline_match": true,
+  "cases": [
+    {
+      "test": "step1",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "10",
+      "expected": "10",
+      "elapsed_seconds": 0.055,
+      "exit_code": 0
+    },
+    {
+      "test": "step2",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "288",
+      "expected": "288",
+      "elapsed_seconds": 0.048,
+      "exit_code": 0
+    },
+    {
+      "test": "step3",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "601",
+      "expected": "601",
+      "elapsed_seconds": 0.048,
+      "exit_code": 0
+    },
+    {
+      "test": "step4",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "1000000000000000",
+      "expected": "1000000000000000",
+      "elapsed_seconds": 1.174,
+      "exit_code": 0
+    },
+    {
+      "test": "step5",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "999999862",
+      "expected": "999999862",
+      "elapsed_seconds": 1.806,
+      "exit_code": 0
+    },
+    {
+      "test": "step6",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "66465510914",
+      "expected": "66465510914",
+      "elapsed_seconds": 0.068,
+      "exit_code": 0
+    },
+    {
+      "test": "alien1",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "3",
+      "expected": "3",
+      "elapsed_seconds": 0.01,
+      "exit_code": 0
+    },
+    {
+      "test": "alien2",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "644640082",
+      "expected": "644640082",
+      "elapsed_seconds": 0.005,
+      "exit_code": 0
+    },
+    {
+      "test": "alien3",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "779225020",
+      "expected": "779225020",
+      "elapsed_seconds": 0.003,
+      "exit_code": 0
+    },
+    {
+      "test": "alien4",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "682498929",
+      "expected": "682498929",
+      "elapsed_seconds": 0.071,
+      "exit_code": 0
+    },
+    {
+      "test": "alien5",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "242225077",
+      "expected": "242225077",
+      "elapsed_seconds": 0.125,
+      "exit_code": 0
+    },
+    {
+      "test": "alien6",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "824182295",
+      "expected": "824182295",
+      "elapsed_seconds": 0.092,
+      "exit_code": 0
+    },
+    {
+      "test": "alien7",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "233432906",
+      "expected": "233432906",
+      "elapsed_seconds": 0.155,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover1",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "3",
+      "expected": "3",
+      "elapsed_seconds": 0.004,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover2",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "4",
+      "expected": "4",
+      "elapsed_seconds": 0.006,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover3",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "4",
+      "expected": "4",
+      "elapsed_seconds": 0.004,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover4",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "11",
+      "expected": "11",
+      "elapsed_seconds": 0.017,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover5",
+      "passed": false,
+      "expected_baseline": false,
+      "actual": "66738",
+      "expected": "90000",
+      "elapsed_seconds": 0.021,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover6",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "1996",
+      "expected": "1996",
+      "elapsed_seconds": 0.009,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover7",
+      "passed": true,
+      "expected_baseline": true,
+      "actual": "4096",
+      "expected": "4096",
+      "elapsed_seconds": 0.02,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover8",
+      "passed": false,
+      "expected_baseline": false,
+      "actual": "30000",
+      "expected": "93000",
+      "elapsed_seconds": 7.966,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover-special-n21",
+      "passed": false,
+      "expected_baseline": false,
+      "actual": 20,
+      "expected": 21,
+      "exit_code": 0
+    },
+    {
+      "test": "maxcover-gap-n21",
+      "passed": false,
+      "expected_baseline": false,
+      "actual": 11,
+      "expected": 16,
+      "exit_code": 0
+    }
+  ]
+}
