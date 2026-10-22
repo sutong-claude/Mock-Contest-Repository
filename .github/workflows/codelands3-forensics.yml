@@ -1,0 +1,24 @@
+name: CodeLands3 candidate independent validation
+on:
+  push:
+    paths:
+      - '考古/赛后候选/**'
+      - '考古/验证脚本/verify_codelands3_candidates.py'
+      - '.github/workflows/codelands3-forensics.yml'
+  pull_request:
+    paths:
+      - '考古/赛后候选/**'
+      - '考古/验证脚本/verify_codelands3_candidates.py'
+      - '.github/workflows/codelands3-forensics.yml'
+jobs:
+  verify-post-contest-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check installed compiler and Python
+        run: |
+          g++ --version
+          python3 --version
+      - name: Independent small-oracle verification
+        run: python3 "考古/验证脚本/verify_codelands3_candidates.py"
