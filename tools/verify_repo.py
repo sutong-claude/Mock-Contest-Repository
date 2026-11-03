@@ -341,6 +341,57 @@ def main():
     check('远古数值精确复算可重跑且字节确定', recompute_ok,
           recompute_detail[0][:100])
 
+    # 14. 二次考古 / 正式数据包 / 捆绑评分评测器
+    deep2 = [
+        '交接/2026-11-03_二次考古与矛盾对账/00_二次考古总览.md',
+        '交接/2026-11-03_二次考古与矛盾对账/01_Day1A_版本链复原.md',
+        '交接/2026-11-03_二次考古与矛盾对账/02_CodeLands2_悬案边界.md',
+        '交接/2026-11-03_二次考古与矛盾对账/03_矛盾台账.md',
+        '交接/2026-11-03_二次考古与矛盾对账/考古复算.py',
+        '交接/2026-11-03_二次考古与矛盾对账/二次考古复算.json',
+        'NOIP2026/原创模拟赛_2026-11/gen_data.py',
+        'NOIP2026/原创模拟赛_2026-11/judge.py',
+        'NOIP2026/原创模拟赛_2026-11/data_manifest.json',
+        'NOIP2026/原创模拟赛_2026-11/病因失分实测.md',
+        'NOIP2026/原创模拟赛_2026-11/考前执行包.md',
+    ]
+    missing2 = [f for f in deep2 if not os.path.isfile(p(*f.split('/')))]
+    check('二次考古/正式数据包/评测器交付物齐全', not missing2,
+          f'{len(deep2) - len(missing2)}/{len(deep2)}' + (f' 缺 {missing2}' if missing2 else ''))
+
+    man = json.loads(read(p('NOIP2026', '原创模拟赛_2026-11', 'data_manifest.json')))
+    data_files = [c[k] for c in man['cases'] for k in ('in', 'ans')]
+    data_missing = [f for f in data_files
+                     if not os.path.isfile(p('NOIP2026', '原创模拟赛_2026-11', *f.split('/')))]
+    check('正式数据包 57 组 / 114 文件齐全', len(man['cases']) == 57 and not data_missing,
+          f"{len(man['cases'])} 组, {len(data_files)} 文件, 缺 {len(data_missing)}")
+    try:
+        rv = subprocess.run([sys.executable, p('NOIP2026', '原创模拟赛_2026-11', 'judge.py'),
+                             '--verify-data'], cwd=ROOT, capture_output=True, text=True, timeout=180)
+        sha_ok = rv.returncode == 0 and 'DATA_SHA_PASS' in (rv.stdout or '') and 'bad=0' in (rv.stdout or '')
+        sha_detail = (rv.stdout or rv.stderr or '').strip().splitlines()[-1:][:1] or ['']
+    except subprocess.TimeoutExpired:
+        sha_ok, sha_detail = False, ['TIMEOUT']
+    check('正式数据包 SHA256 逐文件校验通过', sha_ok, sha_detail[0][:100])
+
+    ci2 = ['judge.py --verify-data', 'judge.py --self-test', '考古复算.py']
+    miss_ci2 = [s for s in ci2 if s not in integ]
+    check('总控 CI 覆盖 3 个第二轮复算/评测脚本', not miss_ci2,
+          f'{len(ci2) - len(miss_ci2)}/{len(ci2)}' + (f' 缺 {miss_ci2}' if miss_ci2 else ''))
+
+    aj = p(*'交接/2026-11-03_二次考古与矛盾对账/二次考古复算.json'.split('/'))
+    before2 = hashlib.sha256(open(aj, 'rb').read()).hexdigest()
+    try:
+        rr2 = subprocess.run([sys.executable, p(*'交接/2026-11-03_二次考古与矛盾对账/考古复算.py'.split('/'))],
+                             cwd=ROOT, capture_output=True, text=True, timeout=300)
+        after2 = hashlib.sha256(open(aj, 'rb').read()).hexdigest()
+        arch_ok = (rr2.returncode == 0 and 'SECOND_ARCHAEOLOGY_RECOMPUTE_PASS' in (rr2.stdout or '')
+                   and before2 == after2)
+        arch_detail = (rr2.stdout or rr2.stderr or '').strip().splitlines()[-1:][:1] or ['']
+    except subprocess.TimeoutExpired:
+        arch_ok, arch_detail = False, ['TIMEOUT']
+    check('二次考古复算可重跑且字节确定', arch_ok, arch_detail[0][:100])
+
     failed = [n for n, ok, _ in results if not ok]
     print('\n' + '=' * 72)
     print(f'REPO_INTEGRITY_{"PASS" if not failed else "FAIL"}  checks={len(results)}  failed={len(failed)}')

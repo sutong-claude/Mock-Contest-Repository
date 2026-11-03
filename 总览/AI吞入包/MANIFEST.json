@@ -20,17 +20,17 @@
     "总览/AI吞入包/00_使用说明.md",
     "维护日志.md"
   ],
-  "file_count": 640,
-  "total_bytes": 41753727,
-  "text_file_count": 631,
+  "file_count": 765,
+  "total_bytes": 49449257,
+  "text_file_count": 756,
   "binary_file_count": 9,
   "ledger_contest_count": 19,
   "categories": {
     "AI吞入包": 2,
     "CI": 4,
-    "NOIP备考控制层": 21,
+    "NOIP备考控制层": 140,
     "NOIP备考资料库": 4,
-    "交接与一手证据": 27,
+    "交接与一手证据": 33,
     "其他根目录文档": 33,
     "协议与课程": 3,
     "工具": 121,
@@ -43,7 +43,7 @@
   },
   "read_priority_distribution": {
     "0": 10,
-    "1": 88,
+    "1": 213,
     "2": 371,
     "3": 168,
     "4": 3
@@ -51,9 +51,9 @@
   "shards": [
     {
       "name": "01_逐文件摘要.jsonl",
-      "records": 640,
-      "bytes": 337280,
-      "sha256": "d15f239d2aa62d72aa6751601ee5a0ebc112e7e5daa29ccd54c6f0f63b4e730a",
+      "records": 765,
+      "bytes": 378280,
+      "sha256": "96dd1dc30b2a8e2f5101e27b9429db3caa8bef42b80e67ac8af194e6ec6b8018",
       "format": "jsonl; 一行一文件；可流式读入，支持按 category / read_priority 过滤"
     },
     {

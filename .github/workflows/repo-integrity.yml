@@ -43,6 +43,12 @@ jobs:
         run: python3 NOIP2026/原创模拟赛_2026-11/run_all.py
       - name: Ancient numeric claims recomputed exactly (no snapshot overwritten)
         run: python3 交接/2026-11-03_远古数据复算/复算.py
+      - name: Second archaeology recompute (version chain + contradiction ledger)
+        run: python3 交接/2026-11-03_二次考古与矛盾对账/考古复算.py
+      - name: Formal mock-contest data integrity (57 cases / 114 files)
+        run: python3 NOIP2026/原创模拟赛_2026-11/judge.py --verify-data
+      - name: Bundled-scoring judge self-test (std 400 / 7 mutants all penalized)
+        run: python3 NOIP2026/原创模拟赛_2026-11/judge.py --self-test
       - name: Evidence atlas static snapshot (2026-10-12, 8 contests / 36 problems)
         run: node tools/verify_star_atlas.mjs
       - name: Report boundary

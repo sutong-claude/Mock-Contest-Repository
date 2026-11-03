@@ -1,0 +1,416 @@
+{
+  "as_of": "2026-11-03",
+  "method": "编译源码 + 全排列对拍 + 一手证据表重算；不改写任何历史快照",
+  "day1a_version_chain": {
+    "permutations_n1_7": 5913,
+    "permutations_n2_7": 5912,
+    "per_n": {
+      "2": {
+        "total": 2,
+        "v1": 0,
+        "v2": 0,
+        "v3": 0,
+        "v4": 0
+      },
+      "3": {
+        "total": 6,
+        "v1": 3,
+        "v2": 1,
+        "v3": 1,
+        "v4": 0
+      },
+      "4": {
+        "total": 24,
+        "v1": 18,
+        "v2": 7,
+        "v3": 7,
+        "v4": 0
+      },
+      "5": {
+        "total": 120,
+        "v1": 98,
+        "v2": 53,
+        "v3": 53,
+        "v4": 0
+      },
+      "6": {
+        "total": 720,
+        "v1": 642,
+        "v2": 378,
+        "v3": 378,
+        "v4": 0
+      },
+      "7": {
+        "total": 5040,
+        "v1": 4564,
+        "v2": 3079,
+        "v3": 3079,
+        "v4": 0
+      }
+    },
+    "wrong_n2_7": {
+      "v1": 5325,
+      "v2": 3518,
+      "v3": 3518,
+      "v4": 0
+    },
+    "v2_v3_logic_identical": true,
+    "v1_outputs_over_theoretical_max": 779,
+    "v1_overestimates": 3220,
+    "v1_underestimates": 2105,
+    "v1_high_under_both_directions": true,
+    "minimal_counterexamples": {
+      "[3,1,2]": {
+        "truth": "3",
+        "v1": "2",
+        "v2": "2",
+        "v3": "2",
+        "v4": "3"
+      },
+      "[2,1,3,4]": {
+        "truth": "5",
+        "v1": "6",
+        "v2": "6",
+        "v3": "6",
+        "v4": "5"
+      },
+      "[1,2,3]": {
+        "truth": "3",
+        "v1": "4",
+        "v2": "3",
+        "v3": "3",
+        "v4": "3"
+      }
+    },
+    "historical_claims": {
+      "3518_of_5912": {
+        "literal": "3518/5912",
+        "recomputed": "3518/5912",
+        "match": true
+      },
+      "n3_1_of_6": {
+        "recomputed": "1/6",
+        "match": true
+      },
+      "n4_7_of_24": {
+        "recomputed": "7/24",
+        "match": true
+      },
+      "n6_378_of_720": {
+        "recomputed": "378/720",
+        "match": true
+      },
+      "v4_zero_mismatch_on_5912": {
+        "recomputed": 0,
+        "match": true
+      }
+    }
+  },
+  "evidence_recompute": {
+    "evidence_inventory": {
+      "events": 690,
+      "catalog_rows": 2581,
+      "cpp_snapshots_jsonl": 520,
+      "notes_jsonl": 96,
+      "sessions": 10,
+      "video_segments_declared": 240,
+      "source_nonempty_events": 522,
+      "source_event_extensions": {
+        "cpp": 516,
+        "cc": 4,
+        "py": 2
+      },
+      "non_cpp_source_events": [
+        {
+          "path": "CSP-S/codelands-Day2/contest_replay_capture.py",
+          "bytes": 42371,
+          "sha16": "7cdacb9042e63030"
+        },
+        {
+          "path": "contest_replay_capture.py",
+          "bytes": 42371,
+          "sha16": "7cdacb9042e63030"
+        }
+      ],
+      "resolution_520_vs_522": "522 条 source 事件 = 516 cpp + 4 cc + 2 py；520 = 仅 C++（516+4），522 还含 2 个 contest_replay_capture.py 录制脚本事件"
+    },
+    "codelands_day2": {
+      "session_events": 126,
+      "source_nonempty": 78,
+      "zero_byte_events": 36,
+      "relative_time_range_s": [
+        2803.190345,
+        14969.239014
+      ],
+      "same_timestamp_14969_239_events": 22,
+      "same_timestamp_243B_templates": 8,
+      "template_sha16": [
+        "c5cf23d14a3d1c9d"
+      ],
+      "version_index_rows": 76,
+      "version_index_equals_source_minus_py": true,
+      "named_source_cross_check": {
+        "zerofree": {
+          "sha16": "46cdf6edd73148aa",
+          "bytes": 1580,
+          "jsonl_hits": 2,
+          "catalog_hits": 1,
+          "size_match": true
+        },
+        "count": {
+          "sha16": "624d1556949cd4",
+          "bytes": 1732,
+          "jsonl_hits": 2,
+          "catalog_hits": 1,
+          "size_match": true
+        },
+        "color": {
+          "sha16": "18950accf6f464f7",
+          "bytes": 1385,
+          "jsonl_hits": 2,
+          "catalog_hits": 1,
+          "size_match": true
+        },
+        "silent": {
+          "sha16": "6557a1184d1cdc43",
+          "bytes": 273,
+          "jsonl_hits": 2,
+          "catalog_hits": 1,
+          "size_match": true
+        }
+      },
+      "score_conflict": {
+        "values": [
+          40,
+          61
+        ],
+        "tier": "CONFLICT",
+        "repo_has_official_record": false,
+        "attachment_rates_5_of_8_and_4_of_8": "NOT_REPRODUCIBLE_IN_REPO",
+        "reason": "仓库只有 .in/.ans 的 SHA 目录，没有正文；5/8 与 4/8 是上轮在外部桌面附件上实测的 [R]，本轮无法重跑"
+      }
+    }
+  },
+  "contradiction_ledger": {
+    "claims": [
+      {
+        "id": "N01",
+        "topic": "仓库文件数",
+        "appearances": [
+          "610（2026-11-03 v2 体检）",
+          "625（e1d6861 跟踪文件）",
+          "640（当前清单行）",
+          "647（当前跟踪文件）"
+        ],
+        "verdict": "VERSIONED+DEFINITION",
+        "recomputed": {
+          "tracked_now": 647,
+          "catalog_rows_now": 640,
+          "generated_products": 7,
+          "identity": "640 + 7 = 647"
+        },
+        "note": "610/625 是旧日期快照；640 是「非生成文件」清单行数，647 是 git ls-files 总数，差 7 个生成产物（自哈希循环不计入清单）。不是冲突。"
+      },
+      {
+        "id": "N02",
+        "topic": "verify_repo 检查数",
+        "appearances": [
+          "21/21",
+          "29/29",
+          "32/32"
+        ],
+        "verdict": "VERSIONED",
+        "recomputed": {
+          "now": 32
+        },
+        "note": "48a6b6f=21、e1d6861=29、本轮=32；维护日志里的旧数字是当时快照，不得覆盖。"
+      },
+      {
+        "id": "N03",
+        "topic": "本地 Markdown 链接数",
+        "appearances": [
+          "537",
+          "603",
+          "619"
+        ],
+        "verdict": "VERSIONED",
+        "recomputed": {
+          "now": 619
+        },
+        "note": "每次新增文档都会增加链接数；旧数字是当时快照。"
+      },
+      {
+        "id": "N04",
+        "topic": "520 vs 522 非空源码",
+        "appearances": [
+          "520 份 C++ 快照",
+          "522 条带正文源码事件"
+        ],
+        "verdict": "DEFINITION_RESOLVED",
+        "recomputed": "522 条 source 事件 = 516 cpp + 4 cc + 2 py；520 = 仅 C++（516+4），522 还含 2 个 contest_replay_capture.py 录制脚本事件",
+        "literal_check": true
+      },
+      {
+        "id": "N05",
+        "topic": "3518/5912 与 3518/5913",
+        "appearances": [
+          "逐段考古纪要 3518/5912",
+          "本轮复算 3518/5913（n=1..7）"
+        ],
+        "verdict": "DEFINITION_RESOLVED",
+        "recomputed": {
+          "n2_7": 5912,
+          "n1_7": 5913,
+          "wrong_v3": 3518
+        },
+        "literal_check": true
+      },
+      {
+        "id": "N06",
+        "topic": "Day1 A 历史断言",
+        "appearances": [
+          "1/6",
+          "7/24",
+          "378/720",
+          "0/5912"
+        ],
+        "verdict": "VERIFIED_INDEPENDENTLY",
+        "recomputed": {
+          "3518_of_5912": {
+            "literal": "3518/5912",
+            "recomputed": "3518/5912",
+            "match": true
+          },
+          "n3_1_of_6": {
+            "recomputed": "1/6",
+            "match": true
+          },
+          "n4_7_of_24": {
+            "recomputed": "7/24",
+            "match": true
+          },
+          "n6_378_of_720": {
+            "recomputed": "378/720",
+            "match": true
+          },
+          "v4_zero_mismatch_on_5912": {
+            "recomputed": 0,
+            "match": true
+          }
+        },
+        "literal_check": true,
+        "tier_change": "[R] → [E]"
+      },
+      {
+        "id": "N07",
+        "topic": "Day4 generator 合法率",
+        "appearances": [
+          "≈0.0282690368（2026-10-02 原文）",
+          "0.0282（更早文档）",
+          "38971267793/1378584918490（本轮精确值）"
+        ],
+        "verdict": "PRECISION_UPGRADE",
+        "recomputed": "38971267793/1378584918490",
+        "note": "历史近似值保留原文，新精确值统一从 远古数据复算/历史数值复算.json 读取。"
+      },
+      {
+        "id": "N08",
+        "topic": "#26 = .clear()",
+        "appearances": [
+          "上轮草稿误标"
+        ],
+        "verdict": "CORRECTED",
+        "recomputed": "#26 = SPJ/多解构造题缺计分检验器；.clear() 是考场执行卡的「跨界死穴」",
+        "note": "已在上轮更正，避免污染 错因总表.csv 的统计口径。"
+      },
+      {
+        "id": "N09",
+        "topic": "CodeLands2 40/61",
+        "appearances": [
+          "40/400 与 61/400 两轮转写"
+        ],
+        "verdict": "CONFLICT_UNRESOLVED",
+        "recomputed": {
+          "values": [
+            40,
+            61
+          ],
+          "tier": "CONFLICT",
+          "repo_has_official_record": false,
+          "attachment_rates_5_of_8_and_4_of_8": "NOT_REPRODUCIBLE_IN_REPO",
+          "reason": "仓库只有 .in/.ans 的 SHA 目录，没有正文；5/8 与 4/8 是上轮在外部桌面附件上实测的 [R]，本轮无法重跑"
+        },
+        "note": "无官方逐提交 record，CONFLICT 保持；不得以附件通过率反推分数。"
+      },
+      {
+        "id": "N10",
+        "topic": "CodeLands3 160 [G] vs OJ UNKNOWN",
+        "appearances": [
+          "160/400 转写",
+          "[OJ] UNKNOWN"
+        ],
+        "verdict": "TIER_DIFFERENCE",
+        "recomputed": "ledger score_tier=GEMINI_REPORT+USER_REPORT, score=160",
+        "note": "不是数值冲突，是证据等级差异；v2 独立验证器通过也不升级为 OJ。"
+      },
+      {
+        "id": "N11",
+        "topic": "CodeLands2 附件 5/8 与 4/8",
+        "appearances": [
+          "考古文档实测"
+        ],
+        "verdict": "UNVERIFIABLE_IN_REPO",
+        "recomputed": "仓库仅有 .in/.ans 的 SHA，无正文",
+        "note": "保持 [R]；本轮不声称重跑过。"
+      },
+      {
+        "id": "N12",
+        "topic": "主线总分与病因次数",
+        "appearances": [
+          "729/3600",
+          "28 条 / 40 次"
+        ],
+        "verdict": "VERIFIED",
+        "recomputed": {
+          "total": 729,
+          "max": 3600,
+          "error_rows": 28,
+          "recurrences": 40
+        },
+        "literal_check": true
+      },
+      {
+        "id": "N13",
+        "topic": "原创模拟赛对拍组数",
+        "appearances": [
+          "1548 组（命题说明）",
+          "57 组正式数据（本轮新增）"
+        ],
+        "verdict": "DISTINCT_SCOPES",
+        "recomputed": {
+          "stress_checks": 1548,
+          "formal_data_cases": 57,
+          "formal_data_files": 114,
+          "bundled_subtask_total_points": 400
+        },
+        "note": "1548 是随机/解析对拍次数；57 是正式评测点，两码事，不要相加。"
+      }
+    ],
+    "summary": {
+      "VERSIONED+DEFINITION": 1,
+      "VERSIONED": 2,
+      "DEFINITION_RESOLVED": 2,
+      "VERIFIED_INDEPENDENTLY": 1,
+      "PRECISION_UPGRADE": 1,
+      "CORRECTED": 1,
+      "CONFLICT_UNRESOLVED": 1,
+      "TIER_DIFFERENCE": 1,
+      "UNVERIFIABLE_IN_REPO": 1,
+      "VERIFIED": 1,
+      "DISTINCT_SCOPES": 1
+    },
+    "checks_literal_failed": []
+  },
+  "boundary": "[E] 本地可复算；不替代官方 OJ 回读、录像逐帧审阅或数学证明",
+  "result": "SECOND_ARCHAEOLOGY_RECOMPUTE_PASS"
+}
