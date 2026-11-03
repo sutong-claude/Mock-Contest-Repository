@@ -17,6 +17,27 @@
 | 唯一机器可读总账 | `总览/赛事账本.json`（改分数/加比赛只改它，再跑 `python3 tools/build_repo_state.py`）。 |
 | 唯一自检入口 | `python3 tools/verify_repo.py`（必须全绿才算仓库自洽）。 |
 | 想找某场比赛 | 看第 3 节总账，或 `全赛事账本_2026-11-03.md` / `.csv`。 |
+| 只有 10 分钟 | 先读 `总览/AI吞入包/02_全仓库知识骨架.md`（一文件吞下全仓库）＋ `总览/用户画像_2026-11-03.md`（认识仓库主人）。 |
+
+---
+
+## 0.1 2026-11-03 二次整理（v2）：一目了然 / 全量吞入 / 反混乱
+
+本轮把 610 个文件逐一体检，并处理了「16 份互相矛盾的历史首读档」这一主要混乱源。新增控制层：
+
+| 需求 | 唯一入口 | 说明 |
+| --- | --- | --- |
+| 一目了然 | `仓库治理规范.md` | 层级表、写入规则、命名、收件箱纪律、CI 守卫、16 份已降级入口清单 |
+| 认识仓库主人 | `总览/用户画像_2026-11-03.md` | 能力/失分/习惯/环境/协作方式，全部带证据等级 |
+| 逐文件体检 | `总览/仓库细节审阅_2026-11-03.md` | 610 文件构成、重复/空文件/大二进制/隐私/断链、已修与保留 |
+| 全仓库可吞 | `总览/AI吞入包/` | `00_使用说明.md`、`01_逐文件摘要.jsonl`（流式）、`MANIFEST.json`（读序与分片 SHA）、`02_全仓库知识骨架.md` |
+| 每个文件的细节 | `总览/仓库全量清单_2026-11-03.csv` | 610+ 行：路径/字节/SHA/编码/读优先级/标题/摘要/异常标记 |
+| 超大规模读 | `tools/export_ai_corpus.py` | 按文件边界分片导出全文，`--max-bytes` / `--categories` / `--format jsonl` |
+| 超大规模写 | `tools/ingest_materials.py` | 批量导入、SHA 去重、隐私硬拦截、自动重建索引 |
+| NOIP 资料与路线 | `备考资料库/` | `README.md` 统一索引、`成长路线图.md` L0–L4 关卡、`知识点掌握度.csv`（55 项） |
+| 历史入口 | 16 份旧档顶部横幅 | 正文一字未删，全部指向本文；见 `仓库治理规范.md` §7 |
+
+> **所有机器产物仍只由 `python3 tools/build_repo_state.py` 生成，现在是 7 个，禁止手改。**
 
 ---
 
@@ -29,8 +50,9 @@
 5. `交接/2026-11-03_双PDF解析/00_总览_方法论与事实分栏.md`：2026-11-03 两份 Gemini 转写 PDF 解析出的一切新增事实与未核实项。
 6. `模拟赛复盘总协议_v2.md` ＋ `skills/oi-contest-review-v2/SKILL.md` ＋ `复盘产物覆盖矩阵.md`：新增一场比赛时的完整度标准。
 7. 再进入**具体比赛目录**：`README.md` → `复盘报告.md` → `题解.md` → `逐段考古纪要.md` → `赛时代码/` → `验证/`。
+8. 动手写之前：`仓库治理规范.md` ＋ `备考资料库/README.md`；要查某文件细节用 `总览/仓库全量清单_2026-11-03.csv`。
 
-> 老文件 `00_请先阅读_2026-10-11.md`、`01_2026-10-22_桌面全量考古_陌生AI首读.md`、`CURRENT_STATE.md`、`AI_HANDOFF.md`、`AI_MASTER_INDEX.md`、`README.md` 都是**各自日期的历史快照**，其中很多「最新」只代表当天。不要拿它们的「当前」覆盖本文。
+> **16 份历史首读/接班/入口文档**（含 `00_请先阅读_2026-10-11.md`、`01_2026-10-22_桌面全量考古_陌生AI首读.md`、`CURRENT_STATE.md`、`AI_HANDOFF.md`、`AI_MASTER_INDEX.md`、`README.md`、`总览/AI直接接手入口.md` 等）都是**各自日期的历史快照**，曾互相声称「唯一入口」，现已在顶部统一加导航横幅指向本文。不要拿它们的「当前 / 最新」覆盖本文；完整清单见 `仓库治理规范.md` §7。
 
 ---
 
@@ -142,12 +164,21 @@
 
 ```bash
 cd /home/user/Mock-Contest-Repository
-python3 tools/verify_repo.py                 # 总控：链接/总账/证据CSV/隐私/入口一致性
-python3 tools/build_repo_state.py            # 从 总览/赛事账本.json 重生成总账与文件索引
+python3 tools/build_repo_state.py            # 从 总览/赛事账本.json + 工作区重生成 7 个机器产物
+python3 tools/verify_repo.py                 # 总控：产物漂移/链接/总账/证据CSV/隐私/入口/CI/吞入包
 python3 交接/核验接班一致性.py                # 历史八场 669/3200、隐私、万字报告
 python3 考古/验证脚本/verify_codelands3_candidates.py   # LOCAL-VERIFIED only
 node tools/verify_star_atlas.mjs            # 星图 2026-10-12 快照静态校验
-sha256sum 赛场星图.html docs/index.html 总览/可视化/赛场星图_2026-10-12.html
+python3 tools/ingest_materials.py --self-test            # 批量写入自检（200 文件幂等/脱敏）
+python3 tools/export_ai_corpus.py --self-test            # 分片读入自检（确定性/哈希/jsonl）
+sha256sum 赛场星图.html docs/index.html 总览/可视化/赛场星图_2026-10-12.html 总览/可视化/阶段成长仪表盘.html
+```
+
+顺序：**先 build 再 verify**（改了任何文件都要重建 7 个产物，否则会报「生成产物漂移」）。全文吞入：
+
+```bash
+python3 tools/export_ai_corpus.py --out 总览/AI吞入包/_导出/full.txt --max-bytes 8000000
+python3 tools/ingest_materials.py --src <新材料目录> --dry-run
 ```
 
 `verify_repo.py` 检查的是**结构与自洽性**，不能替代真实 OJ 回读或数学证明。CI：`.github/workflows/repo-integrity.yml` 在**所有分支的 push 和所有 PR** 上跑 `verify_repo.py`＋三个既有校验；`atlas-smoke.yml` 负责真实 Chromium 交互（需 Playwright）。

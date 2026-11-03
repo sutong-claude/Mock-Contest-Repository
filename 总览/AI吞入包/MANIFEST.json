@@ -1,0 +1,73 @@
+{
+  "schema": "mock-contest-repository.ai-corpus.v1",
+  "as_of": "2026-11-03",
+  "generated_by": "tools/build_repo_state.py",
+  "purpose": "让不具备 Agent 能力的 AI 一次读入全仓库：先读 02_全仓库知识骨架.md，再按 read_order 逐层展开。",
+  "entry": "START_HERE.md",
+  "read_order": [
+    "START_HERE.md",
+    "仓库治理规范.md",
+    "总览/AI吞入包/02_全仓库知识骨架.md",
+    "总览/用户画像_2026-11-03.md",
+    "全赛事账本_2026-11-03.md",
+    "总览/赛事账本.json",
+    "NOIP2026/README.md",
+    "NOIP2026/接手总控.md",
+    "备考资料库/成长路线图.md",
+    "备考资料库/README.md",
+    "总览/仓库细节审阅_2026-11-03.md",
+    "总览/仓库全量清单_2026-11-03.csv",
+    "总览/AI吞入包/00_使用说明.md",
+    "维护日志.md"
+  ],
+  "file_count": 618,
+  "total_bytes": 41626161,
+  "text_file_count": 609,
+  "binary_file_count": 9,
+  "ledger_contest_count": 19,
+  "categories": {
+    "AI吞入包": 2,
+    "CI": 4,
+    "NOIP备考控制层": 6,
+    "NOIP备考资料库": 4,
+    "交接与一手证据": 21,
+    "其他根目录文档": 33,
+    "协议与课程": 3,
+    "工具": 121,
+    "总览与可视化": 19,
+    "控制层": 9,
+    "桌面取证与赛后候选": 13,
+    "比赛归档": 371,
+    "站点镜像与素材": 3,
+    "转写PDF派生解析": 9
+  },
+  "read_priority_distribution": {
+    "0": 10,
+    "1": 67,
+    "2": 371,
+    "3": 167,
+    "4": 3
+  },
+  "shards": [
+    {
+      "name": "01_逐文件摘要.jsonl",
+      "records": 618,
+      "bytes": 325101,
+      "sha256": "2376b31362d18e23a68431fe12c765d2f909cb85dd50976731b2965d367004f8",
+      "format": "jsonl; 一行一文件；可流式读入，支持按 category / read_priority 过滤"
+    },
+    {
+      "name": "02_全仓库知识骨架.md",
+      "records": 1,
+      "format": "markdown; 人工编纂的全仓库事实骨架，非自动生成"
+    }
+  ],
+  "catalog": "总览/仓库全量清单_2026-11-03.csv",
+  "full_body_export": "按需运行 python3 tools/export_ai_corpus.py --out <路径>；输出目录 _导出/ 已 gitignore，不进版本库",
+  "bulk_import": "批量写入用 python3 tools/ingest_materials.py --src <目录>；先落 99_收件箱_待归档/ 再分类",
+  "verification": [
+    "python3 tools/build_repo_state.py",
+    "python3 tools/verify_repo.py"
+  ],
+  "boundary": "索引只描述仓库内容，不证明算法正确性、不把 [G]/ESTIMATE 升级成 OJ 成绩；LOCAL-VERIFIED ≠ OJ-AC。"
+}

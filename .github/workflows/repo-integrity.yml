@@ -23,10 +23,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Regenerate control-plane artifacts and verify byte-for-byte
+      - name: Regenerate 7 control-plane artifacts and verify byte-for-byte
         run: |
           python3 tools/build_repo_state.py
           python3 tools/verify_repo.py
+      - name: Bulk import / sharded corpus export self-tests
+        run: |
+          python3 tools/ingest_materials.py --self-test
+          python3 tools/export_ai_corpus.py --self-test
       - name: Historical handoff consistency (8 contests / 669 / privacy)
         run: python3 交接/核验接班一致性.py
       - name: CodeLands3 independent small oracles (LOCAL-VERIFIED only)
