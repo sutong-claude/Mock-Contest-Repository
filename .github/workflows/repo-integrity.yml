@@ -35,6 +35,14 @@ jobs:
         run: python3 交接/核验接班一致性.py
       - name: CodeLands3 independent small oracles (LOCAL-VERIFIED only)
         run: python3 考古/验证脚本/verify_codelands3_candidates.py
+      - name: CodeLands3 v2 independent oracles (Python exhaustive + C++ sanitizer)
+        run: python3 考古/验证脚本/verify_codelands3_candidates_v2.py
+      - name: Day1 A rewrite equivalence and complexity benchmark (self-compiling)
+        run: python3 交接/2026-11-03_深度代码复审/基准与等价性.py
+      - name: Original NOIP-style mock contest (4 problems, independent oracles)
+        run: python3 NOIP2026/原创模拟赛_2026-11/run_all.py
+      - name: Ancient numeric claims recomputed exactly (no snapshot overwritten)
+        run: python3 交接/2026-11-03_远古数据复算/复算.py
       - name: Evidence atlas static snapshot (2026-10-12, 8 contests / 36 problems)
         run: node tools/verify_star_atlas.mjs
       - name: Report boundary

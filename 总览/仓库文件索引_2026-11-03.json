@@ -3,21 +3,21 @@
   "as_of": "2026-11-03",
   "generated_by": "tools/build_repo_state.py",
   "note": "确定性快照；sha256 可跨分支回读。逐文件元信息见 仓库全量清单_2026-11-03.csv 与 AI吞入包/01_逐文件摘要.jsonl。",
-  "file_count": 618,
-  "total_bytes": 41626939,
+  "file_count": 640,
+  "total_bytes": 41752842,
   "ledger_contest_count": 19,
   "categories": {
     "AI吞入包": 2,
     "CI": 4,
-    "NOIP备考控制层": 6,
+    "NOIP备考控制层": 21,
     "NOIP备考资料库": 4,
-    "交接与一手证据": 21,
+    "交接与一手证据": 27,
     "其他根目录文档": 33,
     "协议与课程": 3,
     "工具": 121,
     "总览与可视化": 19,
     "控制层": 9,
-    "桌面取证与赛后候选": 13,
+    "桌面取证与赛后候选": 14,
     "比赛归档": 371,
     "站点镜像与素材": 3,
     "转写PDF派生解析": 9
@@ -49,8 +49,8 @@
     },
     {
       "path": ".github/workflows/repo-integrity.yml",
-      "bytes": 1446,
-      "sha256": "40aa1be7cd92c8a4533266ec997fd95a877817ab80a864a9fec0b744acd088ac",
+      "bytes": 2065,
+      "sha256": "1cf0be92eaef14520edf35ae791227a8cea119d62ddb43c14e61741a76be2b24",
       "category": "CI",
       "read_priority": 1,
       "flags": []
@@ -3242,9 +3242,129 @@
       ]
     },
     {
+      "path": "NOIP2026/原创模拟赛_2026-11/00_命题说明.md",
+      "bytes": 7576,
+      "sha256": "052b4b005f95c2e89a9e63daeb44f0a92a619bd4b0c9ef175dc8a7c086e3c4f3",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/brute/T1_window.cpp",
+      "bytes": 490,
+      "sha256": "bd4d732e81b09d3548f9ebc4602fecaa58c722fda489c7972d543983959e44cf",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/brute/T2_lamps.cpp",
+      "bytes": 551,
+      "sha256": "99fb53d74b04cc42f25c2a82802a54d9201a622fe079fb5beb8be18907b9845a",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/brute/T3_segments.cpp",
+      "bytes": 1012,
+      "sha256": "457eb373d4e8de9061eaaea56e807ddf139b1a16f4048a39a34f90263cbd4ecb",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/brute/T4_pairs.cpp",
+      "bytes": 690,
+      "sha256": "0db629af7f97ec59f6949c1e9e1b4603ee4241aff1dc38f2eefbe37589185ae7",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/run_all.py",
+      "bytes": 10083,
+      "sha256": "f67437d125159566a521c70886dc01e6ad0a1c37da6dabc26b40da9dd4cd9629",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/solution.md",
+      "bytes": 15429,
+      "sha256": "993e8bce81741f8e0452f6f81a589437af7c1926654ea039d8e813c7afc9fe8b",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/statement.md",
+      "bytes": 8576,
+      "sha256": "ed4d2c211ff67f761e3b1d01b1a40da221a5430e5d1fed44d6233eab227374c8",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/std/T1_window.cpp",
+      "bytes": 1110,
+      "sha256": "8a0423bb041d26a20ba69f4dcc500468106260b4cd30f626509a84825d373bd0",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/std/T2_lamps.cpp",
+      "bytes": 508,
+      "sha256": "9e66c282ad556e39e405883774110299e78d127ed049b3b69d6d57010de567e9",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/std/T3_segments.cpp",
+      "bytes": 2241,
+      "sha256": "47847df07ba4355f9bbfe1f59cd9a8234360442e116d87e306f22078691407d6",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/std/T4_pairs.cpp",
+      "bytes": 772,
+      "sha256": "2877573e596860740eeeb14d4caea1a04ef8ac75dab6280c86e2e804c5ab6bd0",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/验证报告.json",
+      "bytes": 1575,
+      "sha256": "623cce5b8bb2629956c026bb7feb100759d9b8ea05da1aa72f756288642cb4a7",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/原创模拟赛_2026-11/验证报告.md",
+      "bytes": 1123,
+      "sha256": "22db3dff016b3433f1365017a16241229d3a54d02343126ca5c857e9b36b6c0c",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
       "path": "NOIP2026/四阶段路线图.md",
       "bytes": 4262,
       "sha256": "46263f25e48eadfe9e55e7e9d2392f0140eb812a6440ee592086b0f468311699",
+      "category": "NOIP备考控制层",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "NOIP2026/备考推理分析_2026-11-03.md",
+      "bytes": 10413,
+      "sha256": "aea5d098e5dd8ff5c40718c9ecabbe709ff439d17a67488b9d6564c21b97e29e",
       "category": "NOIP备考控制层",
       "read_priority": 1,
       "flags": []
@@ -3303,8 +3423,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 23863,
-      "sha256": "1fabe5b800b0fb303bd37ec1f9d405ab24ad89900ba7878432f0c1fee61cf3c3",
+      "bytes": 25560,
+      "sha256": "00f40ced6570bf49c9dfbfea122b7385b9b1af1aef91317c6bf677d02c91df0d",
       "category": "控制层",
       "read_priority": 0,
       "flags": [
@@ -3573,8 +3693,8 @@
     },
     {
       "path": "tools/verify_repo.py",
-      "bytes": 16603,
-      "sha256": "759646344d5ebb67c8e3cd84176519883cf01404331e93410d6c94aa15f4fefa",
+      "bytes": 19487,
+      "sha256": "cdb89c708347399fb0e668e240a9e800aff0133790d6698be1738fe2cbc75650",
       "category": "工具",
       "read_priority": 3,
       "flags": []
@@ -4586,6 +4706,54 @@
       "flags": []
     },
     {
+      "path": "交接/2026-11-03_深度代码复审/00_代码复审总览.md",
+      "bytes": 14601,
+      "sha256": "d62e37fce4350e0942ee778f85c7574d0ba5397115a07355d2e73c00bbd64658",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "交接/2026-11-03_深度代码复审/Day1A_改写_树状数组版.cpp",
+      "bytes": 2951,
+      "sha256": "bf9ab42d2d0591b46ee947584f02e936f939ca91a647fb4f3d54d79bb68a9d6e",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "交接/2026-11-03_深度代码复审/基准与等价性.py",
+      "bytes": 4486,
+      "sha256": "d005b11599d5285430edbea69e70932def2f3b8279ef3e7d3208a9b4cb59ccc3",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "交接/2026-11-03_远古数据复算/00_历史数值复算与更新.md",
+      "bytes": 7673,
+      "sha256": "215f56f2b4fa9ee616c06f862150ad483ae3cf50001f1dae97a51f58b7b41787",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "交接/2026-11-03_远古数据复算/历史数值复算.json",
+      "bytes": 6147,
+      "sha256": "ac538f6a6f96838c85c68c3f91a0624d5437b70965dc0fee12046fe68bf067d5",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
+      "path": "交接/2026-11-03_远古数据复算/复算.py",
+      "bytes": 8431,
+      "sha256": "1128090e08be622f36999fa2872953b4d9cc66f1980c500605bee3662f7177aa",
+      "category": "交接与一手证据",
+      "read_priority": 1,
+      "flags": []
+    },
+    {
       "path": "交接/一手证据/2026-10-22_2581桌面文件_SHA256脱敏目录.csv",
       "bytes": 330465,
       "sha256": "c5e8d1946fd57fec71b61a3a82ca36e6a2651987f28a9e5d9723b97cdcbbe5db",
@@ -4949,8 +5117,8 @@
     },
     {
       "path": "维护日志.md",
-      "bytes": 5659,
-      "sha256": "8ff665352b19566eb9bc0fc189f90bbf8ba3387aa766b769c3079c4f9ab57ed4",
+      "bytes": 7149,
+      "sha256": "d562206acd94087321cf689f4e34639a585df1b22adeae1f580ceb3bd5c99e74",
       "category": "控制层",
       "read_priority": 0,
       "flags": [
@@ -5061,6 +5229,14 @@
       "path": "考古/验证脚本/verify_codelands3_candidates.py",
       "bytes": 2996,
       "sha256": "23f504a4b2008953707a5fa63c7b8279a0bafe56abcd14f04f7230f919e3e0e4",
+      "category": "桌面取证与赛后候选",
+      "read_priority": 3,
+      "flags": []
+    },
+    {
+      "path": "考古/验证脚本/verify_codelands3_candidates_v2.py",
+      "bytes": 12775,
+      "sha256": "7d8d500ba6310968f665c97d2dad540ba7cab36c767721c38f86c668d16763d9",
       "category": "桌面取证与赛后候选",
       "read_priority": 3,
       "flags": []

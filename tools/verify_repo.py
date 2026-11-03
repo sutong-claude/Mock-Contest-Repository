@@ -298,6 +298,49 @@ def main():
     check('批量写入/分片读入工具自检通过', not bad_st,
           '; '.join(f'{k}: {v[1][0][:90]}' for k, v in self_tests.items()))
 
+    # 13. 深度代码复审 / 原创模拟赛 / 远古数值复算：交付物齐全且 CI 覆盖
+    deep_files = [
+        '交接/2026-11-03_深度代码复审/00_代码复审总览.md',
+        '交接/2026-11-03_深度代码复审/Day1A_改写_树状数组版.cpp',
+        '交接/2026-11-03_深度代码复审/基准与等价性.py',
+        '考古/验证脚本/verify_codelands3_candidates_v2.py',
+        'NOIP2026/备考推理分析_2026-11-03.md',
+        'NOIP2026/原创模拟赛_2026-11/statement.md',
+        'NOIP2026/原创模拟赛_2026-11/solution.md',
+        'NOIP2026/原创模拟赛_2026-11/00_命题说明.md',
+        'NOIP2026/原创模拟赛_2026-11/run_all.py',
+        'NOIP2026/原创模拟赛_2026-11/验证报告.json',
+        'NOIP2026/原创模拟赛_2026-11/验证报告.md',
+        '交接/2026-11-03_远古数据复算/复算.py',
+        '交接/2026-11-03_远古数据复算/00_历史数值复算与更新.md',
+        '交接/2026-11-03_远古数据复算/历史数值复算.json',
+    ] + [f'NOIP2026/原创模拟赛_2026-11/{kind}/T{i}_{name}.cpp'
+         for kind in ['std', 'brute']
+         for i, name in [(1, 'window'), (2, 'lamps'), (3, 'segments'), (4, 'pairs')]]
+    missing_deep = [f for f in deep_files if not os.path.isfile(p(*f.split('/')))]
+    check('深度复审/原创模拟赛/远古复算交付物齐全', not missing_deep,
+          f'{len(deep_files) - len(missing_deep)}/{len(deep_files)}' + (f' 缺 {missing_deep}' if missing_deep else ''))
+
+    ci_scripts = ['verify_codelands3_candidates_v2.py', '基准与等价性.py',
+                  '原创模拟赛_2026-11/run_all.py', '远古数据复算/复算.py']
+    missing_ci = [s for s in ci_scripts if s not in integ]
+    check('总控 CI 覆盖 4 个新增复算/验证脚本', not missing_ci,
+          f'{len(ci_scripts) - len(missing_ci)}/{len(ci_scripts)}' + (f' 缺 {missing_ci}' if missing_ci else ''))
+
+    # 精确复算层必须字节确定：重跑 复算.py 后 JSON 不变（否则生成产物会漂移）
+    rj = p(*'交接/2026-11-03_远古数据复算/历史数值复算.json'.split('/'))
+    before = hashlib.sha256(open(rj, 'rb').read()).hexdigest()
+    try:
+        rr = subprocess.run([sys.executable, p(*'交接/2026-11-03_远古数据复算/复算.py'.split('/'))],
+                            cwd=ROOT, capture_output=True, text=True, timeout=180)
+        after = hashlib.sha256(open(rj, 'rb').read()).hexdigest()
+        recompute_ok = rr.returncode == 0 and 'ANCIENT_DATA_RECOMPUTE_PASS' in (rr.stdout or '') and before == after
+        recompute_detail = (rr.stdout or rr.stderr or '').strip().splitlines()[-1:][:1] or ['']
+    except subprocess.TimeoutExpired:
+        recompute_ok, recompute_detail = False, ['TIMEOUT']
+    check('远古数值精确复算可重跑且字节确定', recompute_ok,
+          recompute_detail[0][:100])
+
     failed = [n for n, ok, _ in results if not ok]
     print('\n' + '=' * 72)
     print(f'REPO_INTEGRITY_{"PASS" if not failed else "FAIL"}  checks={len(results)}  failed={len(failed)}')

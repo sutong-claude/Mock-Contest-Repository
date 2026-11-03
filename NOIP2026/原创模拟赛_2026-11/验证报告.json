@@ -1,0 +1,62 @@
+{
+  "seed": 20261103,
+  "problems": {
+    "T1_window": {
+      "random_cases": 400,
+      "analytic_large": 3,
+      "total_checked": 403,
+      "sanitizer_runs": 20,
+      "oracle": "O(n^2) 穷举所有 (l,r)"
+    },
+    "T2_lamps": {
+      "random_cases": 400,
+      "analytic_large": 3,
+      "total_checked": 403,
+      "sanitizer_runs": 20,
+      "oracle": "2^n 状态空间 BFS（最短操作数）"
+    },
+    "T3_segments": {
+      "random_cases": 500,
+      "known_counterexamples": 4,
+      "analytic_large": 2,
+      "total_checked": 506,
+      "sanitizer_runs": 20,
+      "oracle": "n<=8 递归穷举所有不相交合法段集合 + O(n^2) 逐段 DP"
+    },
+    "T4_pairs": {
+      "exhaustive_N_le_20": 231,
+      "large_N_crosscheck": [
+        {
+          "n": 1000,
+          "m": 0,
+          "mod": 37043040
+        },
+        {
+          "n": 0,
+          "m": 1000,
+          "mod": 641419708
+        },
+        {
+          "n": 500,
+          "m": 500,
+          "mod": 521303692
+        },
+        {
+          "n": 999,
+          "m": 1,
+          "mod": 460080086
+        },
+        {
+          "n": 100000,
+          "m": 200000,
+          "mod": 808891029
+        }
+      ],
+      "total_checked": 236,
+      "sanitizer_runs": 20,
+      "oracle": "128 位精确整数 + Pascal 组合数容斥（N<=20）；大 N 用 pow 逆元递推的第三条独立路径"
+    }
+  },
+  "result": "MOCK_CONTEST_LOCAL_VERIFIED_PASS",
+  "boundary": "本场为原创命题，LOCAL-VERIFIED 只说明标程与独立 oracle 一致，不代表任何官方 OJ 成绩。"
+}
