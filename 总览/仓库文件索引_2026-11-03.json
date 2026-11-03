@@ -4,7 +4,7 @@
   "generated_by": "tools/build_repo_state.py",
   "note": "确定性快照；文件的 sha256 可用于跨分支回读。原始录屏/按键/聊天/账号页不在本索引中，也不应在仓库中。",
   "file_count": 606,
-  "total_bytes": 41493671,
+  "total_bytes": 41494350,
   "ledger_contest_count": 19,
   "categories": {
     "CI": 4,
@@ -3467,8 +3467,8 @@
     },
     {
       "path": "维护日志.md",
-      "bytes": 2800,
-      "sha256": "507ae6c0c83be31e63c9a079ed25b95f1996239e111e3cd5e21be356ae95905b",
+      "bytes": 3479,
+      "sha256": "466a8b9d08e793b7ef02ba594985593b6969e05b7216c9737d6fd2e0b9f5817a",
       "category": "控制层"
     },
     {
