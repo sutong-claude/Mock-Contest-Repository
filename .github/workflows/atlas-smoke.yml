@@ -1,9 +1,15 @@
 name: CSP-S Evidence Atlas · visual smoke
 on:
   push:
-    branches:
-      - claude/simulation-analysis-vm-debug-lzglku
-      - chatgpt/oct7-stage-maintenance
+    branches: ['**']
+    paths:
+      - '总览/可视化/**'
+      - '赛场星图.html'
+      - 'docs/**'
+      - 'tools/verify_star_atlas.mjs'
+      - 'tools/smoke_star_atlas.mjs'
+      - '.github/workflows/atlas-smoke.yml'
+  pull_request:
     paths:
       - '总览/可视化/**'
       - '赛场星图.html'

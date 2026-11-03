@@ -1,3 +1,5 @@
+> **2026-11-03 唯一首读入口：[START_HERE.md](START_HERE.md)**（零背景接手：全局规矩、全赛事账本、目录地图、校验命令、NOIP 阶段目标）。当前机器可读总账 [总览/赛事账本.json](总览/赛事账本.json)、[全赛事账本_2026-11-03.md](全赛事账本_2026-11-03.md)，备考控制层 [NOIP2026/README.md](NOIP2026/README.md)，两份转写 PDF 的脱敏解析 [交接/2026-11-03_双PDF解析/00_总览_方法论与事实分栏.md](交接/2026-11-03_双PDF解析/00_总览_方法论与事实分栏.md)；机器自检 `python3 tools/verify_repo.py`。以下各条横幅均为各自日期的历史快照，不代表今天状态。
+
 > **2026-10-22：已从用户新上传的双分卷Desktop真正解包，11场Replay／690条保存事件／520份赛时C++源码全文／2,581文件SHA目录进入一手证据库。** 新 AI 请从 [《桌面全量考古：陌生AI首读》](01_2026-10-22_桌面全量考古_陌生AI首读.md) 开始，沿 [690事件](交接/一手证据/2026-10-22_690保存事件_脱敏可搜索.csv) → [520份源码](交接/一手证据/2026-10-22_520份赛时C++非空源码快照.jsonl) → [2581文件SHA](交接/一手证据/2026-10-22_2581桌面文件_SHA256脱敏目录.csv) 自行验证；参见 [11场Replay时间链](交接/2026-10-22_十一场Replay_证据索引.md)、[真实口述改写](交接/2026-10-22_赛时推理口述重整.md)、[新CodeLands3](交接/2026-10-22_CodeLands3_首次考古.md)、[Gemini真假核对](交接/2026-10-22_Gemini_结论与事实分栏.md)。历史录像只建立索引，并非全部逐帧分析；赛后本地AC不得写成OJ-AC。
 
 > **2026-10-18 代码源 Day9 完整复盘**：本场是后藤一里/山田凉/虹夏/子集异或，**不是**旧目录中zerofree/count/color/silent那场。赛时OJ核实 **60/400（A60 B0 C0 D未交）**。新增[长篇复盘](2026-10-18_代码源_CSP-S_day9/复盘报告.md)、[四题独立证明及代码](2026-10-18_代码源_CSP-S_day9/题解.md)、[41事件与65次保存](2026-10-18_代码源_CSP-S_day9/比赛全过程复现_完整版.md)、[离线交互回放](2026-10-18_代码源_CSP-S_day9/可视化复盘/Day9_整场回放.html)。四题最终源码6618例独立真值＋20份附件＋正式IO/UBSan通过，**未新交OJ，不标官方补题400**；25段录像只检查9张关键帧。下一步沿A原倒扫→B插入合法性→C按起点合并→C事件图→D值域分层补题。完整交接见[本场入口](2026-10-18_代码源_CSP-S_day9/README.md)。
@@ -12,7 +14,8 @@
 
 # CSP-S 赛场星图 · 真实证据驱动的复盘系统
 
-[![Evidence Atlas CI](https://github.com/sutong-claude/Day1/actions/workflows/atlas-smoke.yml/badge.svg)](https://github.com/sutong-claude/Day1/actions/workflows/atlas-smoke.yml)
+[![Evidence Atlas CI](https://github.com/sutong-claude/Mock-Contest-Repository/actions/workflows/atlas-smoke.yml/badge.svg)](https://github.com/sutong-claude/Mock-Contest-Repository/actions/workflows/atlas-smoke.yml)
+[![Repository integrity](https://github.com/sutong-claude/Mock-Contest-Repository/actions/workflows/repo-integrity.yml/badge.svg)](https://github.com/sutong-claude/Mock-Contest-Repository/actions/workflows/repo-integrity.yml)
 **[下载即可离线打开的完整网页](赛场星图.html)** · **[今天的真实施工状态](CURRENT_STATE.md)** · [36题证据数据](总览/可视化/赛场星图_2026-10-12.json) · [完整接班报告](交接/2026-10-11_主力模拟赛分析_万字接班报告.md)
 
 > **不是一张原型截图。** 已在真实 Chromium 和移动视口自动测试搜索、筛选、弹窗、时间线、CSV 导出；默认分支 CI **#38203544956 通过**。入口包含八场669/3200、36题、113条Replay保存核验及11处重要赛时思路转折。站点可单文件离线运行；GitHub Pages尚未确认开启，不能把预期URL冒充已上线。

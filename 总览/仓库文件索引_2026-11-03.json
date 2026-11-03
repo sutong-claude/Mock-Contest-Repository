@@ -1,0 +1,3661 @@
+{
+  "schema": "mock-contest-repository.file-index.v1",
+  "as_of": "2026-11-03",
+  "generated_by": "tools/build_repo_state.py",
+  "note": "确定性快照；文件的 sha256 可用于跨分支回读。原始录屏/按键/聊天/账号页不在本索引中，也不应在仓库中。",
+  "file_count": 606,
+  "total_bytes": 41493405,
+  "ledger_contest_count": 19,
+  "categories": {
+    "CI": 4,
+    "NOIP备考控制层": 6,
+    "交接与一手证据": 21,
+    "其他根目录文档": 33,
+    "协议与课程": 3,
+    "工具": 119,
+    "总览与可视化": 16,
+    "控制层": 8,
+    "桌面取证与赛后候选": 13,
+    "比赛归档": 371,
+    "站点镜像与素材": 3,
+    "转写PDF派生解析": 9
+  },
+  "files": [
+    {
+      "path": ".github/workflows/atlas-smoke.yml",
+      "bytes": 1595,
+      "sha256": "cbf0e3aa6e5757854f30cc95dae0bddffd5dcf736203139c679cdbd9c12a6f47",
+      "category": "CI"
+    },
+    {
+      "path": ".github/workflows/codelands3-forensics.yml",
+      "bytes": 775,
+      "sha256": "a758e6642137404f9f766210747c0931b2eff6c9684a93caf919afe14966ef0a",
+      "category": "CI"
+    },
+    {
+      "path": ".github/workflows/codesource-day9-20261018.yml",
+      "bytes": 1429,
+      "sha256": "1a09991cdb6f6d5322841c4d34fcad12e66fe02127b623cbd442d338f86eaf63",
+      "category": "CI"
+    },
+    {
+      "path": ".github/workflows/repo-integrity.yml",
+      "bytes": 1256,
+      "sha256": "31f75b3b39c9039c52e8d186ae926a1ab11d292a53cc1abfc3a4d979ae1dd130",
+      "category": "CI"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 603,
+      "sha256": "62719eef6c0f04f59d37ba02bc165f651729d73e09f8b0590ccc716367141e5a",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "00_2026-10-22_历史源码发布范围_520与522说明.md",
+      "bytes": 1102,
+      "sha256": "af80fc9275557d5c185dbcb1f1f12b7ce6eee0c240fc0d56d290e405ad8c0979",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "00_2026-10-22_双GeminiPDF_模拟赛全量压缩接班.md",
+      "bytes": 35594,
+      "sha256": "21930f7e1f9e9b7006c6a0f12b0c5a3b09ef62ea7b3ec1059dc0750e21edabfb",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "00_2026-10-22_桌面全量取证_新AI首读.md",
+      "bytes": 2971,
+      "sha256": "4c922e4e0523ec5a0c9cd3265c5983b8fcc43010ac8e02fb65f788cf8afd9266",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "00_请先阅读_2026-10-11.md",
+      "bytes": 2977,
+      "sha256": "0e76f92e81a848384ffcae500f8e32832b898cbdea6ddf61bfa2e4fadfe244d4",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "01_2026-10-22_桌面全量考古_陌生AI首读.md",
+      "bytes": 6188,
+      "sha256": "d13d07730ab60701ec506e3c11e9375797fd9572ba5528cf7572d33a2b22b586",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/动画讲义/蜗蜗四题动画复盘.html",
+      "bytes": 419577,
+      "sha256": "607b16e8eb906b9afec458c61a2a491c2704cf6237cac43428594763d06cb992",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/复盘报告.md",
+      "bytes": 26515,
+      "sha256": "369fc7d24de354c4c623a8a93e9bf43dbb421171e9582eb0d7eab43e1869aaab",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/复盘报告.pdf",
+      "bytes": 511083,
+      "sha256": "fafe443f30c6dfa70dddc59ca90239e62995cb38eab8b32fb39068ec88574132",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/正解代码/A_记录带_On2.cpp",
+      "bytes": 767,
+      "sha256": "307d91ca29a39bf0000f4d32eef2fb3aead60450fbc3a8e00a279545cda06b76",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/正解代码/A_记录带_赛时代码只换树状数组.cpp",
+      "bytes": 1407,
+      "sha256": "55aabd9005b42c218f63441ddf3f673783f789c7a080c664d8113f5b51ee6a55",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/正解代码/B_联动面板.cpp",
+      "bytes": 892,
+      "sha256": "dac084b1148fbbefaf5f7e6616bfc0598ed3debd6b3eb753ac8b94a05ea90594",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/正解代码/C_晶体树阵.cpp",
+      "bytes": 1833,
+      "sha256": "a25421d332c494b04011dd16dd0a70ccc276686fc6a693803f7e5f87b5c761ab",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/正解代码/D_轮换密钥.cpp",
+      "bytes": 2645,
+      "sha256": "0aa185ae86ac6052b14d07bfd3a31c497446e4c4d518dc88ee98f54c8d86492e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/A_v1_On前缀公式_20-20.cpp",
+      "bytes": 1261,
+      "sha256": "df4d097cd6f26d696747e25b6c22e014940065b379332358fa4c10babf75f1ab",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/A_v2_On前缀公式改符号_20-37.cpp",
+      "bytes": 1253,
+      "sha256": "e58bd015fadda08da05a10e38528592c8586e2f4978c1bb93fe2791c43677ce3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/A_v3_On前缀公式最终_20-48.cpp",
+      "bytes": 1078,
+      "sha256": "b57d970c5785397cf61b1c54c1f53b1968a181fdf4540204b406093e260e35cc",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/A_v4_n方multiset_已提交_21-10.cpp",
+      "bytes": 1470,
+      "sha256": "e9e6dd1dafc94613493a857adadf573eac2deef50e7a5e37dcbef121c5669335",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/B_v1_骗分_22-19.cpp",
+      "bytes": 1462,
+      "sha256": "26089eecfb7a7977260ba1b5fa5c7b34796ee10c8971f614b02084edec4171e9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/B_v2_骗分_已提交_22-37.cpp",
+      "bytes": 1709,
+      "sha256": "f62e21ab489536421f325a0bfe550f9dbf4029f6cc40e2094e05bdb93851b198",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/赛时代码/D_暴力骗分未完成_22-56.cpp",
+      "bytes": 974,
+      "sha256": "8733350940c5765bb8c780884b74c607cdf97e3bf7956f4954796d8760cbb6f2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/逐段考古纪要.md",
+      "bytes": 21476,
+      "sha256": "6882802d737bd423acb89915f9988841890366f5ac143687b6423356fd9396de",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-25_CSP-S模拟赛day1/题解.md",
+      "bytes": 7059,
+      "sha256": "e482375e41e72e12e652e909d95e8915852739b67316d12f054195681e5cb592",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/Day2四题动画复盘.html",
+      "bytes": 440129,
+      "sha256": "36c447b85583fc8846f669adbc456c5e309a93923f2cbae3bc266774451e9c7e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/build.py",
+      "bytes": 1232,
+      "sha256": "0b58573814fbbcc87a891b7f69d9ef9fa97d4d14ca6b5e97af204e264c19e31f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/common.py",
+      "bytes": 8744,
+      "sha256": "4919b7a74b9f9b0f1e01ec31e8a49e8c8d52c593822cc3f84cffa09378444693",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/g0.py",
+      "bytes": 10713,
+      "sha256": "bd0cd9760987a4aff08429029fc4dc3e7752d279cfa04066057c206ab170ea4a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/gA.py",
+      "bytes": 17948,
+      "sha256": "661dabd41b47f42ce0021f6a7844d0e2800f52e6dd54fd2f1f29f1f049dd3ab6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/gB.py",
+      "bytes": 13104,
+      "sha256": "099d56167ee4723b9322da3d16b77fc3c77257b9c2b9a578058a6d55fa1f8e06",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/gC.py",
+      "bytes": 7154,
+      "sha256": "e49ff4a5b239391fcfa9df21dabd23d8e016b3f46165dd0da50e562ee5a03025",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/gD.py",
+      "bytes": 11503,
+      "sha256": "ab34bbccc9a112f229d562e20ae088016529931ce14adc64b41b025060599c1b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/动画讲义/生成脚本/timeline.py",
+      "bytes": 16100,
+      "sha256": "512cb839e24ff6f6c6e6b1d46c078762fcfa0ec24ea8f44e8349e241f27cef64",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/归档_AI完整上下文.txt",
+      "bytes": 29534,
+      "sha256": "43e7f772fe779d30ace41af9a3f47342c986b0afef65b41d7761a188cef695e2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/归档_day2.zip",
+      "bytes": 1613706,
+      "sha256": "ab2e6515f15e25e9f04e1fba735a6360c6c8a7583b11757aab0f1e0d7c58426a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/录音转写.docx",
+      "bytes": 53492,
+      "sha256": "9d01e2fae939b460a24075e2d53ab518ffb4e4d0783a424d15f5ed9f3cd02d3e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/录音转写_纯文本.txt",
+      "bytes": 55753,
+      "sha256": "5becf0110e2d0a1bbafe63482fbfd5cfa17668dc4d10393a105dd765aa11bd26",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/虚拟机赛后桌面_战场.zip",
+      "bytes": 12398044,
+      "sha256": "ea66005c2503b6d7a0335ec57ce00382387c5476e0852ee3ad5a41fbc2faafbb",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/原始材料/说明.md",
+      "bytes": 900,
+      "sha256": "c8c624e2989f46943c7d93f0094ca3e1885ec47841d548dc024ab398dc0b83d4",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/复盘报告.md",
+      "bytes": 55370,
+      "sha256": "57a178c55d86d126b1f146306d96e1294044d9552ab7b793ae3eb61b4abb6f66",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/复盘报告.pdf",
+      "bytes": 814062,
+      "sha256": "583c1a01bb9be3a88684c8d649b764fbc672d4d438096e9ea7c7095cfaf395b9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/A_乘法.cpp",
+      "bytes": 947,
+      "sha256": "f19cd1f50c94e8d540331da029fcfb8116ca2912b57ae7f4c977f386f0616534",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/A_其他做法/A_3a异或a.cpp",
+      "bytes": 724,
+      "sha256": "a695f06cb5617b2b29ec0e5b62cdbc92cb4f71bb57efd17e60feff8bea00f846",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/A_其他做法/A_从低位贪心.cpp",
+      "bytes": 890,
+      "sha256": "2a84cce30edf9e1eb021e4e1ddbe52af350e3757a8c73d1eb8ace42bc3c51cee",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/B_毛线.cpp",
+      "bytes": 1214,
+      "sha256": "2a10164926074f54700d223c82080801ca37baa731ba7cb86fbc3e2ab3e7ab9f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/C_棋子.cpp",
+      "bytes": 2261,
+      "sha256": "45c92dbb597b841121fa027d8804e5ae9697540f6408f0ffe8696622c7d6896e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/D_狼人.cpp",
+      "bytes": 4072,
+      "sha256": "4de0c27392511f62e17a1ce7eb2b0a11b388a1cdd79d69e96578e1d82d379883",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/暴力/A_暴力.cpp",
+      "bytes": 544,
+      "sha256": "b1cd9892e97fcb94aecf05900343f0370e98724b36e6272f805993de549e348c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/暴力/B_暴力.cpp",
+      "bytes": 839,
+      "sha256": "8e8a4428009c1cb91110e0d6f096b1eee3074e7b2549832e1cf9077b23df469d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/暴力/C_暴力.cpp",
+      "bytes": 704,
+      "sha256": "b446334c40c929bd2883f2cc63cbad6dea877e8f4b1cf0728ff631545c51c91d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/正解代码/暴力/D_暴力.cpp",
+      "bytes": 1170,
+      "sha256": "58abf4677a432f316c485b4cfe31e5f9253a0d93e878020cb7933da49afda70a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/A_乘法_DP为什么一定对.mp4",
+      "bytes": 5745505,
+      "sha256": "4968327220e9f6b0610217c147605eb61c43b51956fbfc3689772ebb8907b9e0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/B_毛线_为什么不用重算每个f.mp4",
+      "bytes": 5558554,
+      "sha256": "f44d6cbdff0844398a67e5fe4eddc05bbfb90a860c914c2276ba49dbe9c4bc92",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/C_棋子_DP怎么优化.mp4",
+      "bytes": 5497151,
+      "sha256": "f3141dcac6b8f19af4da90be995a357e0d2b01239171b8c587a6e4724c631073",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/D_狼人_枚举了所有i为什么还错.mp4",
+      "bytes": 3899251,
+      "sha256": "79e87350b4d3aba5f4bbcbaab7fd158853612186e78e9f70ecfe1752f253c45b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/a_mul.py",
+      "bytes": 12051,
+      "sha256": "d29c77a018c1f5ffb215174d67046ad82d37d1d49319288d75daf21ab1f8ed1a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/b_yarn.py",
+      "bytes": 10733,
+      "sha256": "bc184f26d7028c1fb089cf8a76f56c853b986571a9b3089e641e1cf8a5bcca41",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/c_chess.py",
+      "bytes": 12193,
+      "sha256": "16fd001105e72c56988b8c24754fa39dabb5625b1dfdb778b81ae988251997b1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/d_wolf.py",
+      "bytes": 6965,
+      "sha256": "925102e7afeaa8f965d2a847115e84f58caea367d6e04bf3b37900cfeb801171",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/vcommon.py",
+      "bytes": 3541,
+      "sha256": "ef6b9458c63ea112e9b6362f13a7c1d64580720b45d1513d19186de815839e51",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/讲解视频/源码/说明.txt",
+      "bytes": 411,
+      "sha256": "eb475b863d531fc36b7c087ca82a132521e3551d609bfaa8593e777134cbf4f5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v0_数1的个数_11-23.cpp",
+      "bytes": 675,
+      "sha256": "59b36f7fad93d9d803a2f6bef2c50dedca9f0f2038eb4a711088088ecb317eaf",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v1_只试最高位借位_约10-45_抄自paper.cpp",
+      "bytes": 1299,
+      "sha256": "f30befbca1dbd97100e14c33ac2d0cf877929924358fbe451f2c33a1b61406f7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v2_连续1段_12-22_推断为12-45提交RE.cpp",
+      "bytes": 1032,
+      "sha256": "6604aef966c5b93fd9e7f20a4f10504d3c87af2dd54de78e96c7ceb9acacbeac",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v3_改系数_12-33.cpp",
+      "bytes": 1090,
+      "sha256": "537da9340e4a0887058be84adb7229bad744ff2f661f0ce42d07b361b2056493",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v4_13-02_13-06提交WA.cpp",
+      "bytes": 1028,
+      "sha256": "016c1e0c4ded277a148ebc5819710d470ae54b7ee0e8fa39db6bcd66cc11b4f8",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_v5_加check_13-33_13-35提交AC.cpp",
+      "bytes": 1230,
+      "sha256": "ddb10846d827a26d204d956de0e54058a9660b18335b27130dee5d7d34239469",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_暴力_枚举b_13-22.cpp",
+      "bytes": 974,
+      "sha256": "281d1f76fc5df09a720b0cd2a77931b0d077a9fb02772b9cb7d57a08a52ddad2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/A_造数据_13-23.cpp",
+      "bytes": 598,
+      "sha256": "3f0210a260205776798c312f0ffdbc5da86fdf7fc65d5bcd0a4ffbbd63000f12",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/B_写在T3里_未完成_14-06.cpp",
+      "bytes": 777,
+      "sha256": "889595f568b3724ab1bf7b388af34354c8767f2f8f3d509f9541a2a2be1b0d30",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/C_v1_写在T2里_严格大于_13-40.cpp",
+      "bytes": 1174,
+      "sha256": "afdeeb923663d485644b11fa3556266a77902c3714cd297b0ed5f2f36e1b0cb9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/C_v2_写在debug里_13-49_13-51提交30分.cpp",
+      "bytes": 1180,
+      "sha256": "3d56784fbb3d925b4c79eabdb46de17f32d25f10eb8c525669eb1ab0fe95e74d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/D_v1_暴力_约14-00_14-01提交0分_还原.cpp",
+      "bytes": 2009,
+      "sha256": "d625ae9546978fc77a7d4a3f669423a2a069ddb63912e4ff8b3803e66255be02",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/赛时代码/D_v2_加solve2_14-09_14-09提交CE.cpp",
+      "bytes": 2231,
+      "sha256": "421900dd00f482f1d6931da64a6b5f07397105760f1c95080bfe130971bbbdf0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/逐段考古纪要.md",
+      "bytes": 15931,
+      "sha256": "3852df3f825c596a83933e3c548f2f796f8e23fb3304b77bcd51223df21f6971",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-09-27_CSP-S模拟赛day2/题解.md",
+      "bytes": 9400,
+      "sha256": "f07fdaa75dc87b99fac83dbb9b8a365b900a2e2e216fe620d1c8a2387bc4b74d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/README.md",
+      "bytes": 2950,
+      "sha256": "5f93efb3e8aba425c3c69ae62309f7daf0d8b258037d65a71c57eed6d6458cea",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/B_checker_关键说明.md",
+      "bytes": 518,
+      "sha256": "ac4e621d5089fed3fe6b0bba9cd938f3f4cfbcf9c896be57ad20d28a7235cd31",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/OJ归档_AI完整上下文.txt",
+      "bytes": 42561,
+      "sha256": "e97a9f5da1e564b75609bf306bce1c33f498bb055cca6c71ad4b3bf52d487972",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/OJ提交源码与VM_AC对齐.md",
+      "bytes": 4404,
+      "sha256": "047f079aeffc4234601a47532b87d35d90b938335289fd49f9c998377cc9599e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/checker.cpp",
+      "bytes": 3460,
+      "sha256": "8ee448de659d385c3c656818f8a0952d524b14c98003f52be79db2d42a5798da",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/keystream_20261001_184442_checker假安全链.md",
+      "bytes": 5471,
+      "sha256": "5f51b7a28ab645df77bb6f6f811d8dbdf1479a337e4df8467dadeed13e037c57",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/keystream_四题最后验证到提交链.md",
+      "bytes": 8426,
+      "sha256": "d067d7731313ce0f1e884c2df1e89207b8020b08232599fa2d46239e735f8435",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/录音转写_2026-10-01_06_40_原文.txt",
+      "bytes": 65602,
+      "sha256": "4b41fd1b09bb04d631be06e99938ba03410f836e45dec72c938d58385f1a0257",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/录音转写_Day3比赛音频_原文.txt",
+      "bytes": 60760,
+      "sha256": "cf5f5042428c196c191c234988859f8f709f46df754adddb20f49d22ca518e25",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料/说明.md",
+      "bytes": 1054,
+      "sha256": "ff01a039280de072ab8d2316fe075b11f069df24a03173caf18e2e1cf80660f6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/原始材料说明.md",
+      "bytes": 435,
+      "sha256": "080950846c58dda6eb35db8e02f133e6365a831feeab4bffbfd13660c9cba0de",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/可视化复盘/Day3赛场回放.html",
+      "bytes": 7651,
+      "sha256": "ed9b71dd9cb0442070a33352c0aeb5ff2923c0d28c1b0d857d4eb1e8fdfeea93",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/复盘报告.md",
+      "bytes": 12530,
+      "sha256": "f304946f1431a79c231774f611ce4b08b3fa89c01cba2f39f44f30bff844d78a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/工具/赛中研究协议.md",
+      "bytes": 2878,
+      "sha256": "b041d0dbb358c5a40cf0713e3b7b3cb3f1d88b712941a6427625a958f0793d4c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/正解代码/A_报数.cpp",
+      "bytes": 498,
+      "sha256": "ce93fa1898dfe13820ceeab9dcfbc52c88d70e3a46e8e58a131b2d7b97a0f35f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/正解代码/B_翻面消除.cpp",
+      "bytes": 753,
+      "sha256": "8c4de4ffca220c1dc6fddcac905b2a65c934ae7569c24cb81ecda91c93a558c3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/正解代码/C_任务领取.cpp",
+      "bytes": 1662,
+      "sha256": "dc34f62d58e170616754ff2ab4b81657f63f635df1de07dcaf52b62af3c311c2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/正解代码/D_同类分段.cpp",
+      "bytes": 2385,
+      "sha256": "22329f54903dbef2d9c0e19218ec69027f5a6ac0c35b93015d29db6407361544",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/比赛全过程复现_完整版.md",
+      "bytes": 22953,
+      "sha256": "deaa6f9eb73852483dd4f7f23edaa2fc8d8d72a5fb092cabbd4e0df1b43e0c96",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/研究笔记/B_翻面消除_证明.md",
+      "bytes": 1053,
+      "sha256": "722a28ee6a9bff92f43a6f05607552a214ebcf117b07a214ca6da2acaf4e25ad",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/研究笔记/C_任务领取_推导.md",
+      "bytes": 1292,
+      "sha256": "7381099249a9f7ac01f40cbb121d4d0f536660ec436903c1d1c517ceefac49d3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/研究笔记/D_同类分段_推导.md",
+      "bytes": 1400,
+      "sha256": "7047a13b2cee9d512ee2101681da47c0c6ac74729b4a2d35c75d601543aacd09",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/研究过程深挖.md",
+      "bytes": 8547,
+      "sha256": "49f5c539456d63f9d10357c10395dd389d2f64933e2a7896fe7c17c8ed974782",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/线上评测明细.md",
+      "bytes": 1402,
+      "sha256": "67cc571641e09b22817cac0acae42537184fe7fe68396c24af764f5424346e7e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/结果核对.md",
+      "bytes": 2219,
+      "sha256": "b6694762e316355b52fa512c394c52940ac4c2d8d52658afd09eff4174b2e381",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/资料完整性报告.md",
+      "bytes": 3339,
+      "sha256": "37f16548552a2a61f624b5ac01d055d668f6bc6b88ee4bdfcf2f709d1627134a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码/T1_赛时最终.cpp",
+      "bytes": 1263,
+      "sha256": "03a6656219e57f61525cf71cfb575754cd2c9313f37c444bb59f939430345f2c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码/T2_赛时最终.cpp",
+      "bytes": 1763,
+      "sha256": "cecc13fe8190d19aa8adf965ac2edc4026bb293965233391f0082d566540c0d5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码/T3_赛时最终.cpp",
+      "bytes": 2086,
+      "sha256": "da5be5fab4bad20f794134e72e8b1772b042a8f0fe2991b2a35635145ae8f1a3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码/T4_赛时最终.cpp",
+      "bytes": 2286,
+      "sha256": "91672c92008848810867d4f913bb1f6ba1db189b029df62cab1b4b5899fdbdd1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码模拟报告.md",
+      "bytes": 2303,
+      "sha256": "ef308b074e1ad2ca78486801798263a9d964414e6b7fb2a67aaede261594d608",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时代码逐段解剖.md",
+      "bytes": 6895,
+      "sha256": "c595d0a599cb0a1aef2beb4030e89109240b140385c2351ae01b2b48b001d022",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时笔记/T1_notes.txt",
+      "bytes": 138,
+      "sha256": "3ca054c238467e02cbd1bbb6bbc4e0954639965d6448be20161f95c5eb4e7ec4",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时笔记/T2_notes.txt",
+      "bytes": 5527,
+      "sha256": "9a3a25f7b4a784d4a2564937c3f6a25e86e664f2cdfb7c8c26c14fe036741d31",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时笔记/T3_notes.txt",
+      "bytes": 21,
+      "sha256": "afbfa2ebd96d7e83f8b365ed9eb08d8a9bf04debabb8f034ef44d03fb7ea3240",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时笔记/T4_notes.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时轨迹.md",
+      "bytes": 5019,
+      "sha256": "cb2428822201fda7becba640f3fc4b5d87280fc592aee3cee1e71c2d098f9d16",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/赛时轨迹_音频+键盘.md",
+      "bytes": 2367,
+      "sha256": "d2597f9973a9c961afb640461c63f1dbe4ed360f843e4b757e0b4c6baddc70da",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/逐段考古纪要.md",
+      "bytes": 20415,
+      "sha256": "627d631a55d1acfffcf8f29b6d422da594e332e76299191d22757bc153241656",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/键盘记录分析.md",
+      "bytes": 3385,
+      "sha256": "b4d28d6d4f458313505ab0561afaf6331993b152117c69b3ae3ec03ef96679ff",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/阶段总结_Day1-Day3.md",
+      "bytes": 3274,
+      "sha256": "34dbcf1ef1790f9b3c2a5e8c806b99fab3868c2dfd29189a8244858627d50bf9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/题解.md",
+      "bytes": 8552,
+      "sha256": "f7d88b1dbc2e11672beaf820913694687b6a92b9721c80e82fe1cd6f109a3fe6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证/official_rerun_report.tsv",
+      "bytes": 1328,
+      "sha256": "cec02cdbc9dc71c3cc241d34f2ffe4e382fcfd99b703425f20eea3466ebd0250",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证/stress_report.txt",
+      "bytes": 245,
+      "sha256": "446682e79a41e887b6a6b5ceff0cd9160692b75a1a7aef921fb9e2b286fad97c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证/核心验证计数.csv",
+      "bytes": 171,
+      "sha256": "70da22970586ffa10cc507dedbab04dca990d2c812dda36e572178f896257804",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证/赛时代码_官方附件复现.tsv",
+      "bytes": 821,
+      "sha256": "f08d10d6e6f65a6b01d7001df6d95f7beb3121a5755ab70595fe2cd056531015",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证工具/README.md",
+      "bytes": 856,
+      "sha256": "56ee52b70419ab9225045fe612bdc8afb25edef98f417540452eda85631d6c7c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证工具/stress_A.cpp",
+      "bytes": 1138,
+      "sha256": "f466cf05ba47fc9e14555722a191fcacdfd6b078841bbf6679089f7c2b4553d9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证工具/stress_B.cpp",
+      "bytes": 2239,
+      "sha256": "f9737e857653267f6e47c6da830c7f49b255d57d8ebf0d3f50fb0b1fbe5c7a0e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证工具/stress_C.cpp",
+      "bytes": 2885,
+      "sha256": "b4b5f221b23c7631c044d1ff9a1d25e1b798a00129a48955dfc9cfdb6d8cb5e0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证工具/stress_D.cpp",
+      "bytes": 2446,
+      "sha256": "27d382dfba5498e1311e793212dfa40443a44efd9bdf214838e17ec9275d5a57",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证报告.md",
+      "bytes": 5055,
+      "sha256": "0b8564b6889eab61b3f393a8a24327375e857c89649185213b8b43d94d8ba325",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证数据/keystream_10min.csv",
+      "bytes": 1003,
+      "sha256": "6945880a71290e0fb75af83b0039d14b7ad4773d73a89803316ea15c4f2ff4c7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证数据/keystream_notable.csv",
+      "bytes": 7162,
+      "sha256": "ce31c80b8e130ac469c9b250059b1febc7164f98cfe38de1b5b24cd6aaffc052",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证数据/虚拟机_递归清单.csv",
+      "bytes": 93206,
+      "sha256": "7140e89fdf8a29088ea6e38777b18b56171912f108f06626994bb409e6d72013",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-01_CSP-S模拟赛day3/验证统计.csv",
+      "bytes": 388,
+      "sha256": "3a83ea79f931f9752bad0f1b6f9e91118f7d7e1d6041ff40f45e260c1248ab6f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/原始材料/README.md",
+      "bytes": 519,
+      "sha256": "4a26085dd4928ae0ec90191e16aefacc293056948512bc9e3b5142719ff18b33",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/原始材料/T2_对拍污染链_非法generator_错oracle.md",
+      "bytes": 6052,
+      "sha256": "6d5313930f7b952460f278a4b6fccbab282af508da102ac6a538d12668a34aaa",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/复盘报告.md",
+      "bytes": 2960,
+      "sha256": "68e4b4b13299353928c8e9cb9279028fa45484fb120eb0baffaa21fb2629e564",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/工具/B_频谱窗_solve1最小边界反例.py",
+      "bytes": 1860,
+      "sha256": "62cae68982290e4e0cb8cdd72d290b80e6bb3effc29a1f0df978b8569d7cc57f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/工具/D_组合题_三代判定最小反例.py",
+      "bytes": 3601,
+      "sha256": "eb930ab39dd9eac42837daad2be82c34fa9e8a617f2e53f3e41068ff28d4c682",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/比赛全过程复现_完整版.md",
+      "bytes": 2518,
+      "sha256": "af6359b839f96e56368bde72380e5593ed3b9fe3885cfb47271b0edaac6bcd59",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/逐段考古纪要.md",
+      "bytes": 35476,
+      "sha256": "0fca9147a3d6593dfede631d9872b682a004418e672a8f1fb53efb41e41d3611",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-02_CSP-S模拟赛day4/题解.md",
+      "bytes": 8176,
+      "sha256": "4f61194461a1869ef892f5931b738c33fa429820b405aa9f39abdb6cf0691857",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/T1_两版代码_全Bug考古.md",
+      "bytes": 15107,
+      "sha256": "df897348bf5b976fd4140513a90f3339fde1a0e2ab9c52992b99bdb22bd0e113",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/原始材料/README.md",
+      "bytes": 582,
+      "sha256": "caf6d4857cfb198df83657c3b80f2db24d5a2ec9e87b0bb0d04de09dbdba7402",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/回放数据/OJ正式提交与file_changes逐提交对齐.md",
+      "bytes": 2521,
+      "sha256": "b72d3c5732f495dd5327c72b8804970827cb9391df0554ac651c1dae0ae4ef0a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/回放数据/Replay与六次OJ提交映射_20261004_090304.md",
+      "bytes": 11300,
+      "sha256": "5a3c2b7368ed5d99534289d93e5fd102375d6a92b202c4f492640cff0f9a96eb",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/复盘报告.md",
+      "bytes": 7908,
+      "sha256": "3b2c7843dd20cfb5e2811a01704030724400ad97c835eea721cb9765af708055",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/正解代码/A_单调栈.cpp",
+      "bytes": 982,
+      "sha256": "e89cd2c4f1fad9c6a3d5584de1dec118284e6f86a711a0e03718d800cb209ec2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/正解代码/C_日志摘要_精确字典序AVL.cpp",
+      "bytes": 5421,
+      "sha256": "9004c5239dca4f382a682ae72f1ef2650a498dfd1abccf8313c99866876657d5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/正解代码/D_灯光预案_二阶矩_确定性位集.cpp",
+      "bytes": 3717,
+      "sha256": "bf45d80eaae0a74c92f9890a47684f3d2ae79e5d85640e761fba4f74b017cb45",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/调试崩溃对照_Day4B_vs_Day5A.md",
+      "bytes": 1828,
+      "sha256": "1e38961230ee22e9989b6a31d0429e6506f2a7e937a1be44cbde5fb61b172959",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/逐段考古纪要.md",
+      "bytes": 24481,
+      "sha256": "4efc43cf08a6c649c4e1e45c929cac2407d3ed66f650792b02a0b1079c2dd184",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/题解.md",
+      "bytes": 15019,
+      "sha256": "1c82066d62518796805b3b989c4d597185e6f06e0ea54ea71d0eccfa37e69d18",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/验证/2026-10-08_执行结果.md",
+      "bytes": 506,
+      "sha256": "e0f18ec028cb1098bfda5afbde528e677b0e86eb294ec27138c8cb3164b72884",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/验证/C_日志摘要_bruteforce.md",
+      "bytes": 145,
+      "sha256": "e6edd64b86a280f038983a7ea249c9be1a44307165a433f12316fe4cb99df0e9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/验证/C_日志摘要_tiny_oracle.py",
+      "bytes": 3265,
+      "sha256": "caf04cbe724fb34a37c9a41bcea84e70daec823fb680f861cade5ae31d659d71",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/验证/D_灯光预案_独立穷举对拍.py",
+      "bytes": 3427,
+      "sha256": "89547777d0340f6ae5609ab478bdbc4155b329327e94d37c991cd873577ff848",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-04_CSP-S模拟赛day5/验证/day5_first_greater_regression.py",
+      "bytes": 2902,
+      "sha256": "565770b9ab103a412da03cd5965671baa6d3f48294f6f2771b00d4ebf3bdad69",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/原始材料/README.md",
+      "bytes": 428,
+      "sha256": "19910f1db322779ad6796846d85e45f0811b3429a519c13772c59e2c99268daa",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/回放数据/file_changes_语义版本时间线_20261005_101100.md",
+      "bytes": 7750,
+      "sha256": "7e6edf58b95e180d8297fc5af080b05d0088eba79489028424b416477641e937",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/复盘报告.md",
+      "bytes": 8676,
+      "sha256": "1fb9dac87eeeb5e0f254b0fa9a70a5b9d745f930ddd044e49604c6aa74381794",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/工具/B_计算日志_tiny_oracle与状态污染.py",
+      "bytes": 3316,
+      "sha256": "dc8c42c19ebc09035f6f48b796f5ece053593ee0897255969e94a7b7f413d6f8",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/工具/C_反馈灯阵_精确小空间oracle.py",
+      "bytes": 2431,
+      "sha256": "bed789424f3afd2541ae3ad0f8952c5f50e6b059764937905b548f320cc44387",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/比赛全过程复现_完整版.md",
+      "bytes": 1608,
+      "sha256": "ee8a254b528eeccb559b69e68c349e6e671501ca15c5de25d769a2283fc07af9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/赛时代码逐段解剖.md",
+      "bytes": 1733,
+      "sha256": "d0b5a1b488eaf0bd0f07cc87c93427e37bea6b9e344503718154c571178f75a9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/逐段考古纪要.md",
+      "bytes": 22673,
+      "sha256": "e5817aa425ce0fa22f200d0a0a466177a8367c671c59c48afc25e951a03fb19a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-05_CSP-S模拟赛day6/题解.md",
+      "bytes": 5837,
+      "sha256": "c9f4eee3139ac1e9ead6c38b406b5fb08db8337aa455167c74af02ab1719f984",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/README.md",
+      "bytes": 3165,
+      "sha256": "5fcfb69106ad01354daead70cd30193f5367f3b21b3627de3d2da9b8cc55510b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/原始材料/README.md",
+      "bytes": 994,
+      "sha256": "27607bfb44689b0190a01f17129b4dcea83b84d0b046f5ba687579acd622c558",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/可视化复盘/Day7状态曲线.svg",
+      "bytes": 2728,
+      "sha256": "88bcbdced7992ed9d09df0cd3f9ab9218f5dd6bede58ea63e48aeb7821002ebd",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/可视化复盘/Day7赛场回放.html",
+      "bytes": 4791,
+      "sha256": "9bc115f82bc50861e9a063db39945bf397105285d8e9bccfda90359d4786b597",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/回放数据/file_changes_完整版本时间线_20261006_080043.md",
+      "bytes": 9205,
+      "sha256": "30d423f3916a8a79830bc72aeb2bf48b0355bd74c9cd65700a8bcea88ea7d829",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/回放数据/关键文件版本.csv",
+      "bytes": 883,
+      "sha256": "5de344aa4b7902bd4f8e145481bb4f38975b7f0ce67c11341dabe68bf69be962",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/复盘报告.md",
+      "bytes": 13436,
+      "sha256": "12a0c7dbce796f9106e6ab86a77e33b6372d7db97ecc0bb3fdbffa26f4a8170c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/工具/D_5000候选_exact_oracle与最小反例.py",
+      "bytes": 5043,
+      "sha256": "da403689fbe3ff65c2fe607f396141eb56a31bdb144b1d48be451753ebbf0e2f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/录音与Replay交叉时间线.md",
+      "bytes": 6964,
+      "sha256": "65b219056552e950e66e798ec393aabca2656a95ee19604424f7f63cdafda620",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/正解代码/B_反向并查集.cpp",
+      "bytes": 1830,
+      "sha256": "56add13f5930d6629462f0aace11fb6467478487abb00b64ebeb0d5aff1e3ab7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/比赛全过程复现_完整版.md",
+      "bytes": 2674,
+      "sha256": "540eed8c07e5fbd56d7dc09c5e78d178969b056bdd76ddf3662383230aab9422",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/研究过程深挖.md",
+      "bytes": 5934,
+      "sha256": "e09eb6801e1fcb607e30a426147c2e38c7c916700b0ef9b117dba69a051743f6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/结果核对.md",
+      "bytes": 2221,
+      "sha256": "9ee16192da2b9bde8441b2d52d03114e0c83389515cda37c423f20c0c709ff52",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/资料完整性报告.md",
+      "bytes": 2583,
+      "sha256": "ddd1e97f9c72a9b627b4e9a6a9762aa5f707233a0653d47949092416c716da5a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/A_兄弟.cpp",
+      "bytes": 1598,
+      "sha256": "c787f443972b04e720014dd6cb87398d79bd0a0cedad766f4d6722998abebaf1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/B_凯瑟琳的委托分组.cpp",
+      "bytes": 1447,
+      "sha256": "12fdeaab27e6d8ce8f50fc7f02313e2ba279456fe2caa90bbcefab53bbde39ab",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/C_砂糖_未完成.cpp",
+      "bytes": 242,
+      "sha256": "22354d2bff12468ec003af20d1062ee8c3308a3fafde6c52b23786380d68411b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/D_提纳里_未完成.cpp",
+      "bytes": 582,
+      "sha256": "434e7471e2118e78c0da52cefa55639c5ae7b6634e33324d3b5dcc1f2a6b95ae",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/历史版本/B_优化尝试_01-46.cpp",
+      "bytes": 1178,
+      "sha256": "6a0d8ccd75453a2db9d1b3ccb477324357a1752fbffdf5beff55e9b1a1b63dcb",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/历史版本/B_稳定冻结_01-53.cpp",
+      "bytes": 1433,
+      "sha256": "be603849347f72ea3fb02550a3fda25a899f8fac05604bb9aa23e16eb7e9d7a6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/历史版本/D_5000候选_03-48.cpp",
+      "bytes": 1663,
+      "sha256": "19f1a98247259f9575e2adf3b12aeaafc5e551835da02d6f5d7c9e9f27b5db26",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码/历史版本/D_推倒后_03-52.cpp",
+      "bytes": 582,
+      "sha256": "434e7471e2118e78c0da52cefa55639c5ae7b6634e33324d3b5dcc1f2a6b95ae",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/赛时代码逐段解剖.md",
+      "bytes": 5979,
+      "sha256": "346d5c1b465610447fdc4c33066324744a5f1341217a64ce00df24a8b655abce",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/逐段考古纪要.md",
+      "bytes": 25630,
+      "sha256": "b286673caa81d94eb8439827868bbeb92cbfaad8eb9a3f8339ae2f1ccadb92e1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/部分分代码/D_19分_N100暴力.cpp",
+      "bytes": 2367,
+      "sha256": "415aa518e2f766034e42fe50bdec8f2f213388a3f666a622a22546921632663b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/题解.md",
+      "bytes": 4304,
+      "sha256": "992a78b71693f0f76fdf59135a458e33988d01063a963153ef54bb6ec6e3d148",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/验证/B_反向DSU验证.md",
+      "bytes": 829,
+      "sha256": "66ef9fdc18f183bd34cf4d22d55857ca75a5bc360a163c43e6ee652df61878aa",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/验证/D_19分暴力核对.md",
+      "bytes": 1406,
+      "sha256": "c47af036b9f0003998bc55126088c1019ef7524eff46ce70590cb906469922ac",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/验证/D_20次保存版本样例回归与Pruefer全穷举.md",
+      "bytes": 9591,
+      "sha256": "0f23b3dc2b43d98103743ddee4536c754577bf649cc0bbd29ef042c118231dda",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_CSP-S模拟赛day7/验证/day7_d_replay_prufer.py",
+      "bytes": 5127,
+      "sha256": "ce3b07d6f5c4d614ad0195935f1db4ddddd2c49e89918b5aea033ade5c47ba4a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/README.md",
+      "bytes": 3469,
+      "sha256": "8828ecb23d8fec986b53af46547ed5ca06a374623ece5cf44ef418066bcb0893",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/Replay与录音交叉时间线.md",
+      "bytes": 5251,
+      "sha256": "ea771ef4198d4df8e77c7f138bfc15e89520b782e9d45a196bfcada1e4e2e19a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/core_Trie容量证明.md",
+      "bytes": 3260,
+      "sha256": "f6fbd52ed99e9ecfa760524f54cfdb586b8e16d5893e8447d317c06ebd65a9a0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/game_16状态DP证明.md",
+      "bytes": 1797,
+      "sha256": "bc615b1068338d6721c7b557f9af494743fc95d58f3f5896bcfe2bef54786d5b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/game_Bug修复考古.md",
+      "bytes": 5292,
+      "sha256": "8f8fbf5cb23f1505b1ce13b1cdfd8c970b7ffbb1bc46197297c5d14e1a2f6c4b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/net_叶层剥离证明.md",
+      "bytes": 1718,
+      "sha256": "599576e62eeb248952c06ed31dae5145472bb6c668a3f0742ffe3bbbae7e08bd",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/tree_N5000精确部分分.md",
+      "bytes": 1563,
+      "sha256": "bab52705e58302417b4dbc7172002acb3d23e30a5a69107f07afd20e1972a81b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/tree_Replay12代语义版本链.md",
+      "bytes": 6050,
+      "sha256": "c08ba1c4c3c059e4cd474d82520c885fa8b5cb1e4ce186eb6e4bcce79dbbc5e7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/原始材料/README.md",
+      "bytes": 863,
+      "sha256": "17993be1597c7bd4a5b379d49d1baf361808a62596ef038f1508aed3023836f9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/原始材料/Replay采集器语义证据日志.md",
+      "bytes": 5393,
+      "sha256": "adb6e385b70fcb961e37a8cd108dd2464c01b312f3e46433d77dec526df510b0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/原始材料/core_最后72秒_条件分支塌缩.md",
+      "bytes": 5681,
+      "sha256": "3ebb014efcdd3b4eab607237ca958ec5b0ef0307fa5e1918b4cae95d43f4ff15",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/可视化复盘/CodeLands_回放验收与来源.md",
+      "bytes": 2811,
+      "sha256": "67dd20e3abb65c7579342d36d2a255d28a9d253b8a4c178d2994666a54ee09d5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/可视化复盘/CodeLands_赛时证据交互回放.html",
+      "bytes": 13256,
+      "sha256": "7cb9be57da0285d322c2f6bcf9560bbdea7cfb29f1cf173440d251c2ce999163",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/可视化复盘/game版本演化.svg",
+      "bytes": 2293,
+      "sha256": "39370e09e70ce59f36fe33afef4f20b2a564841a956c721fd5567a75718fb2e9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/回放数据/game版本演化.csv",
+      "bytes": 681,
+      "sha256": "d893f92803e1a0b1d8b10083d2ea82ae20226c55c9ab31206996f93ec24d5c74",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/复盘报告.md",
+      "bytes": 8522,
+      "sha256": "d6dc51bad4e03fa5d49297a7d99384d74e1412469a9ab8771391d7e67f238de2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/最终提交核对.md",
+      "bytes": 1953,
+      "sha256": "db32c7188f77f2487a82077024023dc2889bbdc4458f258b053f7a3827f3c4c9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/榜单分布.svg",
+      "bytes": 1917,
+      "sha256": "64e5b3f2f693503416b1d09e4265aab90426359a912b9e282829f7cc9076163e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/榜单统计.csv",
+      "bytes": 580,
+      "sha256": "ea5fefa341551dcfd1c440408acc68d651773fab830512a8e9afcf2f092374f5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/正解代码/core_Trie容量字典序.cpp",
+      "bytes": 2994,
+      "sha256": "9e5f1738239d079a91149e02d8d7e207b7964f95f0b779136f8d0062ec2b9c57",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/正解代码/game_16状态DP_On.cpp",
+      "bytes": 1749,
+      "sha256": "c859d569c79977dd9519cfd4095b7f6675f13554eeaeb36d8a367b1f585a5a45",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/正解代码/net_叶层剥离_On.cpp",
+      "bytes": 1228,
+      "sha256": "039ff2358c62b6d781b1f4f8c9e791251ebbd83894857a2a8f824b940ec60b98",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/比赛全过程复现_完整版.md",
+      "bytes": 3678,
+      "sha256": "02b5d7f1cf5c25b41b766e7b591eebaa21574fb7b76573fb2bd39f831190891f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/研究过程深挖.md",
+      "bytes": 5403,
+      "sha256": "42e1c4cea284a72671206ab98003c36bd83f9a0da32695d299c6deda8a3a7e69",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/试卷画像与榜单分析.md",
+      "bytes": 3999,
+      "sha256": "bb1201d963fc9dbe3a4ae89ddd7adc43a0d58c4bdc379ee0d285a7c73b1ff9f2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/资料完整性报告.md",
+      "bytes": 1861,
+      "sha256": "36cf7ba7e583ca6c0726c7db6c2cef931dc9f2ab35cd2b66e3a16a54e1bfc4bd",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛场环境与样例事故.md",
+      "bytes": 3400,
+      "sha256": "d56ee748f6eededf50b1770b79b3cf5f9f0e7ffb6376135553cdc67cef0f36ec",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/core.cpp",
+      "bytes": 377,
+      "sha256": "1d6c7ff1a0afe24cfd6038ff4203d6e2cfb8537f044854085bcc4dfe35f02839",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/game.cpp",
+      "bytes": 3888,
+      "sha256": "7f004798fdef35ce5ad90e61df6ce7fb7c0f0de68debb2c0427c697941c8dcaa",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/net.cpp",
+      "bytes": 2308,
+      "sha256": "cb3c3e3acbe013d751b36c1133933ec430e5b462c1b22b20a7eba1c083b30592",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/tree.cpp",
+      "bytes": 4772,
+      "sha256": "ff7f4b908134c7bafdda7b3f0d0aca0c88fca8309630d87754f1e1da492f1f1a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/历史版本/game_v0_第一版分类.cpp",
+      "bytes": 3295,
+      "sha256": "cdc40a3cc9b06d4b7f464b6cd72b7c86aa37baa8dd49f8c402e9c47c9845a0ce",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/历史版本/game_v1_k2精确化但未封口.cpp",
+      "bytes": 2658,
+      "sha256": "16aa0180e951fde8a0e07c4fe1ea619bf13d8f577d5b4005e2eadb853e3b5bb8",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/历史版本/game_v5_逻辑冻结_IO前.cpp",
+      "bytes": 3112,
+      "sha256": "e115a55a8147be5d57ae1ee7a4b3862dd273188626e010125f4acfd062afb737",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/历史版本/tree_v1_小数据初版.cpp",
+      "bytes": 1578,
+      "sha256": "83346d9dfe5fa9cf02574099d8e493bfefdd9564cd671cf6936ff0a6d275da18",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码/历史版本/tree_v8_链算法首次成型.cpp",
+      "bytes": 4090,
+      "sha256": "efb255592a606f85a6b0e12aa32fcef079a280f00f0e4cbb2f93a97c875b8663",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/赛时代码逐段解剖.md",
+      "bytes": 6376,
+      "sha256": "f7c351b9885e227622804f48198bab83c4c10017a7d490d43f893fec230fad82",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/逐段考古纪要.md",
+      "bytes": 19246,
+      "sha256": "ee0254678d91ff8eb3b345d553c3ae98d452ade29be0a75c362ed7ad76a29ebc",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/部分分代码/tree_N5000_On2.cpp",
+      "bytes": 1367,
+      "sha256": "b9e079b4c5c8e75900c57672bc3a4b39b6c1e513dd3ae98630401de5ddcbb1ad",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/题解.md",
+      "bytes": 2770,
+      "sha256": "4b4b38065b16bee3c9d642a996807a4dd18f6197e37a454d5d88d241f948014a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/core_EMPTY严格判定与最小反例.py",
+      "bytes": 2039,
+      "sha256": "d600f69bdf81c5641fe62931d44806cd018c364116d3f56132b26e7046c2d9d1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/core_Trie容量_穷举.py",
+      "bytes": 2931,
+      "sha256": "cd76068a7274422ff75cdf4486d872ab2f6c9f0afc7a75a716be82be2b59e9e2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/game_16状态DP_穷举.py",
+      "bytes": 1321,
+      "sha256": "9cc3cddd663fead9400d2bc3790cf537b48bfc2b64d422e1d6f5ba208271328b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/net_叶层剥离_穷举.py",
+      "bytes": 2344,
+      "sha256": "2b74aa213f9a880c4da2f2e3888a5c7eee3a859a1b0dda3cf3915d0ea5bbe63d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/net_最小反例.md",
+      "bytes": 721,
+      "sha256": "8a0cd34d161e398dde7a3e3f7f923092fe4c7a18e221cee572ca458b5f95bcdb",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/tree_N5000_随机暴力.py",
+      "bytes": 2401,
+      "sha256": "ed4e3e115595be19b2192ffa202fa171734a049f41c8c3350fab5a55910d7d0c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/tree_小数据反例.md",
+      "bytes": 582,
+      "sha256": "8db1970388f080f4a542969f3a843518b42a58de52efce364ff41082494c9448",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/tree_最终代码_六子任务回归反例.py",
+      "bytes": 4354,
+      "sha256": "fda1f5d8eeedda19724e9a7cc307ba33b92563bbfe3fc12aa3b98014c11319b3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证/verify_game.py",
+      "bytes": 2252,
+      "sha256": "41280f6a7ca6cf0b5157898d5f7605c34b284a06d9672ce5c51824c038837cee",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-06_代码部落_NOI金牌命题模拟赛1/验证报告.md",
+      "bytes": 4127,
+      "sha256": "fc099619830bf5912767de1d06418255e53908d091d7a8fcfea53140c12a75ff",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-09_CSP-J公益模拟赛/README.md",
+      "bytes": 1104,
+      "sha256": "dd89df20d0e380c333e580c25440dd9d694e8f94ba1321f2420adfb835256e58",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-09_CSP-J公益模拟赛/独立赛时证据复盘_脱敏版.md",
+      "bytes": 5538,
+      "sha256": "6ceb36f4b02fb317170fca1a1a3b144f42327ac8082e2ead110aa08dc38e7bf8",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/2026-10-11_赛后重交与Replay修订.md",
+      "bytes": 3153,
+      "sha256": "ee4154b83e56f688e9082c4a318ba4d1ad00917e7a6ed98457c2c8ab4f54118d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/2026-10-12_B_接线方案_一般树满分候选_证明与验证.md",
+      "bytes": 5445,
+      "sha256": "9241e22cab5fb249e62899070fe22d27ace8c99236d004dc84b7f36a18c353ad",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/2026-10-12_四题重讲与连续动画独立验证.md",
+      "bytes": 3665,
+      "sha256": "54c7018c50ae53d90324a2844083496e46ef82f7dc4831d1c58bef60ba9fd01c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/README.md",
+      "bytes": 8690,
+      "sha256": "b50e13b27a8051576c769b5c4790aefcc756997d1905512f64a65e6e6ed4d788",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/三版复盘_推理模型与证据修订.md",
+      "bytes": 2681,
+      "sha256": "4ab8af49014149a7b023d5c72515b7cd4ae88bd417205f1ce58fadf98232f981",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/赛后正解/A_巡防分区_70分版最小逆阶乘优化.cpp",
+      "bytes": 1978,
+      "sha256": "c01b5b804419f3e1214a58c1ee63e6bcd41acb0c2453d181c17a64dfa07529bc",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/赛后正解/B_接线方案_一般树_O(nlogn)_候选.cpp",
+      "bytes": 1617,
+      "sha256": "8969b59425800acd7ab90cb5048745e956fbe07dd7ee92f0389c246ca421061a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/赛后正解/C_观测记录_20bit拆半DP.cpp",
+      "bytes": 1396,
+      "sha256": "94e776deb81007b6b9ef60547db261baf332ad4fdac4e7775237d1202c2a1c9d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/赛后正解/D_脉冲测试_链环门户压缩_全范围候选.cpp",
+      "bytes": 5968,
+      "sha256": "c7165ac319d74cc9ab327ed019cbea334c7cdca936db92f7defb0b15d581c334",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/赛时过程逐段考古_纠正初版.md",
+      "bytes": 6098,
+      "sha256": "597c1bffd46fe4e9c92f92b753592d1f2c3fb52138563a4e6ad91329b0d7f236",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/验证/2026-10-12_独立附件与随机验收.md",
+      "bytes": 4205,
+      "sha256": "5f25c320eae4160d76ebb0dd5f31d579d7e5fab8530e51c2ca148db62790fa35",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-11_CSP-S模拟赛day8/验证/D_脉冲测试_独立最短路oracle.py",
+      "bytes": 1905,
+      "sha256": "3148cfce60b57aa3cabc20ff5d242f5ba82944802c3af196673cdad367e0642b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/README.md",
+      "bytes": 1844,
+      "sha256": "512ea942eaa39d17ec19bdfa9d7d0f923c43d95f77f7da190c45c029df6e094a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/001_T1_notes.txt",
+      "bytes": 24,
+      "sha256": "16ab02d4db44c213919004be504ea0aff80fd64a2babb9ca4cce5b4614909cf4",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/002_T1_notes.txt",
+      "bytes": 142,
+      "sha256": "02ea2b8abc77b72daf713e320a8d19e2852ba29e1eeb6c64db1a59cd30c037c9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/003_T1_notes.txt",
+      "bytes": 169,
+      "sha256": "eb9083e03105ff2a2b4bd53417f0c2bbe2af7274027838553b5f0f38674b91fd",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/004_T1_notes.txt",
+      "bytes": 169,
+      "sha256": "eb9083e03105ff2a2b4bd53417f0c2bbe2af7274027838553b5f0f38674b91fd",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/005_T1_notes.txt",
+      "bytes": 269,
+      "sha256": "7be9434d6c5660a4f65ac98ef053feb3dcb57917d69163bf93e4db1b82aeb204",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/006_T1_notes.txt",
+      "bytes": 269,
+      "sha256": "7be9434d6c5660a4f65ac98ef053feb3dcb57917d69163bf93e4db1b82aeb204",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/007_T1_notes.txt",
+      "bytes": 349,
+      "sha256": "35d02af2b2cba1fd28e628b856b94ab979301fd7e8b2cd2a45efbcc47a116c3e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/008_T1_notes.txt",
+      "bytes": 349,
+      "sha256": "35d02af2b2cba1fd28e628b856b94ab979301fd7e8b2cd2a45efbcc47a116c3e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/009_T1_notes.txt",
+      "bytes": 349,
+      "sha256": "35d02af2b2cba1fd28e628b856b94ab979301fd7e8b2cd2a45efbcc47a116c3e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/010_T1_notes.txt",
+      "bytes": 349,
+      "sha256": "35d02af2b2cba1fd28e628b856b94ab979301fd7e8b2cd2a45efbcc47a116c3e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/011_T1_main.cpp",
+      "bytes": 414,
+      "sha256": "a63522cdd9c07efbfefd6c11e96f548fb403ffd4eca46b56f68d7934bcabfc6e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/012_T1_main.cpp",
+      "bytes": 953,
+      "sha256": "7fafc8bf5af9257100035cfd93042d371604cbb3f3868e7f61b1e426710060a3",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/013_T1_notes.txt",
+      "bytes": 376,
+      "sha256": "6e72bcca695e5b4f73ebfb014bfa8ff47e1dd39fc78f353f401fabf4ba0de46a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/014_T1_notes.txt",
+      "bytes": 376,
+      "sha256": "6e72bcca695e5b4f73ebfb014bfa8ff47e1dd39fc78f353f401fabf4ba0de46a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/015_T1_main.cpp",
+      "bytes": 947,
+      "sha256": "c3e9cb1b642c06d776aceb84625fef695ba266be488a76599998a6a9d1fd7b3d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/016_T1_notes.txt",
+      "bytes": 408,
+      "sha256": "ea015c813385f672c215036e8602d94d426b133faa84a07d7fcc54e9572a749b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/017_T1_notes.txt",
+      "bytes": 408,
+      "sha256": "ea015c813385f672c215036e8602d94d426b133faa84a07d7fcc54e9572a749b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/018_T1_notes.txt",
+      "bytes": 408,
+      "sha256": "ea015c813385f672c215036e8602d94d426b133faa84a07d7fcc54e9572a749b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/019_T1_main.cpp",
+      "bytes": 1016,
+      "sha256": "99b996c6e6f06e216dc953a628b17c1f9111698cdd9db1803da8fd9e77b89941",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/020_T1_main.cpp",
+      "bytes": 1014,
+      "sha256": "7b2e4f8d6b4adc836ce3bc4269d309a620a7c886a29dd58e488a6454c1803377",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/021_T1_main.cpp",
+      "bytes": 1008,
+      "sha256": "13afd4cf7bf84d60fd9d6b49f5211e55600f0940fa8fb6c34fc982aaafafe719",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/022_T1_main.cpp",
+      "bytes": 1282,
+      "sha256": "d9883c62708020fa84b26352277bc35c72b3b54c556c5df542eae6394080a674",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/023_T1_main.cpp",
+      "bytes": 1282,
+      "sha256": "cfc5a1ea214dc323babec70b5cb2b13ed2167d72d52ea56d8f626c449f9b4c82",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/024_T1_main.cpp",
+      "bytes": 1282,
+      "sha256": "d4b554d61fd660fd5761e475b925d2194a8a0d401e25d35eceaa229ed725faa0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/025_T1_main.cpp",
+      "bytes": 1278,
+      "sha256": "4d525ee344d56480539e39557fde9e1416fc2f4849a81ff3c0a90e61c8cfc6ef",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/026_T1_main.cpp",
+      "bytes": 1385,
+      "sha256": "cd615fc8265efd3d57a905805e09d6da089f0602ce1435cacabf2199286d9f23",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/027_T1_main.cpp",
+      "bytes": 1068,
+      "sha256": "3deb1b18359dfc3a9a26e677d19ba6e320ae3cf8f16ec9aad41266950202f12b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/028_T1_main.cpp",
+      "bytes": 1094,
+      "sha256": "66d7052403cf61209eba16e0387344590c4f99f6e99fe4f98a718b1f08d2c28e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/029_T1_main.cpp",
+      "bytes": 1108,
+      "sha256": "06a5ec9f34f47d547b0aa2f81497d3b44026cf3253097c675cde542c5a569d4d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/030_T1_main.cpp",
+      "bytes": 1131,
+      "sha256": "a9044c02a7217c1503301348dade5fc7c898142e6fab198132d49c517254c84f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/031_T1_WA.cpp",
+      "bytes": 551,
+      "sha256": "04bc75958ba10fbd6f3bcbf2dc7ee543de02e61063b75736f57e08e88a2c341c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/032_T1_main.cpp",
+      "bytes": 1143,
+      "sha256": "cfeb532a9752d400072ed0cc3ef76c53606f3228991356654a2970b6bee54b7b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/033_T1_WA.cpp",
+      "bytes": 639,
+      "sha256": "1b56a692cca889409a2d20948a71b2ed70c7c0c849b5a351489981bcd2ae043d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/034_T1_WA.cpp",
+      "bytes": 644,
+      "sha256": "4e6284fddaadb1ad0be66e7718f3cf261b2ae4338853ffcc81c1f7508fd1d7b5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/035_T1_notes.txt",
+      "bytes": 513,
+      "sha256": "78aa4b07fa76382703880b0f7f38db89b23ec6983825e2d514ba88ec3457c3ac",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/036_T1_main.cpp",
+      "bytes": 1237,
+      "sha256": "fb02045bd0c5dab1c45d0b6ce819adbf6d94c4a994ebbfab80754ee03426c566",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/037_T1_main.cpp",
+      "bytes": 1241,
+      "sha256": "3c8a309db183ed5827cf3045924c32b250bfa4bf6136ef2bd3adaab191fcf107",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/038_T1_main.cpp",
+      "bytes": 1237,
+      "sha256": "fb02045bd0c5dab1c45d0b6ce819adbf6d94c4a994ebbfab80754ee03426c566",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/039_T1_main.cpp",
+      "bytes": 1272,
+      "sha256": "3f7d1bfd27c7e406f4fece0ef0d9d26c9d79e40e8325b2ea2bcbc9372aa1411b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/040_T1_main.cpp",
+      "bytes": 1291,
+      "sha256": "bcc99974db95e6348aaa3debf0e9863aee91ceb84a5ecd4806d01d0beb34d55f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/041_T1_main.cpp",
+      "bytes": 1372,
+      "sha256": "ab638251decbea2944c3cb1085ce679a926873cea525d7a47e1dd3f6db5f0a2e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/042_T1_main.cpp",
+      "bytes": 1408,
+      "sha256": "161012132f903ff2add9535f10e3b672e28a3214a54f50e080f1f0c80f53db7a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/043_T1_WA.cpp",
+      "bytes": 633,
+      "sha256": "2bdac7bd43fbdc044337240d620bf5f5d2cb82bfefa8d841579c727054c98bf7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/044_T1_main.cpp",
+      "bytes": 1217,
+      "sha256": "b5f816d46c5eeeae3396da05a9bcec1376600dad4be22210a622732dbaefedd6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/045_T2_main.cpp",
+      "bytes": 940,
+      "sha256": "8207b2a1b11057f21225dcba2176a287504fde8929d93bfd8f715dcfcef58aac",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/046_T2_main.cpp",
+      "bytes": 1099,
+      "sha256": "a5363df997e7de218f6242e4755e0baa3e9ecfdea9ced277200d035c314b34f7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/047_T2_main.cpp",
+      "bytes": 1188,
+      "sha256": "1e89974ee50d245f29809e137c3f7743a9036fedb1793042d6795f534c4d5802",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/048_T2_main.cpp",
+      "bytes": 1210,
+      "sha256": "ee088b71523e67ed942e690c16dd4e5a2b9efc96bc7b50ff5f8a9373577662ee",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/049_T2_main.cpp",
+      "bytes": 1184,
+      "sha256": "8d7c5b7297e6ca2b59291b05ce3bd35537ec904ecae91e55001a166b57304758",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/050_T2_main.cpp",
+      "bytes": 1264,
+      "sha256": "06004b7bb4d859570ad3999bceccbe3ccdbadcb8e88fc1dc47f58cbcb53f1b94",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/051_T3_main.cpp",
+      "bytes": 901,
+      "sha256": "ba908925e1a3307460b8d45e3d38dc4c9e2d9cbddbf4cc50b31ae21a48493e67",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/052_T1_main.cpp",
+      "bytes": 1444,
+      "sha256": "519a00aee9f23407f7f7b1d6871491cf00bcb358ff5e9b31218d4ca789f09a4d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/053_T1_main.cpp",
+      "bytes": 1427,
+      "sha256": "59355a79b7239faf7bd0d9e27ce355d2c404d296911918921a8cdfc1103e5019",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/054_T1_main.cpp",
+      "bytes": 1429,
+      "sha256": "a9c3bb35b5b940b905421bb1a752c6e2f098e9999176490720256dabae62066e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/055_T1_main.cpp",
+      "bytes": 1429,
+      "sha256": "c192d2b5e59023bfd77ce0e5be004ff016de1532113255d16127046627fc0fd6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/056_T1_main.cpp",
+      "bytes": 1500,
+      "sha256": "2bf054f91ca1cadd9d04e03911c19cd4c8bdb9f58234471f76439368c4e931ca",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/057_T1_main.cpp",
+      "bytes": 1508,
+      "sha256": "202f666a323bae93ecd79eab1c1b917bdf05ebbcd634bbb0be2fddcbfb9b862d",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/058_T3_main.cpp",
+      "bytes": 1750,
+      "sha256": "0d46e3d28d1c3ca47d4839de7cfe1e93c84f48cc5c6a5914d2a4caa28463a3d5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/059_T3_main.cpp",
+      "bytes": 1817,
+      "sha256": "0b80d26de92999e8f16c759b316bc3516c7ae1c93468c7ee802345951fb84f59",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/060_T3_main.cpp",
+      "bytes": 1867,
+      "sha256": "df4d30221df012c73be9c415a25e226d1f8d564fa509932e33ba965cf1f0af49",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/061_T3_main.cpp",
+      "bytes": 1851,
+      "sha256": "9c4e8c894f8ffb20370bce69305d05164ab64c413acaf72d80f36fe16f66a1b7",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/062_T3_main.cpp",
+      "bytes": 1851,
+      "sha256": "50628aad3398256a3c25ce7c57c2391cc7c61cd5d171cc19263b5d720a077364",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/063_T2_main.cpp",
+      "bytes": 1186,
+      "sha256": "3755015a2b90b115bffcca3b3c63164d95e02be063cf0370b9515ce9c644dce0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/064_T2_main.cpp",
+      "bytes": 1155,
+      "sha256": "e469dc65cb525db5a2ea1a9032cb1b9671056952a4f8e4ce121db08b4e5a7722",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/历史版本/065_T2_main.cpp",
+      "bytes": 1147,
+      "sha256": "9fe05d125a1933e4f228831b6d41602886f43b85311725a13a79bd4198400c2f",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/原始材料索引.md",
+      "bytes": 1295,
+      "sha256": "088f9b9da4f376806044e2345a22e085097db795726f6018bc57a05b58190d21",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/可视化复盘/Day9_整场回放.html",
+      "bytes": 30612,
+      "sha256": "6d381688e63e97fb617e242f88b0fc81d298568c6351f38aba831f95f5dd5b18",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/回放数据/OJ与VM源码映射.json",
+      "bytes": 1109,
+      "sha256": "91307cb7bd2af3a1685fe56322cb30ec7a49e1080fdf14c825147c4aa52aa51b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/回放数据/保存事件.json",
+      "bytes": 11743,
+      "sha256": "9f44c59b9904010855a42f470eded66e2f3bc83f9fd8aa692eeb179ff399f575",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/回放数据/关键事件.json",
+      "bytes": 17113,
+      "sha256": "1d92bd345637ccd3265f12f5024a8a786ba3896460c5425866a082af396b8d62",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/回放数据/材料清单与完整性.json",
+      "bytes": 3561,
+      "sha256": "ecef09730ce75c8de850d4bf2371430e400e84496d74da71d7668c89ed163e45",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/复盘报告.md",
+      "bytes": 18492,
+      "sha256": "9d412b9ae9db53e939a242e455d380a7400c7a5748e8fa8f947f21e3eb2843d1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/正解代码/A_hitori.cpp",
+      "bytes": 844,
+      "sha256": "5b2a6a6860355b635cb2c983f213e4f7e3db3b837174bff7ccb90187b62ecc60",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/正解代码/B_ryo.cpp",
+      "bytes": 533,
+      "sha256": "cb821ce8c9ed6ce4bbec1cfde141167a557b28d551c7416c83e35ef9d75f7637",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/正解代码/C_nijika.cpp",
+      "bytes": 1967,
+      "sha256": "997d01bac0871ca0b6bea69055b50e054cabe81bba40ffc0b7c04a45a568f08b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/正解代码/D_xor.cpp",
+      "bytes": 1173,
+      "sha256": "3b0e27d24eabbcfb3547ca47cf08155ed254ad9bba8345a83ee6d37514440d89",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/比赛全过程复现_完整版.md",
+      "bytes": 15608,
+      "sha256": "4981e3c6d7621563e6230e1cc6a28a20377a055349eca4f1e12dd005f6983fb4",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/研究过程深挖.md",
+      "bytes": 5556,
+      "sha256": "8d260de12508f3574045b38fac442f65b4e7307b5092ee46b3c136c7d601a188",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/结果核对.md",
+      "bytes": 2813,
+      "sha256": "4fd6e81e8d7e9acb45b39ad1a760fb5a899e6a4a39a7b40fb9a4a6327abe661b",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/资料完整性报告.md",
+      "bytes": 3989,
+      "sha256": "adc7d617f06431d30565079aa8904130c0a11ab9899724ee4f6c0f6090357549",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/赛时代码/A_oj.cpp",
+      "bytes": 1507,
+      "sha256": "6f691b1927f947f14482ca8a208525bddb167f93fbe941fdcf118ba1caa31e85",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/赛时代码/B_oj.cpp",
+      "bytes": 1146,
+      "sha256": "14a634e65e490d85f94d2864abb293dd5a538132a244161cdc4751101c98fc56",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/赛时代码/C_oj.cpp",
+      "bytes": 1858,
+      "sha256": "d7ee06b70d5304f836dbd076efac52fdbb7851e1e20ece4680e3a4e0cc90c997",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/赛时代码逐段解剖.md",
+      "bytes": 5030,
+      "sha256": "2c43728beae1e0346f634798bf12644026d28b3bfeebfa0502f4326f2f4821e9",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/逐段考古纪要.md",
+      "bytes": 19942,
+      "sha256": "cc4ec5c94186ebc37dfc3e8b0b719d0a8cbc5348b86b6cc40245b0a1874199af",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/键盘记录分析.md",
+      "bytes": 2670,
+      "sha256": "5d85cdfe2d22ce6ea6725f5fb4d8336b069aed13fa634ff79921f5ff77b87807",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/题解.md",
+      "bytes": 19569,
+      "sha256": "68829d17922c63cbefa5a11083c43ea409075d1418ccd55295ac3858e4359d7e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/A_七项无解反例.in",
+      "bytes": 19,
+      "sha256": "b42055120650d17f7c0d05c287f819e3baaa9ee095ce72064b991d65f405b8da",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/A_七项无解反例.out",
+      "bytes": 3,
+      "sha256": "ee3aa64bb94a50845d5024cd4bd20202a4567aed5cd5328c0d97e9920775fc28",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/A_最小结构改动.diff",
+      "bytes": 911,
+      "sha256": "1580b6fd3b0577db48d2e5645ea56b1b43fb9fcef249227d8d38fcd6254f1550",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/A_沿原倒扫修正版.cpp",
+      "bytes": 1419,
+      "sha256": "5fe134181020390c02c3fef0c9fbd910b2199c4ebc37f01464794f4d61a1e5a1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/B_三项插入障碍.in",
+      "bytes": 8,
+      "sha256": "9d5ddc60694b496e493fc225526c5c996eed796cf84892e96f4ddd63ab08e7b0",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/B_三项插入障碍.out",
+      "bytes": 2,
+      "sha256": "1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/C_按起点合并询问_partial.cpp",
+      "bytes": 1035,
+      "sha256": "7a98f3882ddcca4129742a24f6c02e406b680f92ba15c0d75ea8a814d9affb88",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/verify.py",
+      "bytes": 4588,
+      "sha256": "bc1f8ccce0e2da819290f70c3d619edde7f0a592a85b9482ddebd2b43c4e30c4",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/修复候选重验.json",
+      "bytes": 727,
+      "sha256": "39bcb8c3e74fd75d73ec93795e13f05b253081ab02e6a57a131f503a8fd8c9ee",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/回放浏览器验收.json",
+      "bytes": 361,
+      "sha256": "ab8197a942bf8fbfdd6d4f8cf6b950371a474e8ce8e44825785fd06b4bedc0a6",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/回放验收.cjs",
+      "bytes": 2734,
+      "sha256": "dc343e3b2c3abbbeaa86fc8f68ee7074ab73a9ec248df3b8b49ce4cfa559f151",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/独立对拍结果.json",
+      "bytes": 548,
+      "sha256": "2f67e048448110f2346be34634a5a3a3a81a5f031f835e274b7476bb1ae03645",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/赛时代码重验.json",
+      "bytes": 2989,
+      "sha256": "422955854698405bcdb1b7e0b748aae6fd2611835ead3c1db24b73b34d0616b5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/远端独立对拍结果.json",
+      "bytes": 548,
+      "sha256": "2f67e048448110f2346be34634a5a3a3a81a5f031f835e274b7476bb1ae03645",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/远端验收记录.md",
+      "bytes": 2372,
+      "sha256": "98869369c0e1739ffce60177f3f843d86a53eb63de9a263e2a76c69e266f1b1e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/附件与正式IO验收.json",
+      "bytes": 6573,
+      "sha256": "9d62a8db0d1163220c0418179ab81fb8239ffe792cddfdd11116943491689252",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证/附件验收.py",
+      "bytes": 1441,
+      "sha256": "724a6c6a9969b558b69d572aff5aa47275e7c189cf1bd1613983c3f8656ea9ae",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-18_代码源_CSP-S_day9/验证报告.md",
+      "bytes": 4702,
+      "sha256": "0da8b155235127243877779d632a6e714e678e9591721535305a4488a5a5ab74",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/README.md",
+      "bytes": 3197,
+      "sha256": "71e79dae96087d8a7d69e6bcd84f978c73b11336a3396a656dab919c2a71a2e5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/下一场执行卡.md",
+      "bytes": 1841,
+      "sha256": "f36805ea062e38c1ba75208a97c582ebc90db277323d61d57e9556c12ec2e56a",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/原始材料与可信度.md",
+      "bytes": 2389,
+      "sha256": "be25b2d220c3fbc9695da19c37c1ab5f8ed197f58317dafa69cdeb0fbe611e7e",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/复盘报告.md",
+      "bytes": 10975,
+      "sha256": "9047266560e0c57ffabf939c7d761ea7e8f49ba07e99614a48b13df511c4fab1",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/正解代码/lamps_reference_brute.cpp",
+      "bytes": 768,
+      "sha256": "48b0151a2a8ebeb85f207b0ea38b86e3f4cb7260e3d2c5364800bab248984166",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/正解代码/reserves_rmq.cpp",
+      "bytes": 1950,
+      "sha256": "13f1d516438b85d02a9d056048b40590bf11a764f1549719adf7c86c9f425647",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/正解代码/round_dp.cpp",
+      "bytes": 1798,
+      "sha256": "97baea5c3de7f7d4c1558f6a1bba432231607275b40223e212f94fe35161b8ee",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/研究过程深挖.md",
+      "bytes": 2509,
+      "sha256": "f820a07aec3a39031d536723e98cc0e8e280c612c69bca0864ce8f21d8f993bf",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/赛时代码/T1_150217_赛时AC100.cpp",
+      "bytes": 1205,
+      "sha256": "8beea2311bf4df6c2fdc4a86a89b319048eb26af76a0e684b3891bdc89dbfbd5",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/赛时代码/T2_161855_投票制首版.cpp",
+      "bytes": 1189,
+      "sha256": "4702250d49b51e5d4a60fa29234dabfb541d30901bfce93b3d07772e140e4217",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/赛时代码/T2_180427_最终55分.cpp",
+      "bytes": 1046,
+      "sha256": "200cb8ed790b27e0f56bb55ec2d6f4144d9ccf90ce6a22fc633c9a7ad5fcc391",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/赛时轨迹与版本谱系.md",
+      "bytes": 3421,
+      "sha256": "d947e4a227f8992770c4f5369b1f82ff7fdc13a939b3f9ccd727768b1d15298c",
+      "category": "比赛归档"
+    },
+    {
+      "path": "2026-10-24_信友队_CSP-S复赛模拟赛/验证报告.md",
+      "bytes": 2626,
+      "sha256": "b4562c667aec82a56098481a8f02d0d12a57f8bda70c793c8ff9aad0c1557483",
+      "category": "比赛归档"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1767,
+      "sha256": "59c80d6861d7736b7402231bd17f7f812bc3e26e716f108ab3dea727b3fd7411",
+      "category": "控制层"
+    },
+    {
+      "path": "AI_HANDOFF.md",
+      "bytes": 26068,
+      "sha256": "c11d012807736986e097ecd24817aa8763a0d9f2406c5e8d735cc9ef1a578e5f",
+      "category": "控制层"
+    },
+    {
+      "path": "AI_MASTER_INDEX.md",
+      "bytes": 26106,
+      "sha256": "7159293b220be88f93cec5603dc35f27e160c4715e5b439899cfaa4f1ea6bc94",
+      "category": "控制层"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 11782,
+      "sha256": "5923c02ccfd08216e04d9feeaba859a105dbfc530c75ee10393dd17eb59c475d",
+      "category": "控制层"
+    },
+    {
+      "path": "CURRENT_STATE.md",
+      "bytes": 8700,
+      "sha256": "d0ef4e369965a34d65c4184282f5b1218327ff140824376b2085a6cc4e1da425",
+      "category": "控制层"
+    },
+    {
+      "path": "Claude黄金样例拆解与继承清单.md",
+      "bytes": 6768,
+      "sha256": "ea18547a5a906980395ee1f548735eb850fb3d2b629a05109c1cbcb7e7c4cfa4",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "NOIP2026/README.md",
+      "bytes": 2236,
+      "sha256": "54defb01e14ec81f4b37d9cfea4b12090c4dc1e792b94be38d1fafc318f0a7ec",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "NOIP2026/四阶段路线图.md",
+      "bytes": 4262,
+      "sha256": "46263f25e48eadfe9e55e7e9d2392f0140eb812a6440ee592086b0f468311699",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "NOIP2026/接手总控.md",
+      "bytes": 4460,
+      "sha256": "453e5a09b36b2ce05d23dc92c1a6d9529a9c9aaab5cfa884c7d9e8c116ae5b99",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "NOIP2026/考场执行卡_NOIP.md",
+      "bytes": 8299,
+      "sha256": "2ceafcf19a9cc7bb225e4117bb0900476763f93879e1e28d75f31331e2c537fe",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "NOIP2026/补题队列.md",
+      "bytes": 6288,
+      "sha256": "3aa2c7352b8580d1d36754e1b9f8faaa84ea06480263deb4fcb89a2122604d1c",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "NOIP2026/错因总表.csv",
+      "bytes": 7240,
+      "sha256": "a89394220ca057655629ce94056387ba6f9c8750b9bec86ec810963ffd373365",
+      "category": "NOIP备考控制层"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14844,
+      "sha256": "4135df6a07713c8c65c23fa7296ad96278220877d8892f80864c64f03c245653",
+      "category": "控制层"
+    },
+    {
+      "path": "Replay逐段考古协议.md",
+      "bytes": 5672,
+      "sha256": "b508d4909b4213c3a97aff0536aa85021bb8a2e93129c1a087566b7f6669e025",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 21095,
+      "sha256": "f2ab550e35a6d0e8c4b2340fcc9720d2313da714ea5b05fd823961df2df8e639",
+      "category": "控制层"
+    },
+    {
+      "path": "assets/evidence-atlas-cover.svg",
+      "bytes": 3744,
+      "sha256": "973527dca05025f884471518593004666496fa0006144b5da1a1a5a1570196e0",
+      "category": "站点镜像与素材"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "站点镜像与素材"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 69396,
+      "sha256": "f16a59a14926d0b24c5b891bab4395c7ba79c8dcef6a3e83c7fb7e07971bc5e5",
+      "category": "站点镜像与素材"
+    },
+    {
+      "path": "skills/oi-contest-review-v2/SKILL.md",
+      "bytes": 4562,
+      "sha256": "5c6b67afc9b5d25aef48333c5fb1f4f0e1a273328a043d4858fdad94f1c9a83e",
+      "category": "协议与课程"
+    },
+    {
+      "path": "tools/archive/Checker_Stress_Oracle源码审计_2026-10-07.md",
+      "bytes": 7518,
+      "sha256": "cf00e89e3b391b88de2972f844dfd1555882cfb0b1eff0a12cb3ff034a0144b3",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/Coderlands_平台与采集路径初步勘查.md",
+      "bytes": 3406,
+      "sha256": "9f90710dc3d0cefa2cb5c76a398e52a6f91db4822c650c6c4bb375ffaf0df8a4",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/Day1-Day2_OJ提交_VM血缘与赛后补题复核.md",
+      "bytes": 9644,
+      "sha256": "1e56aebea5e1f3a1626c53646692d2a99f5a99b59c35b305f7d93626dd2bc85f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/OJ多版本归档_字段级证据合并规则.md",
+      "bytes": 3223,
+      "sha256": "a6fcdfb50d4ce0311d5a258f70b18623bbf18a0e93fc0b61caf784cd0d19cfa8",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/checker_coverage_probe.py",
+      "bytes": 4576,
+      "sha256": "0d60aa4e1a663314919b78faaa34d81f3d494c091642271a6d2be8175ae9711a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/recursive_zip_inventory.py",
+      "bytes": 6283,
+      "sha256": "b3bab2e473c8b01e354eee4d81e24cfde03ad618cb8cf9d85553f62d2086f6dd",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/replay_evidence_index_20261022.py",
+      "bytes": 3956,
+      "sha256": "87ec844a4bf88112f6f645d13acf0a52f3da4ec74effcd33f70105f9ddb37388",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/replay_submission_matcher.py",
+      "bytes": 9340,
+      "sha256": "3829394d1bdd329b73a00e9e9010176ea5acf0ea5788e3d162f04faec8833408",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/v7-alpha/README.md",
+      "bytes": 3317,
+      "sha256": "95324de8d723ac602c4fabf8a6cf691f05c97073bacbeec9c2f4dec241f5bbdf",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/verify_codelands3_contest_20261022.py",
+      "bytes": 4861,
+      "sha256": "c40bcc40b34a4211cf09d1195ff8f5f81389caf8ff3ebd28eee9c03911d64cfb",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/三包全文摄取协议与语义阅读台账.md",
+      "bytes": 4260,
+      "sha256": "dec4288260a341bb73541e4a3f8ba60f619d7f56b6920a066c7be0d63d78f58f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/三包全量递归展开与读取审计_2026-10-07.md",
+      "bytes": 5303,
+      "sha256": "5cbb47829763bd53b8111aba91fb56c9f364eebd4716f703fcffbd4a9207a21b",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/三包原始资料_全文读取台账.md",
+      "bytes": 10876,
+      "sha256": "0a7f7550a05df6a12ee11a5edb938377f3326f90a25aaffee8d1ad331e46e82f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/三包原始资料_处理台账.md",
+      "bytes": 10362,
+      "sha256": "081b14189d917f54a42b0c937f1aea6753d82da9eb52e5d06211a080fde401af",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/三包递归扫描_统计摘要.md",
+      "bytes": 4094,
+      "sha256": "c65730be710860c6d78949a8a03494feabcc3e7d4ffed10ba6aaf9c02544eab7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/代码源Day1-Day7_归档证据清单.csv",
+      "bytes": 1066,
+      "sha256": "80a3ebe07f2175376ea328532e7d8386838d4c8007fa9f608321c613cc5f740b",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/代码源Day1-Day7_来源与交叉验证.md",
+      "bytes": 3143,
+      "sha256": "e90b80d86947e20abd5d16c0365e445ea15a44628c8d558bc9d363f16d5811c2",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/四场Replay全文统计_代码churn与验证行为.md",
+      "bytes": 7979,
+      "sha256": "6e903d9273bb50616ba158ddc61dc1d33d39481a518a00190609f664aa7da1ea",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/归档采集与证据链_经验总结.md",
+      "bytes": 4136,
+      "sha256": "dfba33462a9da36e470d8fea8bd92fc2e6e602c463caf0c47da0e2619057d216",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/录音双转写_配对与证据规则.md",
+      "bytes": 2394,
+      "sha256": "969fec69884b670c5830eb736a6a24e97dab095367cc094ee170b020aa3b845f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/旧VM快照_血缘与Day3Day4迁移.md",
+      "bytes": 5285,
+      "sha256": "4d515ae36d237c4c27f90bc1d1bf50e7dd0d65425d5f2d0ed5efc4f44f7419aa",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/赛时notes_paper全量去重考古索引.md",
+      "bytes": 4781,
+      "sha256": "9a9472ccf37b66868c8657ab0e01615c0e92446c5858000d3622114409afc103",
+      "category": "工具"
+    },
+    {
+      "path": "tools/archive/验证资产全量哈希矩阵_2026-10-07.md",
+      "bytes": 5540,
+      "sha256": "8dc494b049d9336afd606138d804c0713eaa83848851e0db5f80729036a3e682",
+      "category": "工具"
+    },
+    {
+      "path": "tools/build_repo_state.py",
+      "bytes": 9253,
+      "sha256": "9a8142cb134c44e497e0df8ca85baaea3fc454170da3499b78a49f36699b8103",
+      "category": "工具"
+    },
+    {
+      "path": "tools/smoke_star_atlas.mjs",
+      "bytes": 4139,
+      "sha256": "87fbbaf37e184c0d0494773cf350821e65544d20bda2568ec60e0d6fa01c9f9a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/verify_repo.py",
+      "bytes": 12764,
+      "sha256": "cbc0cf40c7c0c79565f969bede22a7159163abb28a73831485a1a171aaaf2248",
+      "category": "工具"
+    },
+    {
+      "path": "tools/verify_star_atlas.mjs",
+      "bytes": 3448,
+      "sha256": "69b3838f41de2b5f2b5b9b23eae4ae8d24ab9ccc87a154fcb95d39eb6e678853",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/BAG_演化史与赛场工作流.md",
+      "bytes": 6082,
+      "sha256": "295ba09095e860bef3b75277ce9395dd5e4fd0b111b3b510a697cbe0e0e3354d",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/CodeBlocks四个问题_源码核实版.md",
+      "bytes": 5528,
+      "sha256": "c5881ba54c0ce5b2f3fa7b45342088a62bb230592d80436c92785f9bc8ca6139",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/Day3旧Keystream采集器_源码考古与证据边界.md",
+      "bytes": 9311,
+      "sha256": "ee4a5ddaab9a8b96218076a3db5230aeda37f8f390868acefe93879719f9296b",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/Replay采集脚本_源码考古与能力边界.md",
+      "bytes": 9812,
+      "sha256": "bf075835e4d5fd8f7aa986220861993d0f94e5ca3caca3f1291a6e72029f22ae",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/debug/debug.cbp",
+      "bytes": 997,
+      "sha256": "d290c0c61106e9e30f435a8d3c3e54a7cbcb27cb566720c414c52b4ff9b5edb0",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/debug/main.cpp",
+      "bytes": 736,
+      "sha256": "c914e043facba7926fb29ceb22e4c2b161ae6a8faea48a6c44464ae9cce25db1",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T1/.wa.md5",
+      "bytes": 36,
+      "sha256": "66e9d35b00ab6e4ab8947e1a1bba772a03301b8c9e649b4789f0fe010fb6be81",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T1/ac.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T1/duipai.sh",
+      "bytes": 1284,
+      "sha256": "8c19ef9b8c8d6994a38ae6e8fc6247e98730a1505e767ec05aec3d54cd8c8033",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T1/gen.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T1/wa.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T2/.wa.md5",
+      "bytes": 36,
+      "sha256": "66e9d35b00ab6e4ab8947e1a1bba772a03301b8c9e649b4789f0fe010fb6be81",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T2/ac.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T2/duipai.sh",
+      "bytes": 1284,
+      "sha256": "4db6e5d8343159950a63932301ee9e575d0b36a5af9974d8b8e3d6c2cc4a698e",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T2/gen.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T2/wa.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T3/.wa.md5",
+      "bytes": 36,
+      "sha256": "66e9d35b00ab6e4ab8947e1a1bba772a03301b8c9e649b4789f0fe010fb6be81",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T3/ac.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T3/duipai.sh",
+      "bytes": 1284,
+      "sha256": "aef99eed86a49125c728fb73d6dd5e1abf1f5b2fffe502ac7f201c19a802c246",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T3/gen.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T3/wa.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T4/.wa.md5",
+      "bytes": 36,
+      "sha256": "66e9d35b00ab6e4ab8947e1a1bba772a03301b8c9e649b4789f0fe010fb6be81",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T4/ac.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T4/duipai.sh",
+      "bytes": 1284,
+      "sha256": "f271e114f33d3728a989c77407fbd2655c12e97e01e4093d95fda61efd3a94bf",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T4/gen.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/duipai_T4/wa.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T1.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T1/放样例.txt",
+      "bytes": 74,
+      "sha256": "9082d881f57c8b2f785304ba69d4cd17b28eb515911a080d21eae435cd878cd8",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T2.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T2/放样例.txt",
+      "bytes": 74,
+      "sha256": "9de802c0929159ef986540deabed7354451f65e9cf459c8117a1c340da02726f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T3.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T3/放样例.txt",
+      "bytes": 74,
+      "sha256": "34fd99dbf24b04726cb24d6448f844c6df89f8266303b683d920c7dfcd14cad7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T4.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/T4/放样例.txt",
+      "bytes": 74,
+      "sha256": "f6d9f5623795429ef58c6942ca15bf31261b12a3445c514fa358eb5c435050c3",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/check.sh",
+      "bytes": 1389,
+      "sha256": "36e0001cec13eaa82542518e96491330e260a14f7e1b5d7c7745ec0e4d40b4e7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/map.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/paper.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/run.sh",
+      "bytes": 2275,
+      "sha256": "509de7d6b18742d86128a14c2562c8eb7e949c8737fdcc2a33db7ed377560a4e",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/problems/thoughts.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/使用说明.txt",
+      "bytes": 3044,
+      "sha256": "d59a748cb3cea0cfac4588eb9a13734f61eae0ebeabca8612936e75f1e0ef359",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v2/收纳.sh",
+      "bytes": 1269,
+      "sha256": "68bed62119b278ca89153f5f543d14893e89480c5be83cca71cb3da7f537e59b",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/README.txt",
+      "bytes": 3221,
+      "sha256": "e2ef8eacec4c9d48460e9d86830da50b8297d7376b3b41d07db6cd1a0ed9a879",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/TEST_REPORT.md",
+      "bytes": 8610,
+      "sha256": "be1398db94dcbbb66deda39570de8611ab6547222d337f24c4b9cd106fe373c7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/build_release.sh",
+      "bytes": 537,
+      "sha256": "3fdc56e7cdc4f4796eb21b0e87567acf3f0b6f366a7fc278aade25c50dc15b79",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/clean.sh",
+      "bytes": 289,
+      "sha256": "85472d82ee1d6bec51aee3e10d21d890b0e8e73c422e014e5e3d2e45eade81f0",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/doctor.sh",
+      "bytes": 883,
+      "sha256": "6c10b7a36bd239b7eb105477cfa389d59de44c38af7e24b0bb443b12796490b0",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/new_contest.sh",
+      "bytes": 701,
+      "sha256": "e20f3f875e58ad188fb1ed9ed39d1b4dbb06ee5bc73be82fea8cd1a43fa0f875",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/reset.sh",
+      "bytes": 117,
+      "sha256": "40be7ac3f24e8aaa878fbbf93f5b2aa3066313a40e6909a2fbe740d32808434f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/restore.sh",
+      "bytes": 922,
+      "sha256": "a8b8300cf8221c85094992b5ebaefffcbbf05b0117202be53716fe6b60760245",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/AC.cbp",
+      "bytes": 1184,
+      "sha256": "caf48790d1979507d9b3c6d659023143572dbc7518fc430ab802714caf0e420d",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/AC.cpp",
+      "bytes": 266,
+      "sha256": "ddb5454716dce364794fe802a73b0405738f42b4ffa3cfa35edb6e0fad0cd349",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/AC.layout",
+      "bytes": 355,
+      "sha256": "3e272b716f0f622f6dbb1fbe59b2aaf12f54d8d36c76aa3dab82e144598a6939",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/WA.cpp",
+      "bytes": 211,
+      "sha256": "10da4801d6c7a5b827b1f7b0cdcd984dc6b332cad805419eedaa2642933254a6",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/check.sh",
+      "bytes": 715,
+      "sha256": "a59823e77c60b71348999fdb9bb5092f96ece550875e80ce67b89f2130e68e5b",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/duipai.sh",
+      "bytes": 93,
+      "sha256": "6cd099012ef918700961884eb09eec24f279f23aceba5edfe75516a4733f94b1",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/gen.cpp",
+      "bytes": 726,
+      "sha256": "ac8799cfcc8246673fe0a63917e1b8cff1d19eadd75bfae052057f3175236bc4",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/main.cpp",
+      "bytes": 268,
+      "sha256": "c232b8dc6717e4d19901dc6fd1fa752db69f11ace1b848b6349d3d1c301335dc",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/notes.txt",
+      "bytes": 142,
+      "sha256": "cd740100541879f412c938479bfd476a75bb23547de7a768f0edb57dd12c22c2",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/run.sh",
+      "bytes": 86,
+      "sha256": "c314641ab126296e5337bb416366212b366ab59d44d093a18abbb0a2801547b6",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/runner.py",
+      "bytes": 9883,
+      "sha256": "8759ec54d4ce295e96040ea5e761d49c2672309d829c3247538baeb06afa53a0",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/samples/README.txt",
+      "bytes": 118,
+      "sha256": "6c5e84cded82438b3f679b22635fa5c882ccd6eaa08d79918499ac9d63bda0d1",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/selftest.sh",
+      "bytes": 1631,
+      "sha256": "56cd033270c1840d2d6ceb9faa90be3719dea2f31e0385024f82d7391fff8e27",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_1/template/T/stress_runner.py",
+      "bytes": 4995,
+      "sha256": "0a0d5266f435e14325debba1b53d28e185b4830e5760a6f00986f8e1534de0f7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v3_2_flat/README.md",
+      "bytes": 2056,
+      "sha256": "37730cbb0142994ef28d3b84d3a66864b0a9b3274154d0d12fd4da656c9e6930",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/README.md",
+      "bytes": 2162,
+      "sha256": "6b2e915a4a02baf371a1778902cfa3bded92274e093ad5c0e28b491d1fd504d4",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/SOURCE_MANIFEST.md",
+      "bytes": 1242,
+      "sha256": "9ff0f02af5e2d1f834544f8faed8c66feaf491a57d6c46893e31152e4952e7c2",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/TEST_REPORT.md",
+      "bytes": 1293,
+      "sha256": "ac0fcb7f3f161e91367c3ce6a68630030120aa59e5cc824faa2a326c66db80a8",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/build_release.sh",
+      "bytes": 740,
+      "sha256": "aae1d624d875ff452032338e9244a2f326ce81c879acb968c8710fda241ef603",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/README.txt",
+      "bytes": 941,
+      "sha256": "6076730ddb600bb6bcedad5ad774a717ce65dba9235598fdd0b25c8c995a077f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/doctor.sh",
+      "bytes": 805,
+      "sha256": "6b1b9679fe5a23c07a4027168a8dd2c15dca76f1528e4cd0094ad2f2dc65b930",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/reset.sh",
+      "bytes": 984,
+      "sha256": "099de58fca35d7d6ab03b544af5a0bb9ebcb8850cfcb5d18ad2b43ac27886331",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/.bag_runner.py",
+      "bytes": 12089,
+      "sha256": "c93e3138c9292f39ca354e16da602720f7c593aef7807705d95d658d50b83cf3",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/AC.cbp",
+      "bytes": 1184,
+      "sha256": "bdeb58bd895c64bad5cfaa1afe990f748b87202d4599b7e0291fd048cff0619f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/AC.layout",
+      "bytes": 355,
+      "sha256": "3e272b716f0f622f6dbb1fbe59b2aaf12f54d8d36c76aa3dab82e144598a6939",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/WA.cpp",
+      "bytes": 248,
+      "sha256": "f935ee6da3d4920a72d204e9ad57aaa5e7652c353060e01529665406d540b942",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/duipai.sh",
+      "bytes": 94,
+      "sha256": "cbe434b45d0ef2910ddf33a296993871886cc3580f7dca55994cfbeb989ea80e",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/gen.cpp",
+      "bytes": 446,
+      "sha256": "4420253afe2058a3edaa12901d0a674fedcaf208085924035959f673e6f90051",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/main.cpp",
+      "bytes": 254,
+      "sha256": "56167221445eaf2f6440878042db4c8a42229fb4f4ce5307ada9d49b4ffd6fc7",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/notes.txt",
+      "bytes": 296,
+      "sha256": "188018caab86f67c26e276598c6083d4274a2a1ca6a5bd066684ae43d62bc4f2",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/bag_v4_flat/source/template/run.sh",
+      "bytes": 91,
+      "sha256": "7b3ad53c7245d3790fbfeb0bac65e1fd454dd3cac91b6abc2738307b69dd0544",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/duipai.sh",
+      "bytes": 618,
+      "sha256": "e9ac8db74fb280e2e027e2738421ccb0bd71744c0113440c784ab61ba464839f",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/init.sh",
+      "bytes": 273,
+      "sha256": "81650748c8feeb0a325b4c7054662e65bd92556491ad1a7935c4ed215f031d21",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/replay_recorder/contest_replay_capture_v3.0.1.patch",
+      "bytes": 4301,
+      "sha256": "6a1e7102f3fc28f518f50760f6f2e1bc62f936f43f1f211c84e5da0ec9f44037",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/run.sh",
+      "bytes": 876,
+      "sha256": "b8493040f22c0d7612736d55e23ac421f0d7e6e20b29ea5dc3d286e9985d99dc",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/初始机子/debug/debug.cbp",
+      "bytes": 997,
+      "sha256": "d290c0c61106e9e30f435a8d3c3e54a7cbcb27cb566720c414c52b4ff9b5edb0",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/初始机子/debug/main.cpp",
+      "bytes": 736,
+      "sha256": "c914e043facba7926fb29ceb22e4c2b161ae6a8faea48a6c44464ae9cce25db1",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/初始机子/duipai_T1/duipai.sh",
+      "bytes": 252,
+      "sha256": "a5d1416e1596aca301b90cda528ce61412e0a517c7b957eb90eed5eadba714b2",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/初始机子/problems/模板.cpp",
+      "bytes": 493,
+      "sha256": "a15d7be3ad094896c16f5adb0e61f08259c4e6f243cb9eb1249eb9f9de33321a",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/本地智能体提示词.md",
+      "bytes": 8027,
+      "sha256": "b43e826bc3bc6f93e6cca8b6020f5457148693fca32bc163651ab979d0c0d638",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/给ComputerUseAgent的虚拟机调试手册.md",
+      "bytes": 12520,
+      "sha256": "00bdcd99f7e0b8822e17c4696ecdb953b2e31b7bec58ae207f2c662c68bc3771",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/虚拟机赛场工程经验.md",
+      "bytes": 3344,
+      "sha256": "e713d302aa2c0ccc4ad0dd3fef68e450153c2221f85bc230f3a472a04c52ff21",
+      "category": "工具"
+    },
+    {
+      "path": "tools/vm/赛场录播采集方案_v3.md",
+      "bytes": 1133,
+      "sha256": "07bb47b833e3ce929862fb09555b7280e5dc360a1c76ed0c499f38520cd1143e",
+      "category": "工具"
+    },
+    {
+      "path": "专题课程/2026-10-12_CSP-S2020最优子序列与ARC205E_双轨动画考古.md",
+      "bytes": 6162,
+      "sha256": "785cae43611ff6c56b7dfe2c3a5b3acabd85eb2b9afb8d5534a97599df9dcb7c",
+      "category": "协议与课程"
+    },
+    {
+      "path": "交接/2026-10-11_下一阶段任务与验收.md",
+      "bytes": 3136,
+      "sha256": "6b0b44c10957ec97efa9f89474ceacd665ab55bf3048feb9084aa46a7cc8a2de",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-11_主力模拟赛分析_万字接班报告.md",
+      "bytes": 46360,
+      "sha256": "179e1644a676a6913f150a343ece932b344865c09af0c0a8c2b3c804b229a8f2",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-11_接班导航.md",
+      "bytes": 1751,
+      "sha256": "3d00bb7e0b5d2c1df40388d282e068163c4a9be226d60f489f44fc1822b2df9c",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-11_机器可读接管状态.json",
+      "bytes": 5057,
+      "sha256": "07ccf8d2131c44e5b8cf85bc63388495c5507ea912db98821d992d18040e5b96",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-12_漏写资产补齐_两分支回读验收.md",
+      "bytes": 7526,
+      "sha256": "11039801d206bf5849191488057f53e3b99e49daf9d52b5595b57b850e62652b",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-15_Gemini39页_维护分支更新导航.md",
+      "bytes": 3329,
+      "sha256": "3224554de1f471b1c680fc03a650f78ddff31e4473512ff7b6ce58a6e33c502c",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_CodeLands3_21附件实测与两类反例.md",
+      "bytes": 5690,
+      "sha256": "e78525437e00795f4cb126ce778f534d754c9980326d7b3e742ca05532203659",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_CodeLands3_首次考古.md",
+      "bytes": 3133,
+      "sha256": "e88de80e0d888f758fd560a0980c66b19328b3d287f19b481f5276078d78a0ec",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_CodeLands3题面逐题约束与计分协议.md",
+      "bytes": 2123,
+      "sha256": "96c2c26f6145daf087cfdf8332c15d524af56d17339efa9d1ab3cf088c880d9e",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_Gemini_结论与事实分栏.md",
+      "bytes": 3260,
+      "sha256": "d07c7efa71fbd33ab29f9f4c23cdfc6c37c2af0aba50638b4710b795e60f1593",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_十一场Replay_证据索引.md",
+      "bytes": 6038,
+      "sha256": "24102509fbdb600d641c5a669a61431175645b3d1a2713a4a725ea2c86b07808",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_赛时原笔记与录音语义重整补充.md",
+      "bytes": 6019,
+      "sha256": "2494b596b3604aa5ed6925e1c81e963ce88ca0bf7bf5ea9a651cd574a3bc1ef1",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-10-22_赛时推理口述重整.md",
+      "bytes": 9961,
+      "sha256": "4cf9cbfc6796f66c22d80b2ecdfc8b0d8378fa733e1c13b1874e647e8c56b9ae",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-11-03_仓库现状独立复核_可复算.md",
+      "bytes": 7653,
+      "sha256": "eeceaefe23ab1a77dfd4e06766d3695cce0e193bac654dc3a6710a1bbe5628c8",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/00_总览_方法论与事实分栏.md",
+      "bytes": 8355,
+      "sha256": "6a3334962b1cd6f02ca07d7978c1080210d44f133bf97475ec8cb2f51910fb9e",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/01_CodeLands3_160分悬案与四题最小修复.md",
+      "bytes": 8106,
+      "sha256": "73c51fc08ad00aef170090c5787b2d80d4af5ce0c4bdd9efaa45e39c9a091376",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/02_LGR307_100分悬案与四题击穿.md",
+      "bytes": 6713,
+      "sha256": "6e902e8de86be218cd17758d05cf1a7dc2d6d1cc7aee7e02cfc69b6f4e677eae",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/03_信友队_155分深挖与95分机会成本.md",
+      "bytes": 7462,
+      "sha256": "e57ac2eaae500643e4e9beaf07078c45d8a7a4a5e95730baa98d58316c4673d2",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/04_Day9_60分四题与四条铁律.md",
+      "bytes": 5911,
+      "sha256": "259a01ea8fa3afa1d9946ef4059da0ca138c5cebf4a82007d8a8bae70bea6fd9",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/05_Day10_145分与112分出血点.md",
+      "bytes": 7020,
+      "sha256": "3da8659fe82cf6f6b5a7a0f09d8f55b2c8850e3a96cd835feaaa32f6344a46c5",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/06_CSP2026正式考试与NOIP战略.md",
+      "bytes": 7279,
+      "sha256": "f34fdc65524d29927c1652daf6187ad2429dcac7a9070168c962ee1d80516830",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/07_备考SOP_大样例Debug与模板清单.md",
+      "bytes": 9542,
+      "sha256": "fafc1c3d450c4d66da07f34b1db606e0fd968f38abea864ddd11ee28814d14f6",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/2026-11-03_双PDF解析/08_全文主题索引.csv",
+      "bytes": 64072,
+      "sha256": "748693981ecf7e8844a1931b560b146f927d768469caf1e62814377fc2f6f48f",
+      "category": "转写PDF派生解析"
+    },
+    {
+      "path": "交接/一手证据/2026-10-22_2581桌面文件_SHA256脱敏目录.csv",
+      "bytes": 330465,
+      "sha256": "c5e8d1946fd57fec71b61a3a82ca36e6a2651987f28a9e5d9723b97cdcbbe5db",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/一手证据/2026-10-22_520份赛时C++非空源码快照.jsonl",
+      "bytes": 869634,
+      "sha256": "f96d9c59e0cd097cba3830f1a674522e27ad4f0cc16b9647c84af73299816139",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/一手证据/2026-10-22_690保存事件_脱敏可搜索.csv",
+      "bytes": 154394,
+      "sha256": "55abb61fa630d1e3211c204a1c369d3fe6e40f270234e5915eb24e6f162a4e88",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/一手证据/2026-10-22_96份赛时草稿笔记保存链.jsonl",
+      "bytes": 44712,
+      "sha256": "63bba73cb769012baa0e2f27258b77294fca4634efd6996e32c2bb25367b8bce",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/一手证据/2026-10-22_CodeLands3_21附件加2hack_真实执行结果.json",
+      "bytes": 4575,
+      "sha256": "4c8dc0308c98976abc2032004c5bd967300273b7f9405acebbda1c14eaf40ba3",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/一手证据/README.md",
+      "bytes": 4116,
+      "sha256": "2d07e9b3f8f4b1576625188aac03153301752c52bb0ddc639c6de4bbb0f0a621",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "交接/核验接班一致性.py",
+      "bytes": 3221,
+      "sha256": "be72b9b7c183b57ab329040ea7059b207dfd67dc0f2156b18860b3ae8fe55859",
+      "category": "交接与一手证据"
+    },
+    {
+      "path": "全题总表_2026-10-07.csv",
+      "bytes": 6908,
+      "sha256": "0c6db3144da32bcd57a6a6baba383d4762d2eba6558e690ca3dae21bd704b10c",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "全题总表_2026-10-07.md",
+      "bytes": 9127,
+      "sha256": "24b1991c863e2c1a3c1525c4f2acfbc75d615dff0ee02f4505579d0ed0c686fa",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "全题总表_2026-10-11.md",
+      "bytes": 12670,
+      "sha256": "fdbb8e809b8382e3a2ef3bc7d4dacac646c1d5902527b09af21e9adfd160fa45",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "复盘产物覆盖矩阵.md",
+      "bytes": 8212,
+      "sha256": "e7c812c638bcf336a479fad66bac31908cef03e6d4ac4601bd903cbd7e33f2f7",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "得分资产状态机.md",
+      "bytes": 2466,
+      "sha256": "7fa89b47ba28f24aa960fc72a0eb31e6f8df5e6847a1aa75a8f00b12e72822cd",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "总览/AI直接接手入口.md",
+      "bytes": 864,
+      "sha256": "23d61d942bc571d2beae0dade2f713905844b032812ba3e8be889601585e385d",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/全题总表_32题.csv",
+      "bytes": 5913,
+      "sha256": "2db9c89dad3f7ef1a32da59247f2050e0c8b0924ba11654feb07780ce1355298",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/全题总表_32题.md",
+      "bytes": 8764,
+      "sha256": "8cfe2258aafe7219ef69c4ae956ef795b7ad6a0d380c5139b2594e244c26a2a9",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/星图源码/star-map.css",
+      "bytes": 16166,
+      "sha256": "903fe546099b7cdc2f2033f2daf2b552b74f4acc3bade529920ca415efc1ce4a",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/星图源码/star-map.js",
+      "bytes": 12553,
+      "sha256": "2b77651fc92c29ce1d54147180faffdd965ec06bdabd8ead096d7b6da6dd1fa7",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/赛场星图_2026-10-12.html",
+      "bytes": 69396,
+      "sha256": "f16a59a14926d0b24c5b891bab4395c7ba79c8dcef6a3e83c7fb7e07971bc5e5",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/赛场星图_2026-10-12.json",
+      "bytes": 27809,
+      "sha256": "51c0bb024f12ad13e55f667e76631391340bf2e29086ffa0649446fca930d817",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/赛场星图_使用说明.md",
+      "bytes": 5371,
+      "sha256": "0ab14791dd0b3e708f519e7598467b2457a02e307ee6b9f4c0abab9eb3317995",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/可视化/阶段成长仪表盘.html",
+      "bytes": 69396,
+      "sha256": "f16a59a14926d0b24c5b891bab4395c7ba79c8dcef6a3e83c7fb7e07971bc5e5",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/报告/README.md",
+      "bytes": 1471,
+      "sha256": "dfcfbbb9af5840cb63ecddb8d4e91e8516c06258fba23f3267999ba95b11e643",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/每场比赛经验纪要.md",
+      "bytes": 8496,
+      "sha256": "1a06429840cd72d2b6a97a01f46c0aa237bc24e6068d36e954007eae8dfbab53",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/真实部分分边界_OJ组×题面×源码.md",
+      "bytes": 4237,
+      "sha256": "30d852a1d1f173772165653ab946996b7cab6e3ea86e69410960c9224e306809",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/赛事账本.json",
+      "bytes": 12812,
+      "sha256": "c018947c837fc0edbe8d341fc67355f3ceb431f8356dc8d00b71d1f22751bdcd",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/逐提交子任务得分矩阵_27提交.csv",
+      "bytes": 3413,
+      "sha256": "278906095dde873a3cd6d7815e44bc77a5be7867080f6c965ffa379cd7a60cc4",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/逐提交子任务得分矩阵_27提交.md",
+      "bytes": 5089,
+      "sha256": "a55b749f12816e3a19e05e5def5927cc73f6c68ae681332d7c71ef5d7e691172",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "总览/阶段数据与预测.md",
+      "bytes": 6710,
+      "sha256": "2c0e43b80fcc65e85425e3fb6e765b90f1d3854b79158746dcec9d283beb0d6a",
+      "category": "总览与可视化"
+    },
+    {
+      "path": "执行包/下一场比赛_赛前执行包.md",
+      "bytes": 8278,
+      "sha256": "bffac38d64c205ba8de1dae3bb2b8c59783da0dd9f04c2f74111ca5705dcdc11",
+      "category": "协议与课程"
+    },
+    {
+      "path": "模拟赛复盘总协议_v2.md",
+      "bytes": 12414,
+      "sha256": "e9f4fb7ce741354fb2b758629a5e48d1b9fd445fe1bbb6e196d9ab58a8579e8f",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "模拟赛考古纪要协议.md",
+      "bytes": 612,
+      "sha256": "3b4c34d0afd2e21b439c4120cfe5c12a5ca62b41b54acd5de474211d65909219",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "维护日志.md",
+      "bytes": 2534,
+      "sha256": "a04bb9a60bf82e3b4c860266d085cf5ae10c08494c2b0d15af1275cc80577759",
+      "category": "控制层"
+    },
+    {
+      "path": "考古/2026-10-22_CodeLands2_原命名源码附件实测和赛时失败分支.md",
+      "bytes": 4927,
+      "sha256": "92802fd1860b8fe6e4cf9ed0baa1fe7d7f6bc14742620941c9c898c5f93b9684",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_CodeLands3_三个主要源文件逐版本思维分叉.md",
+      "bytes": 5517,
+      "sha256": "49ebf3c289348606747e312916c49640a6665a6ed10700cd968e2e6eae9de711",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_CodeLands3_赛时模型两处反例与赛后AC候选证明.md",
+      "bytes": 5757,
+      "sha256": "9113b63945d03fadb4efd00e16ffd37adf2737397da1ab9573b3fdeab3f79067",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_CodeLands第三场首次考古.md",
+      "bytes": 3968,
+      "sha256": "8822de036f7ba469e46cc3d4b826168c0f4e4a1408a8c95d7427f4a8bca6922d",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_十一场保存事件时间链.md",
+      "bytes": 6816,
+      "sha256": "712fb3d47502c29dfd9836d3c0c3c992b7c83b5949608402ab4a48024eb39d99",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_机器可读取证状态.json",
+      "bytes": 4980,
+      "sha256": "23681d2afb8dc15319179e034bdf77ded2ef8eaf116566f9dd7c59d292a5bfd1",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_桌面全量取证入口.md",
+      "bytes": 1762,
+      "sha256": "dfa9d054d2edb99ed11dbfc57f8735811acefec790358091466f6eaf361a9a0c",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/2026-10-22_源码版本与证据冲突审计.md",
+      "bytes": 2686,
+      "sha256": "a33db4265d26dfe67eeeb81b91071d7cf5e871ed9108a031e700d2b6432828c9",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/一手证据/codelands-Day2_源码版次变动索引.csv",
+      "bytes": 11571,
+      "sha256": "41691b750715f28f068fb5223fddd0141593fdaba4e5f7c449770ab7f31f42d7",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/一手证据/codelands-Day3_源码版次变动索引.csv",
+      "bytes": 11757,
+      "sha256": "0236573c9794e47e02926f0b62c80a97a40de4f58be7f174198c375fc4c7d577",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/赛后候选/CodeLands3_alien_线性容斥.cpp",
+      "bytes": 1074,
+      "sha256": "50fa1ae83377a469c6aac2a8b6a5fb9b6df97fe5383db1799c65b7719b2a24e0",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/赛后候选/CodeLands3_maxcover_二维树状数组.cpp",
+      "bytes": 2005,
+      "sha256": "63edee1872817d15b227acd39d26ce99fd071329a901fe928686ea1ef54a6c76",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "考古/验证脚本/verify_codelands3_candidates.py",
+      "bytes": 2996,
+      "sha256": "23f504a4b2008953707a5fa63c7b8279a0bafe56abcd14f04f7230f919e3e0e4",
+      "category": "桌面取证与赛后候选"
+    },
+    {
+      "path": "证据阅读台账.md",
+      "bytes": 36869,
+      "sha256": "d9f88c74124a3bd22166d251d9d00b7e0899b7c93149e62275c1da9b76964ed8",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "资料清单_2026-10-06.md",
+      "bytes": 1870,
+      "sha256": "51ccc54b89546d2d49022055fa6d268a694d60cbfda34e8619bdd96dbb41aa34",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "赛中研究协议.md",
+      "bytes": 5457,
+      "sha256": "59a6d2781ef77674e82c2f9498c0fd7cee4a8be3ff983bab0f6850cec90382a9",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "赛前执行卡.md",
+      "bytes": 16636,
+      "sha256": "dc4b36c114707b74e01b1861260f9eb4c924552ba29128594ca2114038cf1a75",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "赛场星图.html",
+      "bytes": 69396,
+      "sha256": "f16a59a14926d0b24c5b891bab4395c7ba79c8dcef6a3e83c7fb7e07971bc5e5",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "近期崩盘根因_Day3-Day5与ABC478.md",
+      "bytes": 8308,
+      "sha256": "2d165ce4ec44899b337eca1452626e985cadee0346e2b4517e53f0d527f55f16",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "错因档案.md",
+      "bytes": 17952,
+      "sha256": "5dee88f37985c6b1888086f6be90f834833d68ca5e3c419e5fe07ab6f897d61c",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day2.md",
+      "bytes": 5206,
+      "sha256": "5ee34444f0933bae72705fae9a5bb5f5bcfd1c784906e56564e9602c166bdf36",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day3.md",
+      "bytes": 4288,
+      "sha256": "e55ce0cc577a6b8483cff0cb29bec555f28dc629f0364d66fb10044a43275f49",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day4.md",
+      "bytes": 2052,
+      "sha256": "17f418d1d60f0da46973ee0d3d092d4f05b75eff811f725a6b7bfddd385087e7",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day5.md",
+      "bytes": 2465,
+      "sha256": "2365ea1e1d0d086df461c4f00e96934fd862dbac904c2e6e1951f26ace8d3f7b",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day6.md",
+      "bytes": 2252,
+      "sha256": "6d1b12adf347d9dae367737c5528e2bf1de2ea37d32e2c934912e45bd2dd3dea",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_Day1-Day7.md",
+      "bytes": 4245,
+      "sha256": "059fba566ceeacb0d4db136c35c5600cc2eb94585f1a1f5cbbb56b9f4062f980",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_截至2026-10-06.md",
+      "bytes": 4013,
+      "sha256": "1959050800d0b70534fc42ef47383f6f946fe73a6c19b93ec5edb1244c1ab270",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_截至2026-10-07_七场代码源与Coderlands.md",
+      "bytes": 4517,
+      "sha256": "1b20f4e78c792c6e18f3d93434b10a989ddb602c704200efb167224480270196",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段总结_截至2026-10-18.md",
+      "bytes": 1838,
+      "sha256": "a2c4877360687fcc3f2f075987047c25239e57cf4e0c4dcf86bc4642e49ca2fa",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段数据_2026-10-06.csv",
+      "bytes": 954,
+      "sha256": "f30f7145bf598d4fb0c4873afe6ed829361403dec553f56c8339a145b5c13f97",
+      "category": "其他根目录文档"
+    },
+    {
+      "path": "阶段趋势_2026-10-06.svg",
+      "bytes": 2405,
+      "sha256": "e0e21cd5ab9d530ded8e8bdeb30e130eccbd08f0c5ca2c900ec69cad9c4dec40",
+      "category": "其他根目录文档"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# 公开仓库：原始私人证据一律不进 Git（即使删除提交，历史仍可追溯）
+# 注意：.gitignore 不保护已跟踪文件；新增文件前必须人工检查内容。
+
+# 原始归档容器与录屏
+*.7z
+*.mkv
+*.mp4.raw
+*.avi
+*.mov
+*.mp3
+*.wav
+*.m4a
+*raw_keys*
+*clipboard*
+*screen_*.png
+*screen_*.jpg
+
+# 未脱敏的账号 / 榜单 / 键盘与窗口日志
+*账号页*
+*未脱敏*
+*private*
+*.env
+*.key
+*.pem
+
+# 转写 PDF 的 OCR 原文（只保留脱敏派生解析）
+*pdf_by_PaddleOCR*
+*OCR原文*
+*聊天全文*
+
+# 运行环境
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+.DS_Store

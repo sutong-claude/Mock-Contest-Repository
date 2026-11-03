@@ -1,0 +1,38 @@
+name: Repository integrity · zero-background handoff
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Set up Node (static atlas check only)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate control-plane artifacts and verify byte-for-byte
+        run: |
+          python3 tools/build_repo_state.py
+          python3 tools/verify_repo.py
+      - name: Historical handoff consistency (8 contests / 669 / privacy)
+        run: python3 交接/核验接班一致性.py
+      - name: CodeLands3 independent small oracles (LOCAL-VERIFIED only)
+        run: python3 考古/验证脚本/verify_codelands3_candidates.py
+      - name: Evidence atlas static snapshot (2026-10-12, 8 contests / 36 problems)
+        run: node tools/verify_star_atlas.mjs
+      - name: Report boundary
+        if: always()
+        run: echo "All checks are structural/local. LOCAL-VERIFIED is not OJ-AC; estimates are not official scores."
