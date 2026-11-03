@@ -21,7 +21,7 @@
     "维护日志.md"
   ],
   "file_count": 640,
-  "total_bytes": 41752842,
+  "total_bytes": 41753727,
   "text_file_count": 631,
   "binary_file_count": 9,
   "ledger_contest_count": 19,
@@ -53,7 +53,7 @@
       "name": "01_逐文件摘要.jsonl",
       "records": 640,
       "bytes": 337280,
-      "sha256": "e726267869ccf4d4fb216ce24d30c8c4ae69faead166af76e7931b6bdffeef1f",
+      "sha256": "d15f239d2aa62d72aa6751601ee5a0ebc112e7e5daa29ccd54c6f0f63b4e730a",
       "format": "jsonl; 一行一文件；可流式读入，支持按 category / read_priority 过滤"
     },
     {

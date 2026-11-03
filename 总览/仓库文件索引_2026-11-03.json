@@ -4,7 +4,7 @@
   "generated_by": "tools/build_repo_state.py",
   "note": "确定性快照；sha256 可跨分支回读。逐文件元信息见 仓库全量清单_2026-11-03.csv 与 AI吞入包/01_逐文件摘要.jsonl。",
   "file_count": 640,
-  "total_bytes": 41752842,
+  "total_bytes": 41753727,
   "ledger_contest_count": 19,
   "categories": {
     "AI吞入包": 2,
@@ -5117,8 +5117,8 @@
     },
     {
       "path": "维护日志.md",
-      "bytes": 7149,
-      "sha256": "d562206acd94087321cf689f4e34639a585df1b22adeae1f580ceb3bd5c99e74",
+      "bytes": 8034,
+      "sha256": "21046f684995660874238bf6213b10b547ebc43d01ff557bf231df0f1ca86845",
       "category": "控制层",
       "read_priority": 0,
       "flags": [
